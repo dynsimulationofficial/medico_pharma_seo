@@ -41,7 +41,7 @@ export default function Home() {
                 Explore products <span aria-hidden="true">→</span>
               </Link>
               <Link href="/contact" className="button button-ghost-light">
-                Talk to our team
+                Talk to our teams
               </Link>
             </div>
             <div className="hero-trust-row">
