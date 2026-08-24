@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Medico Pharma SEO Website
 
-## Getting Started
+A responsive Next.js website scaffold for Medico Pharma.
 
-First, run the development server:
+## Included
+
+- Home page
+- About Us page
+- Products page
+- Contact page
+- Responsive header and footer
+- SEO metadata
+- `robots.txt` and `sitemap.xml` routes
+- Responsive mobile/tablet/desktop styling
+- Custom 404 page
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production URL for sitemap / robots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Set the real website URL in your deployment environment:
 
-## Learn More
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-real-domain.com
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Before production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Replace placeholder product-category copy with approved product data.
+2. Add verified company details, address, phone, email, certifications, and legal pages.
+3. Connect the contact form to your approved email, CRM, or form backend.
+4. Set `NEXT_PUBLIC_SITE_URL` to the production domain.
+5. Review all medical / efficacy / indication claims before publishing.
