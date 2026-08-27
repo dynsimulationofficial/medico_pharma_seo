@@ -57,10 +57,12 @@ export default function Footer() {
         <div className="footer-links-column">
           <p className="footer-label">Company</p>
 
-          <Link href="/about">About us</Link>
+          <Link href="/about">About us</Link>  <Link href="/#faq">Products</Link>
+           <Link href="/#faq">Services</Link>
+            <Link href="/#quality">Resources</Link>
           <Link href="/contact">Contact</Link>
-          <Link href="/#quality">Quality approach</Link>
-          <Link href="/#faq">FAQ</Link>
+         
+        
         </div>
 
         {/* PRODUCTS */}

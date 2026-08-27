@@ -5239,7 +5239,7 @@ a.footer-contact-item:hover {
   font-size: 0.72rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--brand-200, #9fdcd6);
+  color: var(--brand-600);
   animation: riseIn 700ms var(--ease-out, ease) 80ms both;
 }
 
@@ -5773,4 +5773,151 @@ a.footer-contact-item:hover {
   .sidebarNote b {
     transition: none !important;
   }
+}
+
+/* ============================================================
+   FOOTER — BRAND / COMPANY CENTER DIVIDER
+   Places the divider exactly in the gap between the Medico
+   Pharma brand column and the Company column.
+   ============================================================ */
+
+.footer-main.footer-directory-layout {
+  --footer-column-gap: clamp(18px, 2vw, 34px);
+  gap: var(--footer-column-gap);
+}
+
+.footer-brand-column {
+  position: relative;
+}
+
+/* Exact center of the Brand ↔ Company gap */
+.footer-brand-column::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: calc(var(--footer-column-gap) / -2);
+  width: 1px;
+  height: calc(100% + 8px);
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(159, 220, 214, 0.18) 8%,
+    rgba(159, 220, 214, 0.22) 50%,
+    rgba(159, 220, 214, 0.18) 92%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Divider is desktop-only because footer columns stack on smaller screens */
+@media (max-width: 800px) {
+  .footer-brand-column::after {
+    display: none;
+  }
+}
+
+/* ============================================================
+   FINAL FOOTER BACKGROUND — MATCH HOME HERO EXACTLY
+   Keep this as the LAST footer background override.
+   ============================================================ */
+
+.site-footer {
+  position: relative;
+  overflow: hidden;
+
+  /* Same gradient language as the homepage hero */
+  background:
+    radial-gradient(
+      1100px 520px at 78% -10%,
+      rgba(16, 145, 154, 0.35),
+      transparent 62%
+    ),
+    linear-gradient(
+      165deg,
+      #063440 0%,
+      var(--ink-900) 48%,
+      #03202a 100%
+    );
+
+  background-color: var(--ink-900);
+  color: rgba(226, 242, 244, 0.72);
+
+  /* Keep the compact footer spacing */
+  padding-top: clamp(34px, 3.8vw, 50px);
+}
+
+/* Same dotted/blister texture used by the hero */
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  display: block;
+
+  background-image: var(--blister);
+  background-size: 26px 26px;
+  background-position: 0 0;
+
+  opacity: 0.60;
+  pointer-events: none;
+}
+
+/* Remove the older footer-only bottom dark fade */
+.site-footer::after {
+  display: none;
+}
+
+/* Keep all real footer content above the texture */
+.site-footer .footer-main,
+.site-footer .footer-bottom {
+  position: relative;
+}
+
+.site-footer .footer-main {
+  z-index: 2;
+}
+
+.site-footer .footer-bottom {
+  z-index: 3;
+}
+
+/* Slightly stronger light on the far-right side on wide screens,
+   matching the visual balance of the homepage hero. */
+@media (min-width: 1200px) {
+  .site-footer {
+    background:
+      radial-gradient(
+        1050px 500px at 91% -8%,
+        rgba(53, 179, 179, 0.24),
+        transparent 62%
+      ),
+      radial-gradient(
+        1100px 520px at 78% -10%,
+        rgba(16, 145, 154, 0.35),
+        transparent 62%
+      ),
+      linear-gradient(
+        165deg,
+        #063440 0%,
+        var(--ink-900) 48%,
+        #03202a 100%
+      );
+  }
+}
+/* Footer content slightly shift right on desktop */
+
+@media (min-width: 801px) {
+  .footer-main.footer-directory-layout {
+    padding-left: 28px;
+  }
+}
+/* Keep "clarity, quality" on one line */
+.hero-copy-xl h1 {
+  max-width: 13.5ch;
+}
+
+.hero-copy-xl h1 em {
+  display: block;
+  white-space: nowrap;
 }
