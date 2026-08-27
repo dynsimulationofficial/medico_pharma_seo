@@ -5921,3 +5921,14 @@ a.footer-contact-item:hover {
   display: block;
   white-space: nowrap;
 }
+/* ============================================================
+   FOOTER — SHIFT ONLY COMPANY → CONTACT TO THE RIGHT
+   Brand column stays exactly where it is
+   ============================================================ */
+
+@media (min-width: 801px) {
+  .footer-main.footer-directory-layout > .footer-links-column,
+  .footer-main.footer-directory-layout > .footer-contact-column {
+    transform: translateX(22px);
+  }
+}
