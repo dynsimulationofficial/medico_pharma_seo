@@ -7,22 +7,23 @@ import type { CSSProperties } from "react";
 
 const productGroups = [
   {
-    title: "Nutrition & Wellness",
+    title: "Pharmaceutical Categories",
     items: [
-      ["Nutraceuticals", "/products/nutraceuticals", "Wellness formulations"],
-      ["Vitamins & Minerals", "/products/vitamins-minerals", "Daily micronutrition"],
-      ["Protein Powders", "/products/protein-powders", "Protein-led nutrition"],
-      ["Sports Nutrition", "/products/sports-nutrition", "Active lifestyle support"],
-      ["Herbal Products", "/products/herbal-products", "Botanical ranges"],
-      ["Ayurvedic Products", "/products/ayurvedic-products", "Traditional wellness"],
+      ["Pharmaceutical Tablets", "", "Oral solid dosage"],
+      ["Pharmaceutical Capsules", "", "Capsule formulations"],
+      ["Pharmaceutical Injection", "", "Injectable range"],
+      ["Anti Depressants Medicines", "", "Therapy range"],
+      ["Skin Care Products", "", "Dermatology & care"],
     ],
   },
   {
-    title: "Clinical & Diagnostics",
+    title: "Medicines & Specialty",
     items: [
-      ["Medical Devices", "/products/medical-devices", "Healthcare equipment"],
-      ["Surgical Consumables", "/products/surgical-consumables", "Clinical essentials"],
-      ["Diagnostic Kits", "/products/diagnostic-kits", "Testing solutions"],
+      ["Pharmaceutical Medicines", "", "General medicines"],
+      ["Pharmaceutical Ointment", "", "Topical formulations"],
+      ["Antibiotic Medicines", "", "Anti-infective range"],
+      ["Steroids Injections", "", "Specialty injectable"],
+      ["Antimalarial Medicine", "", "Anti-infective range"],
     ],
   },
 ] as const;
@@ -72,7 +73,7 @@ const menuGroups = {
     href: "/products",
     eyebrow: "Products",
     description:
-      "Nine focused healthcare categories organised for faster discovery by buyers, distributors and brand partners.",
+      "Explore ten pharmaceutical product categories, dosage formats and specialty medicine ranges.",
     groups: productGroups,
   },
   Services: {
@@ -298,6 +299,23 @@ export default function Header() {
                       openMenu === name ? "is-open" : ""
                     }`}
                   >
+                    {menuGroups[name].groups.flatMap((group) =>
+                      group.items.map(([label, href]) =>
+                        href ? (
+                          <Link href={href} key={label}>
+                            {label}
+                          </Link>
+                        ) : (
+                          <span
+                            className="mobile-nav-static-link"
+                            key={label}
+                          >
+                            {label}
+                          </span>
+                        )
+                      )
+                    )}
+
                     <Link
                       href={menuGroups[name].href}
                       className="mobile-nav-view-all"
@@ -305,14 +323,6 @@ export default function Header() {
                       View all {name.toLowerCase()}
                       <span aria-hidden="true">→</span>
                     </Link>
-
-                    {menuGroups[name].groups.flatMap((group) =>
-                      group.items.map(([label, href]) => (
-                        <Link href={href} key={href}>
-                          {label}
-                        </Link>
-                      ))
-                    )}
                   </div>
                 </div>
               ))}
@@ -382,7 +392,6 @@ export default function Header() {
               className="premium-enquire"
             >
               <span>Enroll now</span>
-              {/* <i aria-hidden="true">↗</i> */}
             </Link>
           </div>
         </div>
@@ -402,13 +411,15 @@ export default function Header() {
 
                 <p>{menuGroups[openMenu].description}</p>
 
-                <Link
-                  href={menuGroups[openMenu].href}
-                  className="mega-all-link"
-                >
-                  View all {openMenu.toLowerCase()}
-                  <span aria-hidden="true">→</span>
-                </Link>
+                {openMenu !== "Products" && (
+                  <Link
+                    href={menuGroups[openMenu].href}
+                    className="mega-all-link"
+                  >
+                    View all {openMenu.toLowerCase()}
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                )}
               </div>
 
               <div
@@ -426,24 +437,46 @@ export default function Header() {
                     <div className="mega-column-rule" />
 
                     <div className="desktop-mega-list">
-                      {group.items.map(([label, href, meta]) => (
-                        <Link
-                          href={href}
-                          className="desktop-mega-link"
-                          key={href}
-                        >
-                          <span>
-                            <strong>{label}</strong>
-                            <small>{meta}</small>
-                          </span>
+                      {group.items.map(([label, href, meta]) =>
+                        href ? (
+                          <Link
+                            href={href}
+                            className="desktop-mega-link"
+                            key={label}
+                          >
+                            <span>
+                              <strong>{label}</strong>
+                              <small>{meta}</small>
+                            </span>
 
-                          <i aria-hidden="true">↗</i>
-                        </Link>
-                      ))}
+                            <i aria-hidden="true">↗</i>
+                          </Link>
+                        ) : (
+                          <div
+                            className="desktop-mega-link desktop-mega-static"
+                            key={label}
+                          >
+                            <span>
+                              <strong>{label}</strong>
+                              <small>{meta}</small>
+                            </span>
+                          </div>
+                        )
+                      )}
                     </div>
                   </div>
                 ))}
               </div>
+
+              {openMenu === "Products" && (
+                <Link
+                  href="/products"
+                  className="products-mega-view-all"
+                >
+                  <span>View all products</span>
+                  <i aria-hidden="true">→</i>
+                </Link>
+              )}
             </div>
           )}
         </div>

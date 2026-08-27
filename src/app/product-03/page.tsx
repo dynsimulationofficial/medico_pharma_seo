@@ -5,71 +5,71 @@ import type { CSSProperties } from "react";
 
 const categories = [
   {
-    number: "01",
-    title: 'Pharmaceutical Tablets',
-    label: 'Oral solid dosage',
-    href: '/products/pharmaceutical-tablets',
-    image: "/images/product-categories/pharmaceutical-tablets.webp",
-  },
-  {
-    number: "02",
-    title: 'Pharmaceutical Capsules',
-    label: 'Capsule formulations',
-    href: '/products/pharmaceutical-capsules',
-    image: "/images/product-categories/pharmaceutical-capsules.webp",
-  },
-  {
-    number: "03",
-    title: 'Pharmaceutical Injection',
-    label: 'Injectable range',
-    href: '/products/pharmaceutical-injection',
-    image: "/images/product-categories/pharmaceutical-injection.webp",
-  },
-  {
-    number: "04",
-    title: 'Anti Depressants Medicines',
-    label: 'Therapy range',
-    href: '/products/anti-depressants-medicines',
-    image: "/images/product-categories/anti-depressants-medicines.webp",
-  },
-  {
-    number: "05",
-    title: 'Skin Care Products',
-    label: 'Dermatology & care',
-    href: '/products/skin-care-products',
-    image: "/images/product-categories/skin-care-products.webp",
-  },
-  {
-    number: "06",
-    title: 'Pharmaceutical Medicines',
-    label: 'General medicines',
-    href: '/products/pharmaceutical-medicines',
-    image: "/images/product-categories/pharmaceutical-medicines.webp",
-  },
-  {
-    number: "07",
-    title: 'Pharmaceutical Ointment',
-    label: 'Topical formulations',
-    href: '/products/pharmaceutical-ointment',
-    image: "/images/product-categories/pharmaceutical-ointment.webp",
-  },
-  {
-    number: "08",
-    title: 'Antibiotic Medicines',
+    number: "19",
+    title: 'Anti Fungal Medicine',
     label: 'Anti-infective',
-    href: '/products/antibiotic-medicines',
-    image: "/images/product-categories/antibiotic-medicines.webp",
+    href: '/products/anti-fungal-medicine',
+    image: "/images/product-categories/anti-fungal-medicine.webp",
   },
   {
-    number: "09",
-    title: 'Steroids Injections',
-    label: 'Specialty injectable',
-    href: '/products/steroids-injections',
-    image: "/images/product-categories/steroids-injections.webp",
+    number: "20",
+    title: 'Steroids Tablets',
+    label: 'Specialty oral range',
+    href: '/products/steroids-tablets',
+    image: "/images/product-categories/steroids-tablets.webp",
+  },
+  {
+    number: "21",
+    title: 'Protein Powder',
+    label: 'Nutrition',
+    href: '/products/protein-powders',
+    image: "/images/product-categories/protein-powder.webp",
+  },
+  {
+    number: "22",
+    title: 'Anti Acne Medicines',
+    label: 'Dermatology',
+    href: '/products/anti-acne-medicines',
+    image: "/images/product-categories/anti-acne-medicines.webp",
+  },
+  {
+    number: "23",
+    title: 'Hypertension Medicine',
+    label: 'Cardiovascular',
+    href: '/products/hypertension-medicine',
+    image: "/images/product-categories/hypertension-medicine.webp",
+  },
+  {
+    number: "24",
+    title: 'Analgesic And Anti Inflammatory Drugs',
+    label: 'Pain & inflammation',
+    href: '/products/analgesic-and-anti-inflammatory-drugs',
+    image: "/images/product-categories/analgesic-anti-inflammatory.webp",
+  },
+  {
+    number: "25",
+    title: 'Pharmaceutical Cream',
+    label: 'Topical formulations',
+    href: '/products/pharmaceutical-cream',
+    image: "/images/product-categories/pharmaceutical-cream.webp",
+  },
+  {
+    number: "26",
+    title: 'Foam Face Wash',
+    label: 'Skin care',
+    href: '/products/foam-face-wash',
+    image: "/images/product-categories/foam-face-wash.webp",
+  },
+  {
+    number: "27",
+    title: 'Variable Auto Transformer',
+    label: 'Miscellaneous listing',
+    href: '/products/variable-auto-transformer',
+    image: "/images/product-categories/variable-auto-transformer.webp",
   }
 ] as const;
 
-export default function Product01Page() {
+export default function Product03Page() {
   return (
     <main className="medico-cat-page">
       <section className="medico-cat-hero">
@@ -79,7 +79,7 @@ export default function Product01Page() {
 
         <div className="container medico-cat-hero-inner">
           <div className="medico-cat-hero-copy">
-            {/* <span className="medico-cat-kicker">Portfolio / Product 01</span> */}
+            {/* <span className="medico-cat-kicker">Portfolio / Product 03</span> */}
 
             <h1>
               Healthcare categories
@@ -108,16 +108,15 @@ export default function Product01Page() {
         <div className="container">
           <div className="medico-cat-heading">
             <div>
-              <span>Product set 1 of 4</span>
+              <span>Product set 3 of 4</span>
               <h2>Browse categories</h2>
             </div>
 
             <div className="medico-cat-page-links" aria-label="Product pages">
-              <Link href="#" className={true ? "active" : ""}>01</Link>
+              <Link href="/products" className={false ? "active" : ""}>01</Link>
               <Link href="/product-01" className={false ? "active" : ""}>02</Link>
-              <Link href="/product-02" className={false ? "active" : ""}>03</Link>
-              <Link href="/product-03" className={false ? "active" : ""}>04</Link>
-               <Link href="/product-04" className={false ? "active" : ""}>05</Link>
+              <Link href="#" className={true ? "active" : ""}>03</Link>
+              <Link href="/product-04" className={false ? "active" : ""}>04</Link>
             </div>
           </div>
 
@@ -157,8 +156,8 @@ export default function Product01Page() {
               </Link>
             ))}
 
-            <Link href="/product-01" className="medico-cat-more-card">
-              <span className="medico-cat-more-label">Product 02</span>
+            <Link href="/product-04" className="medico-cat-more-card">
+              <span className="medico-cat-more-label">Product 04</span>
 
               <div>
                 <strong>View more categories</strong>
@@ -171,13 +170,13 @@ export default function Product01Page() {
           </div>
 
           <div className="medico-cat-bottom-nav">
-            <Link href="/product-01" className={true ? "disabled" : ""}>
+            <Link href="/product-01" className={false ? "disabled" : ""}>
               ← Previous
             </Link>
 
-            <span>Product 01</span>
+            <span>Product 03</span>
 
-            <Link href="/product-01" className={false ? "disabled" : ""}>
+            <Link href="/product-04" className={false ? "disabled" : ""}>
               Next →
             </Link>
           </div>

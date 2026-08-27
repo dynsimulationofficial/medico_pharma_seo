@@ -5,71 +5,71 @@ import type { CSSProperties } from "react";
 
 const categories = [
   {
-    number: "01",
-    title: 'Pharmaceutical Tablets',
-    label: 'Oral solid dosage',
-    href: '/products/pharmaceutical-tablets',
-    image: "/images/product-categories/pharmaceutical-tablets.webp",
-  },
-  {
-    number: "02",
-    title: 'Pharmaceutical Capsules',
-    label: 'Capsule formulations',
-    href: '/products/pharmaceutical-capsules',
-    image: "/images/product-categories/pharmaceutical-capsules.webp",
-  },
-  {
-    number: "03",
-    title: 'Pharmaceutical Injection',
-    label: 'Injectable range',
-    href: '/products/pharmaceutical-injection',
-    image: "/images/product-categories/pharmaceutical-injection.webp",
-  },
-  {
-    number: "04",
-    title: 'Anti Depressants Medicines',
-    label: 'Therapy range',
-    href: '/products/anti-depressants-medicines',
-    image: "/images/product-categories/anti-depressants-medicines.webp",
-  },
-  {
-    number: "05",
-    title: 'Skin Care Products',
-    label: 'Dermatology & care',
-    href: '/products/skin-care-products',
-    image: "/images/product-categories/skin-care-products.webp",
-  },
-  {
-    number: "06",
-    title: 'Pharmaceutical Medicines',
-    label: 'General medicines',
-    href: '/products/pharmaceutical-medicines',
-    image: "/images/product-categories/pharmaceutical-medicines.webp",
-  },
-  {
-    number: "07",
-    title: 'Pharmaceutical Ointment',
-    label: 'Topical formulations',
-    href: '/products/pharmaceutical-ointment',
-    image: "/images/product-categories/pharmaceutical-ointment.webp",
-  },
-  {
-    number: "08",
-    title: 'Antibiotic Medicines',
+    number: "10",
+    title: 'Antimalarial Medicine',
     label: 'Anti-infective',
-    href: '/products/antibiotic-medicines',
-    image: "/images/product-categories/antibiotic-medicines.webp",
+    href: '/products/antimalarial-medicine',
+    image: "/images/product-categories/antimalarial-medicine.webp",
   },
   {
-    number: "09",
-    title: 'Steroids Injections',
-    label: 'Specialty injectable',
-    href: '/products/steroids-injections',
-    image: "/images/product-categories/steroids-injections.webp",
+    number: "11",
+    title: 'Anti Cancer Medicine',
+    label: 'Oncology range',
+    href: '/products/anti-cancer-medicine',
+    image: "/images/product-categories/anti-cancer-medicine.webp",
+  },
+  {
+    number: "12",
+    title: 'Antidiabetic Medicine',
+    label: 'Metabolic care',
+    href: '/products/antidiabetic-medicine',
+    image: "/images/product-categories/antidiabetic-medicine.webp",
+  },
+  {
+    number: "13",
+    title: 'Erectile Dysfunction Medicine',
+    label: "Men's health",
+    href: '/products/erectile-dysfunction-medicine',
+    image: "/images/product-categories/erectile-dysfunction-medicine.webp",
+  },
+  {
+    number: "14",
+    title: 'Pain Relief Medicines',
+    label: 'Pain management',
+    href: '/products/pain-relief-medicines',
+    image: "/images/product-categories/pain-relief-medicines.webp",
+  },
+  {
+    number: "15",
+    title: 'Herbal Capsul',
+    label: 'Herbal wellness',
+    href: '/products/herbal-capsul',
+    image: "/images/product-categories/herbal-capsul.webp",
+  },
+  {
+    number: "16",
+    title: 'Anti Psychotic Medicines',
+    label: 'Neuro / psychiatry',
+    href: '/products/anti-psychotic-medicines',
+    image: "/images/product-categories/anti-psychotic-medicines.webp",
+  },
+  {
+    number: "17",
+    title: 'Antiparasitic Medicine',
+    label: 'Anti-infective',
+    href: '/products/antiparasitic-medicine',
+    image: "/images/product-categories/antiparasitic-medicine.webp",
+  },
+  {
+    number: "18",
+    title: 'Pharmaceutical Syrup',
+    label: 'Liquid dosage',
+    href: '/products/pharmaceutical-syrup',
+    image: "/images/product-categories/pharmaceutical-syrup.webp",
   }
 ] as const;
 
-export default function Product01Page() {
+export default function Product02Page() {
   return (
     <main className="medico-cat-page">
       <section className="medico-cat-hero">
@@ -79,7 +79,7 @@ export default function Product01Page() {
 
         <div className="container medico-cat-hero-inner">
           <div className="medico-cat-hero-copy">
-            {/* <span className="medico-cat-kicker">Portfolio / Product 01</span> */}
+            {/* <span className="medico-cat-kicker">Portfolio / Product 02</span> */}
 
             <h1>
               Healthcare categories
@@ -108,16 +108,15 @@ export default function Product01Page() {
         <div className="container">
           <div className="medico-cat-heading">
             <div>
-              <span>Product set 1 of 4</span>
+              <span>Product set 2 of 4</span>
               <h2>Browse categories</h2>
             </div>
 
             <div className="medico-cat-page-links" aria-label="Product pages">
-              <Link href="#" className={true ? "active" : ""}>01</Link>
-              <Link href="/product-01" className={false ? "active" : ""}>02</Link>
-              <Link href="/product-02" className={false ? "active" : ""}>03</Link>
-              <Link href="/product-03" className={false ? "active" : ""}>04</Link>
-               <Link href="/product-04" className={false ? "active" : ""}>05</Link>
+              <Link href="/products" className={false ? "active" : ""}>01</Link>
+              <Link href="#" className={true ? "active" : ""}>02</Link>
+              <Link href="/product-03" className={false ? "active" : ""}>03</Link>
+              <Link href="/product-04" className={false ? "active" : ""}>04</Link>
             </div>
           </div>
 
@@ -157,8 +156,8 @@ export default function Product01Page() {
               </Link>
             ))}
 
-            <Link href="/product-01" className="medico-cat-more-card">
-              <span className="medico-cat-more-label">Product 02</span>
+            <Link href="/product-03" className="medico-cat-more-card">
+              <span className="medico-cat-more-label">Product 03</span>
 
               <div>
                 <strong>View more categories</strong>
@@ -171,13 +170,13 @@ export default function Product01Page() {
           </div>
 
           <div className="medico-cat-bottom-nav">
-            <Link href="/product-01" className={true ? "disabled" : ""}>
+            <Link href="/products" className={false ? "disabled" : ""}>
               ← Previous
             </Link>
 
-            <span>Product 01</span>
+            <span>Product 02</span>
 
-            <Link href="/product-01" className={false ? "disabled" : ""}>
+            <Link href="/product-03" className={false ? "disabled" : ""}>
               Next →
             </Link>
           </div>

@@ -6617,3 +6617,1583 @@ a.footer-contact-item:hover {
     animation: none;
   }
 }
+/* ============================================================
+   MEDICO PHARMA — PRODUCT 01–04 FINAL DARK CATEGORY GALLERY
+   Paste ONCE at the VERY END of src/app/globals.css
+   Routes: /product-01 /product-02 /product-03 /product-04
+   ============================================================ */
+
+.medico-cat-page {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      1100px 520px at 88% -8%,
+      rgba(53, 179, 179, 0.22),
+      transparent 62%
+    ),
+    radial-gradient(
+      820px 460px at -8% 86%,
+      rgba(11, 110, 119, 0.22),
+      transparent 64%
+    ),
+    linear-gradient(
+      160deg,
+      #063440 0%,
+      var(--ink-900) 48%,
+      #03202a 100%
+    );
+
+  color: #ffffff;
+}
+
+.medico-cat-page::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background-image: var(--blister);
+  background-size: 26px 26px;
+
+  opacity: 0.52;
+  pointer-events: none;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.medico-cat-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding:
+    clamp(62px, 6vw, 88px)
+    0
+    clamp(46px, 5vw, 68px);
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.medico-cat-pattern {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      rgba(159, 220, 214, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(159, 220, 214, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 42px 42px;
+
+  mask-image:
+    linear-gradient(
+      to right,
+      #000 0%,
+      transparent 76%
+    );
+
+  pointer-events: none;
+}
+
+.medico-cat-glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(70px);
+
+  pointer-events: none;
+}
+
+.medico-cat-glow-a {
+  width: 380px;
+  height: 380px;
+
+  top: -220px;
+  right: -80px;
+
+  background:
+    rgba(53, 179, 179, 0.25);
+
+  animation:
+    medicoCatGlowA
+    14s
+    ease-in-out
+    infinite;
+}
+
+.medico-cat-glow-b {
+  width: 300px;
+  height: 300px;
+
+  left: -150px;
+  bottom: -210px;
+
+  background:
+    rgba(11, 110, 119, 0.33);
+
+  animation:
+    medicoCatGlowB
+    18s
+    ease-in-out
+    infinite;
+}
+
+@keyframes medicoCatGlowA {
+  50% {
+    transform:
+      translate(-35px, 25px)
+      scale(1.12);
+  }
+}
+
+@keyframes medicoCatGlowB {
+  50% {
+    transform:
+      translate(45px, -25px)
+      scale(1.15);
+  }
+}
+
+.medico-cat-hero-inner {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(240px, 0.42fr);
+
+  gap: clamp(48px, 8vw, 100px);
+
+  align-items: end;
+}
+
+.medico-cat-hero-copy {
+  animation:
+    medicoCatHeroIn
+    720ms
+    var(--ease-out)
+    both;
+}
+
+.medico-cat-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--brand-200);
+
+  font-family: var(--font-code);
+  font-size: 0.67rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.medico-cat-kicker::before {
+  content: "";
+
+  width: 22px;
+  height: 1px;
+
+  background: currentColor;
+}
+
+.medico-cat-hero h1 {
+  max-width: 12ch;
+
+  margin-top: 17px;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(3rem, 5.4vw, 5.35rem);
+
+  line-height: 0.98;
+
+  letter-spacing: -0.055em;
+}
+
+.medico-cat-hero h1 em {
+  display: block;
+
+  margin-top: 6px;
+
+  color: var(--brand-200);
+
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+
+  letter-spacing: -0.025em;
+}
+
+.medico-cat-hero-copy > p {
+  max-width: 60ch;
+
+  margin-top: 23px;
+
+  color:
+    rgba(226, 242, 244, 0.70);
+
+  font-size:
+    clamp(0.98rem, 1.15vw, 1.06rem);
+
+  line-height: 1.72;
+}
+
+/* ---------- Hero Stat ---------- */
+
+.medico-cat-hero-stat {
+  position: relative;
+
+  padding: 25px 26px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.13);
+
+  border-radius: 24px;
+
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  box-shadow:
+    0 28px 60px -46px
+    rgba(0, 0, 0, 0.82);
+
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+
+  animation:
+    medicoCatStatIn
+    760ms
+    var(--ease-out)
+    90ms
+    both;
+}
+
+.medico-cat-hero-stat > span {
+  display: block;
+
+  color: var(--brand-200);
+
+  font-family: var(--font-code);
+  font-size: 0.60rem;
+  letter-spacing: 0.16em;
+}
+
+.medico-cat-hero-stat > strong {
+  display: block;
+
+  margin-top: 14px;
+
+  color: #ffffff;
+
+  font-family: var(--font-display);
+  font-size: 3.65rem;
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+}
+
+.medico-cat-hero-stat > p {
+  margin-top: 8px;
+
+  color:
+    rgba(226, 242, 244, 0.53);
+
+  font-size: 0.72rem;
+}
+
+.medico-cat-hero-stat svg {
+  width: 100%;
+  height: 34px;
+
+  margin-top: 22px;
+}
+
+.medico-cat-hero-stat path {
+  fill: none;
+
+  stroke: var(--brand-400);
+
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  stroke-dasharray: 260;
+
+  animation:
+    medicoCatTrace
+    4.2s
+    linear
+    infinite;
+}
+
+@keyframes medicoCatTrace {
+  from {
+    stroke-dashoffset: 260;
+  }
+
+  to {
+    stroke-dashoffset: -260;
+  }
+}
+
+/* ============================================================
+   CATALOG
+   ============================================================ */
+
+.medico-cat-catalog {
+  position: relative;
+  z-index: 2;
+
+  padding:
+    clamp(48px, 5vw, 70px)
+    0
+    clamp(76px, 8vw, 108px);
+}
+
+.medico-cat-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 30px;
+}
+
+.medico-cat-heading
+> div:first-child
+> span {
+  color: var(--brand-200);
+
+  font-family: var(--font-code);
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.medico-cat-heading h2 {
+  margin-top: 7px;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(1.9rem, 3vw, 2.7rem);
+}
+
+.medico-cat-page-links {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.medico-cat-page-links a {
+  display: grid;
+  place-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.13);
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.045);
+
+  color:
+    rgba(226, 242, 244, 0.62);
+
+  font-family: var(--font-code);
+  font-size: 0.64rem;
+
+  transition:
+    transform 220ms var(--ease-out),
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.medico-cat-page-links a:hover {
+  transform: translateY(-2px);
+
+  border-color:
+    rgba(159, 220, 214, 0.38);
+
+  color: #ffffff;
+}
+
+.medico-cat-page-links a.active {
+  background: var(--brand-400);
+
+  border-color: var(--brand-400);
+
+  color: var(--ink-900);
+
+  font-weight: 700;
+}
+
+/* ============================================================
+   5 + 4 + MORE GRID
+   ============================================================ */
+
+.medico-cat-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+/* ============================================================
+   CATEGORY CARD
+   ============================================================ */
+
+.medico-cat-card {
+  --card-delay: 0ms;
+
+  position: relative;
+
+  overflow: hidden;
+  isolation: isolate;
+
+  min-height: 334px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.10);
+
+  border-radius: 22px;
+
+  background:
+    rgba(255, 255, 255, 0.96);
+
+  box-shadow:
+    0 25px 56px -46px
+    rgba(0, 0, 0, 0.84);
+
+  opacity: 0;
+
+  transform:
+    translateY(18px)
+    scale(0.985);
+
+  animation:
+    medicoCatCardIn
+    640ms
+    var(--ease-out)
+    var(--card-delay)
+    forwards;
+
+  transition:
+    transform 420ms var(--ease-out),
+    box-shadow 420ms var(--ease-out),
+    border-color 220ms ease;
+}
+
+.medico-cat-card:hover {
+  transform:
+    translateY(-8px)
+    scale(1.008);
+
+  border-color:
+    rgba(159, 220, 214, 0.52);
+
+  box-shadow:
+    0 35px 70px -46px
+    rgba(0, 0, 0, 0.72),
+    0 14px 28px -22px
+    rgba(53, 179, 179, 0.34);
+}
+
+/* ---------- Image Area ---------- */
+
+.medico-cat-image {
+  position: relative;
+
+  height: 205px;
+
+  overflow: hidden;
+
+  background-color: #dcefeb;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-bottom:
+    1px solid
+    rgba(5, 42, 51, 0.08);
+
+  transition:
+    background-size
+    700ms
+    var(--ease-out);
+}
+
+/*
+  If your image exists in:
+  public/images/product-categories/filename.webp
+  it will automatically appear here.
+
+  Until then the card shows "Add product image".
+*/
+
+.medico-cat-image::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(5, 42, 51, 0.32),
+      transparent 52%
+    );
+
+  pointer-events: none;
+}
+
+.medico-cat-card:hover
+.medico-cat-image {
+  background-size: 108%;
+}
+
+.medico-cat-image-fallback {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  padding: 7px 10px;
+
+  border:
+    1px dashed
+    rgba(5, 42, 51, 0.22);
+
+  border-radius: 999px;
+
+  background:
+    rgba(255, 255, 255, 0.62);
+
+  color:
+    rgba(5, 42, 51, 0.54);
+
+  font-family: var(--font-code);
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  backdrop-filter: blur(5px);
+
+  pointer-events: none;
+}
+
+/*
+  Once a real image is present this label will still technically
+  exist, but sits subtly on top. If you do not want it at all,
+  add className="has-image" and hide it, or simply use:
+  .medico-cat-image-fallback {{ display:none; }}
+*/
+
+.medico-cat-number {
+  position: absolute;
+  z-index: 3;
+
+  right: 13px;
+  bottom: 10px;
+
+  color:
+    rgba(255, 255, 255, 0.92);
+
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+
+  letter-spacing: -0.05em;
+
+  text-shadow:
+    0 2px 14px
+    rgba(5, 42, 51, 0.42);
+}
+
+/* Satin sweep */
+.medico-cat-image-shine {
+  position: absolute;
+  z-index: 2;
+
+  inset: -30%;
+
+  background:
+    linear-gradient(
+      112deg,
+      transparent 37%,
+      rgba(255, 255, 255, 0.42) 48%,
+      transparent 59%
+    );
+
+  transform:
+    translateX(-74%)
+    rotate(5deg);
+
+  transition:
+    transform
+    900ms
+    var(--ease-out);
+
+  pointer-events: none;
+}
+
+.medico-cat-card:hover
+.medico-cat-image-shine {
+  transform:
+    translateX(74%)
+    rotate(5deg);
+}
+
+/* ---------- Card Copy ---------- */
+
+.medico-cat-card-copy {
+  padding: 18px 17px 22px;
+}
+
+.medico-cat-card-copy > span {
+  display: block;
+
+  color: var(--brand-600);
+
+  font-family: var(--font-code);
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.medico-cat-card-copy h3 {
+  max-width: 17ch;
+
+  margin-top: 8px;
+
+  color: var(--ink-900);
+
+  font-size:
+    clamp(0.95rem, 1.15vw, 1.05rem);
+
+  line-height: 1.28;
+
+  letter-spacing: -0.025em;
+}
+
+/* ---------- Arrow ---------- */
+
+.medico-cat-arrow {
+  position: absolute;
+
+  right: 14px;
+  bottom: 14px;
+
+  display: grid;
+  place-items: center;
+
+  width: 29px;
+  height: 29px;
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: var(--brand-600);
+
+  transition:
+    transform 320ms var(--ease-out),
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.medico-cat-card:hover
+.medico-cat-arrow {
+  transform: rotate(45deg);
+
+  background: var(--ink-900);
+
+  color: #ffffff;
+}
+
+/* ============================================================
+   MORE / OTHER PRODUCTS CARD
+   ============================================================ */
+
+.medico-cat-more-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  min-height: 334px;
+
+  padding: 22px;
+
+  border:
+    1px solid
+    rgba(159, 220, 214, 0.18);
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(16, 145, 154, 0.18),
+      rgba(255, 255, 255, 0.045)
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.06);
+
+  transition:
+    transform 420ms var(--ease-out),
+    border-color 220ms ease,
+    background 420ms ease;
+}
+
+.medico-cat-more-card:hover {
+  transform: translateY(-8px);
+
+  border-color:
+    rgba(159, 220, 214, 0.42);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(16, 145, 154, 0.27),
+      rgba(255, 255, 255, 0.06)
+    );
+}
+
+.medico-cat-more-label {
+  position: relative;
+  z-index: 3;
+
+  color: var(--brand-200);
+
+  font-family: var(--font-code);
+  font-size: 0.56rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.medico-cat-more-card > div {
+  position: absolute;
+  z-index: 3;
+
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 14px;
+}
+
+.medico-cat-more-card strong {
+  max-width: 11ch;
+
+  color: #ffffff;
+
+  font-family: var(--font-display);
+
+  font-size: 1.22rem;
+  line-height: 1.18;
+}
+
+.medico-cat-more-card
+> div
+> span {
+  font-size: 1.2rem;
+
+  transition:
+    transform
+    260ms
+    var(--ease-out);
+}
+
+.medico-cat-more-card:hover
+> div
+> span {
+  transform:
+    translate(3px, -3px);
+}
+
+/* Orbit animation */
+.medico-cat-orbit {
+  position: absolute;
+
+  border:
+    1px solid
+    rgba(159, 220, 214, 0.17);
+
+  border-radius: 50%;
+
+  animation:
+    medicoCatOrbit
+    12s
+    linear
+    infinite;
+}
+
+.medico-cat-orbit-a {
+  width: 175px;
+  height: 175px;
+
+  right: -48px;
+  top: 25px;
+}
+
+.medico-cat-orbit-b {
+  width: 112px;
+  height: 112px;
+
+  right: -15px;
+  top: 57px;
+
+  animation-duration: 8s;
+  animation-direction: reverse;
+}
+
+.medico-cat-orbit-a::after {
+  content: "";
+
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  top: 13px;
+  left: 50%;
+
+  border-radius: 50%;
+
+  background: var(--brand-400);
+
+  box-shadow:
+    0 0 16px
+    var(--brand-400);
+}
+
+@keyframes medicoCatOrbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================================
+   BOTTOM NAVIGATION
+   ============================================================ */
+
+.medico-cat-bottom-nav {
+  display: grid;
+
+  grid-template-columns:
+    1fr auto 1fr;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 34px;
+  padding-top: 24px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.10);
+}
+
+.medico-cat-bottom-nav > a {
+  width: max-content;
+
+  color:
+    rgba(226, 242, 244, 0.72);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  transition:
+    color 180ms ease,
+    transform 220ms var(--ease-out);
+}
+
+.medico-cat-bottom-nav
+> a:hover:not(.disabled) {
+  color: #ffffff;
+
+  transform: translateY(-1px);
+}
+
+.medico-cat-bottom-nav
+> a:last-child {
+  justify-self: end;
+}
+
+.medico-cat-bottom-nav
+> a.disabled {
+  opacity: 0.28;
+
+  pointer-events: none;
+}
+
+.medico-cat-bottom-nav > span {
+  color: var(--brand-200);
+
+  font-family: var(--font-code);
+  font-size: 0.61rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   ENTRANCE MOTION
+   ============================================================ */
+
+@keyframes medicoCatHeroIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes medicoCatStatIn {
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(24px)
+      scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes medicoCatCardIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1180px) {
+  .medico-cat-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .medico-cat-hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .medico-cat-hero-stat {
+    max-width: 320px;
+  }
+
+  .medico-cat-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 580px) {
+  .medico-cat-hero {
+    padding-top: 48px;
+  }
+
+  .medico-cat-hero h1 {
+    font-size:
+      clamp(2.7rem, 12vw, 4rem);
+  }
+
+  .medico-cat-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .medico-cat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .medico-cat-card,
+  .medico-cat-more-card {
+    min-height: 350px;
+  }
+
+  .medico-cat-image {
+    height: 220px;
+  }
+
+  .medico-cat-bottom-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .medico-cat-bottom-nav > span {
+    order: -1;
+  }
+
+  .medico-cat-bottom-nav
+  > a:last-child {
+    justify-self: start;
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .medico-cat-glow,
+  .medico-cat-hero-copy,
+  .medico-cat-hero-stat,
+  .medico-cat-hero-stat path,
+  .medico-cat-card,
+  .medico-cat-orbit {
+    animation: none !important;
+  }
+
+  .medico-cat-card {
+    opacity: 1;
+    transform: none;
+  }
+
+  .medico-cat-image-shine {
+    transition: none;
+  }
+}
+/* ============================================================
+   PRODUCT PAGE BACKGROUND FIX
+   Hero = dark green
+   Browse Categories section = white
+   ============================================================ */
+
+/* Full page base white */
+.medico-cat-page {
+  background: #ffffff !important;
+  color: var(--ink-700);
+}
+
+/* Remove dots from complete page */
+.medico-cat-page::before {
+  display: none !important;
+}
+
+
+/* ============================================================
+   TOP HERO ONLY — DARK GREEN
+   ============================================================ */
+
+.medico-cat-hero {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      1100px 520px at 88% -8%,
+      rgba(53, 179, 179, 0.24),
+      transparent 62%
+    ),
+    linear-gradient(
+      160deg,
+      #063440 0%,
+      var(--ink-900) 48%,
+      #03202a 100%
+    ) !important;
+
+  color: #ffffff;
+}
+
+
+/* dots only inside hero */
+.medico-cat-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  display: block;
+
+  background-image: var(--blister);
+  background-size: 26px 26px;
+
+  opacity: 0.56;
+
+  pointer-events: none;
+}
+
+
+/* keep hero content above dots */
+.medico-cat-hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ============================================================
+   SECOND SECTION — WHITE
+   ============================================================ */
+
+.medico-cat-catalog {
+  position: relative;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fbfdfd 100%
+    ) !important;
+
+  color: var(--ink-700);
+}
+
+
+/* subtle premium teal glow */
+.medico-cat-catalog::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      760px 300px at 92% 0%,
+      rgba(53, 179, 179, 0.055),
+      transparent 68%
+    );
+}
+
+
+/* keep content above glow */
+.medico-cat-catalog > .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Browse Categories heading */
+.medico-cat-heading h2 {
+  color: var(--ink-900) !important;
+}
+
+
+/* Product set label */
+.medico-cat-heading > div:first-child > span {
+  color: var(--brand-600) !important;
+}
+
+
+/* ============================================================
+   PAGE NUMBERS ON WHITE SECTION
+   ============================================================ */
+
+.medico-cat-page-links a {
+  border: 1px solid var(--line) !important;
+
+  background: #ffffff !important;
+
+  color: var(--ink-500) !important;
+}
+
+
+.medico-cat-page-links a:hover {
+  border-color: var(--brand-200) !important;
+
+  color: var(--ink-900) !important;
+}
+
+
+.medico-cat-page-links a.active {
+  background: var(--ink-900) !important;
+
+  border-color: var(--ink-900) !important;
+
+  color: #ffffff !important;
+}
+
+
+/* ============================================================
+   BOTTOM NAVIGATION
+   ============================================================ */
+
+.medico-cat-bottom-nav {
+  border-top: 1px solid var(--line) !important;
+}
+
+
+.medico-cat-bottom-nav > a {
+  color: var(--ink-600) !important;
+}
+
+
+.medico-cat-bottom-nav > a:hover:not(.disabled) {
+  color: var(--brand-600) !important;
+}
+
+
+.medico-cat-bottom-nav > span {
+  color: var(--brand-600) !important;
+}
+
+
+/* ============================================================
+   MORE CATEGORIES CARD
+   Keep this one dark for contrast
+   ============================================================ */
+
+.medico-cat-more-card {
+  background:
+    linear-gradient(
+      145deg,
+      #073b46 0%,
+      #052a33 62%,
+      #06333d 100%
+    ) !important;
+
+  color: #ffffff;
+}
+
+
+.medico-cat-more-card:hover {
+  background:
+    linear-gradient(
+      145deg,
+      #0b5260 0%,
+      #063640 65%,
+      #073b46 100%
+    ) !important;
+}
+/* ============================================================
+   PRODUCTS MEGA MENU — 10 STATIC CATEGORIES + VIEW ALL PRODUCTS
+   Paste this at the END of src/app/globals.css
+   ============================================================ */
+
+.desktop-mega-static {
+  cursor: default;
+}
+
+.desktop-mega-static:hover {
+  transform: none;
+}
+
+/* Products categories are intentionally not clickable yet */
+.desktop-mega-static > i {
+  display: none;
+}
+
+/* Bottom View all products link */
+.products-mega-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  width: max-content;
+
+  margin-top: 22px;
+  padding-top: 17px;
+
+  border-top: 1px solid var(--line);
+
+  color: var(--brand-600);
+
+  font-family: var(--font-display);
+  font-size: 0.84rem;
+  font-weight: 700;
+
+  transition:
+    color 180ms ease,
+    transform 240ms var(--ease-out);
+}
+
+.products-mega-view-all i {
+  font-style: normal;
+
+  transition: transform 260ms var(--ease-out);
+}
+
+.products-mega-view-all:hover {
+  color: var(--ink-900);
+}
+
+.products-mega-view-all:hover i {
+  transform: translateX(4px);
+}
+
+/* Static Product items in mobile menu */
+.mobile-nav-static-link {
+  display: block;
+
+  padding: 11px 12px;
+
+  border-radius: 10px;
+
+  color: var(--ink-500);
+
+  font-size: 0.90rem;
+  font-weight: 500;
+
+  cursor: default;
+}
+
+/* Keep View all products visually separated on mobile */
+.mobile-nav-accordion .mobile-nav-view-all {
+  margin-top: 8px;
+  padding-top: 13px;
+
+  border-top: 1px solid var(--line);
+
+  color: var(--brand-600);
+
+  font-weight: 700;
+}
+
+/* Slightly more room for the 10-product mega menu */
+@media (min-width: 901px) {
+  .premium-mega-shell .mega-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .premium-mega-shell .mega-products .desktop-mega-list {
+    gap: 3px;
+  }
+}
+/* ============================================================
+   COMPACT PRODUCTS MEGA MENU
+   Keep header design, reduce dropdown height
+   ============================================================ */
+
+@media (min-width: 901px) {
+
+  /* Main dropdown shell */
+  .premium-mega-shell {
+    background: #ffffff !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  /* Overall mega menu */
+  .desktop-mega-inner {
+    display: grid;
+
+    grid-template-columns:
+      220px
+      minmax(0, 1fr);
+
+    gap: 42px;
+
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+
+    min-height: 0 !important;
+  }
+
+
+  /* ========================================
+     LEFT INTRO COLUMN
+     ======================================== */
+
+  .desktop-mega-intro {
+    padding-right: 26px;
+
+    border-right: 1px solid var(--line);
+  }
+
+  .desktop-mega-intro .mega-eyebrow {
+    font-size: 0.63rem;
+    letter-spacing: 0.16em;
+  }
+
+  .desktop-mega-intro p {
+    max-width: 20ch;
+
+    margin-top: 12px;
+
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+
+  /* ========================================
+     PRODUCTS AREA
+     ======================================== */
+
+  .premium-mega-shell .mega-products {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 44px;
+
+    align-items: start;
+  }
+
+
+  /* Product column title */
+  .desktop-mega-column {
+    min-width: 0;
+  }
+
+  .mega-column-title {
+    font-size: 0.64rem !important;
+
+    letter-spacing: 0.16em;
+  }
+
+
+  .mega-column-rule {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+
+  /* ========================================
+     EACH PRODUCT ITEM
+     ======================================== */
+
+  .desktop-mega-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0 !important;
+  }
+
+
+  .desktop-mega-link {
+    min-height: 0 !important;
+
+    padding: 8px 2px !important;
+
+    border-bottom: 0 !important;
+
+    border-radius: 0 !important;
+  }
+
+
+  .desktop-mega-link > span {
+    display: block;
+  }
+
+
+  .desktop-mega-link strong {
+    display: block;
+
+    color: var(--ink-900);
+
+    font-family: var(--font-display);
+
+    font-size: 0.83rem !important;
+    font-weight: 700;
+
+    line-height: 1.25;
+  }
+
+
+  /* Meta line smaller */
+  .desktop-mega-link small {
+    display: block;
+
+    margin-top: 2px !important;
+
+    color: var(--ink-400);
+
+    font-size: 0.68rem !important;
+    line-height: 1.25;
+  }
+
+
+  /* No hover movement for current static product items */
+  .desktop-mega-static {
+    cursor: default;
+  }
+
+  .desktop-mega-static:hover {
+    transform: none !important;
+
+    background: transparent !important;
+  }
+
+
+  /* ========================================
+     VIEW ALL PRODUCTS
+     ======================================== */
+
+  .products-mega-view-all {
+    grid-column: 1 / -1;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    width: max-content;
+
+    margin-top: 12px !important;
+    padding-top: 12px !important;
+
+    border-top: 1px solid var(--line);
+
+    color: var(--brand-600);
+
+    font-size: 0.79rem;
+    font-weight: 700;
+  }
+
+
+  /* Don't stretch divider across giant width */
+  .products-mega-view-all {
+    min-width: 145px;
+  }
+}
