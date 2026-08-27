@@ -9,63 +9,63 @@ const categories = [
     title: 'Pharmaceutical Tablets',
     label: 'Oral solid dosage',
     href: '/products/pharmaceutical-tablets',
-    image: "/images/product-categories/pharmaceutical-tablets.webp",
+    image: "/Medics_pharma1.png",
   },
   {
     number: "02",
     title: 'Pharmaceutical Capsules',
     label: 'Capsule formulations',
     href: '/products/pharmaceutical-capsules',
-    image: "/images/product-categories/pharmaceutical-capsules.webp",
+    image: "/capsules.png",
   },
   {
     number: "03",
     title: 'Pharmaceutical Injection',
     label: 'Injectable range',
     href: '/products/pharmaceutical-injection',
-    image: "/images/product-categories/pharmaceutical-injection.webp",
+    image: "/injection.png",
   },
   {
     number: "04",
     title: 'Anti Depressants Medicines',
     label: 'Therapy range',
     href: '/products/anti-depressants-medicines',
-    image: "/images/product-categories/anti-depressants-medicines.webp",
+    image: "/medicines.png",
   },
   {
     number: "05",
     title: 'Skin Care Products',
     label: 'Dermatology & care',
     href: '/products/skin-care-products',
-    image: "/images/product-categories/skin-care-products.webp",
+    image: "/p[roducts.png",
   },
   {
     number: "06",
     title: 'Pharmaceutical Medicines',
     label: 'General medicines',
     href: '/products/pharmaceutical-medicines',
-    image: "/images/product-categories/pharmaceutical-medicines.webp",
+    image: "/medicies.png",
   },
   {
     number: "07",
     title: 'Pharmaceutical Ointment',
     label: 'Topical formulations',
     href: '/products/pharmaceutical-ointment',
-    image: "/images/product-categories/pharmaceutical-ointment.webp",
+    image: "/cream.png",
   },
   {
     number: "08",
     title: 'Antibiotic Medicines',
     label: 'Anti-infective',
     href: '/products/antibiotic-medicines',
-    image: "/images/product-categories/antibiotic-medicines.webp",
+    image: "/phasma.png",
   },
   {
     number: "09",
     title: 'Steroids Injections',
     label: 'Specialty injectable',
     href: '/products/steroids-injections',
-    image: "/images/product-categories/steroids-injections.webp",
+    image: "/mp_injection.png",
   }
 ] as const;
 
@@ -137,9 +137,9 @@ export default function Product01Page() {
                     backgroundImage: `url("${category.image}")`,
                   }}
                 >
-                  <span className="medico-cat-image-fallback">
+                  {/* <span className="medico-cat-image-fallback">
                     Add product image
-                  </span>
+                  </span> */}
 
                   <span className="medico-cat-number">
                     {category.number}
