@@ -1,0 +1,326 @@
+[
+  {
+    "id": "pharmaceutical-tablets",
+    "name": "Pharmaceutical Tablets",
+    "slug": "pharmaceutical-tablets",
+    "internalUrl": "/products/pharmaceutical-tablets",
+    "image": "/images/categories/pharmaceutical-tablets.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
+    "productCount": 7
+  },
+  {
+    "id": "pharmaceutical-capsules",
+    "name": "Pharmaceutical Capsules",
+    "slug": "pharmaceutical-capsules",
+    "internalUrl": "/products/pharmaceutical-capsules",
+    "image": "/images/categories/pharmaceutical-capsules.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/337927038/JX/ST/DG/15001533/glutathione-injection-500x500.jpeg",
+    "productCount": 5
+  },
+  {
+    "id": "pharmaceutical-injection",
+    "name": "Pharmaceutical Injection",
+    "slug": "pharmaceutical-injection",
+    "internalUrl": "/products/pharmaceutical-injection",
+    "image": "/images/categories/pharmaceutical-injection.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501404744/LB/ZE/LF/15001533/100mg-vitamin-c-ascorbic-acid-injection-500x500.jpg",
+    "productCount": 5
+  },
+  {
+    "id": "anti-depressants-medicines",
+    "name": "Anti Depressants Medicines",
+    "slug": "anti-depressants-medicines",
+    "internalUrl": "/products/anti-depressants-medicines",
+    "image": "/images/categories/anti-depressants-medicines.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
+    "productCount": 5
+  },
+  {
+    "id": "skin-care-products",
+    "name": "Skin Care Products",
+    "slug": "skin-care-products",
+    "internalUrl": "/products/skin-care-products",
+    "image": "/images/categories/skin-care-products.webp",
+    "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381491453/VH/AS/SA/15001533/product-jpeg-500x500.jpg",
+    "productCount": 9
+  },
+  {
+    "id": "pharmaceutical-medicines",
+    "name": "Pharmaceutical Medicines",
+    "slug": "pharmaceutical-medicines",
+    "internalUrl": "/products/pharmaceutical-medicines",
+    "image": "/images/categories/pharmaceutical-medicines.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379462558/UR/QI/VL/15001533/img-20240121-180533-500x500.jpg",
+    "productCount": 4
+  },
+  {
+    "id": "pharmaceutical-ointment",
+    "name": "Pharmaceutical Ointment",
+    "slug": "pharmaceutical-ointment",
+    "internalUrl": "/products/pharmaceutical-ointment",
+    "image": "/images/categories/pharmaceutical-ointment.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338240720/WC/AX/MN/15001533/steroid-500x500.jpeg",
+    "productCount": 5
+  },
+  {
+    "id": "antibiotic-medicines",
+    "name": "Antibiotic Medicines",
+    "slug": "antibiotic-medicines",
+    "internalUrl": "/products/antibiotic-medicines",
+    "image": "/images/categories/antibiotic-medicines.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501405923/KJ/LB/HZ/15001533/img-20240120-202209-500x500.jpeg",
+    "productCount": 4
+  },
+  {
+    "id": "steroids-injections",
+    "name": "Steroids Injections",
+    "slug": "steroids-injections",
+    "internalUrl": "/products/steroids-injections",
+    "image": "/images/categories/steroids-injections.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467402/YK/RQ/PC/15001533/product-500x500.jpeg",
+    "productCount": 4
+  },
+  {
+    "id": "antimalarial-medicine",
+    "name": "Antimalarial Medicine",
+    "slug": "antimalarial-medicine",
+    "internalUrl": "/products/antimalarial-medicine",
+    "image": "/images/categories/antimalarial-medicine.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501115664/DO/GC/DV/15001533/300mg-lariteg-quinine-sulphate-tablets-500x500.jpeg",
+    "productCount": 4
+  },
+  {
+    "id": "anti-cancer-medicine",
+    "name": "Anti Cancer Medicine",
+    "slug": "anti-cancer-medicine",
+    "internalUrl": "/products/anti-cancer-medicine",
+    "image": "/images/categories/anti-cancer-medicine.webp",
+    "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2023/9/344665356/PK/YP/RF/15001533/product-jpeg-500x500.jpeg",
+    "productCount": 5
+  },
+  {
+    "id": "antidiabetic-medicine",
+    "name": "Antidiabetic Medicine",
+    "slug": "antidiabetic-medicine",
+    "internalUrl": "/products/antidiabetic-medicine",
+    "image": "/images/categories/antidiabetic-medicine.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/2/382846419/CY/IO/RX/15001533/img-20240120-202645-500x500.jpg",
+    "productCount": 3
+  },
+  {
+    "id": "erectile-dysfunction-medicine",
+    "name": "Erectile Dysfunction Medicine",
+    "slug": "erectile-dysfunction-medicine",
+    "internalUrl": "/products/erectile-dysfunction-medicine",
+    "image": "/images/categories/erectile-dysfunction-medicine.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501526952/SB/FO/SO/15001533/erectile-dysfunction-tablets-500x500.png",
+    "productCount": 4
+  },
+  {
+    "id": "pain-relief-medicines",
+    "name": "Pain Relief Medicines",
+    "slug": "pain-relief-medicines",
+    "internalUrl": "/products/pain-relief-medicines",
+    "image": "/images/categories/pain-relief-medicines.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501404345/UH/BW/XJ/15001533/440mg-zerodol-sp-aceclofenac-paracetamol-serratiopeptidase-tablets-500x500.jpeg",
+    "productCount": 2
+  },
+  {
+    "id": "herbal-capsul",
+    "name": "Herbal Capsul",
+    "slug": "herbal-capsul",
+    "internalUrl": "/products/herbal-capsul",
+    "image": "/images/categories/herbal-capsul.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459225/UK/XW/BQ/15001533/img-20240121-174528-500x500.jpg",
+    "productCount": 2
+  },
+  {
+    "id": "anti-psychotic-medicines",
+    "name": "Anti Psychotic Medicines",
+    "slug": "anti-psychotic-medicines",
+    "internalUrl": "/products/anti-psychotic-medicines",
+    "image": "/images/categories/anti-psychotic-medicines.webp",
+    "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458839/UI/VQ/OG/15001533/product-jpeg-500x500.jpg",
+    "productCount": 2
+  },
+  {
+    "id": "antiparasitic-medicine",
+    "name": "Antiparasitic Medicine",
+    "slug": "antiparasitic-medicine",
+    "internalUrl": "/products/antiparasitic-medicine",
+    "image": "/images/categories/antiparasitic-medicine.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431251/WB/OG/VD/15001533/product-jpeg-500x500.png",
+    "productCount": 2
+  },
+  {
+    "id": "pharmaceutical-syrup",
+    "name": "Pharmaceutical Syrup",
+    "slug": "pharmaceutical-syrup",
+    "internalUrl": "/products/pharmaceutical-syrup",
+    "image": "/images/categories/pharmaceutical-syrup.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467879/HP/EB/AO/15001533/product-jpeg-500x500.jpeg",
+    "productCount": 2
+  },
+  {
+    "id": "anti-fungal-medicine",
+    "name": "Anti Fungal Medicine",
+    "slug": "anti-fungal-medicine",
+    "internalUrl": "/products/anti-fungal-medicine",
+    "image": "/images/categories/anti-fungal-medicine.webp",
+    "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381459223/SD/UG/AY/15001533/product-jpeg-500x500.jpg",
+    "productCount": 2
+  },
+  {
+    "id": "steroids-tablets",
+    "name": "Steroids Tablets",
+    "slug": "steroids-tablets",
+    "internalUrl": "/products/steroids-tablets",
+    "image": "/images/categories/steroids-tablets.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501122662/QO/UZ/MH/15001533/prod-20241008-1203018282813961586341864-jpg-500x500.jpeg",
+    "productCount": 2
+  },
+  {
+    "id": "protein-powder",
+    "name": "Protein Powder",
+    "slug": "protein-powder",
+    "internalUrl": "/products/protein-powder",
+    "image": "/images/categories/protein-powder.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338241085/SG/FM/FM/15001533/adenosine-monophosphate-injection-500x500.jpeg",
+    "productCount": 1
+  },
+  {
+    "id": "anti-acne-medicines",
+    "name": "Anti Acne Medicines",
+    "slug": "anti-acne-medicines",
+    "internalUrl": "/products/anti-acne-medicines",
+    "image": "/images/categories/anti-acne-medicines.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431714/ND/UW/DH/15001533/img-4314-500x500.jpeg",
+    "productCount": 1
+  },
+  {
+    "id": "hypertension-medicine",
+    "name": "Hypertension Medicine",
+    "slug": "hypertension-medicine",
+    "internalUrl": "/products/hypertension-medicine",
+    "image": "/images/categories/hypertension-medicine.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
+    "productCount": 1
+  },
+  {
+    "id": "analgesic-and-anti-inflammatory-drugs",
+    "name": "Analgesic And Anti Inflammatory Drugs",
+    "slug": "analgesic-and-anti-inflammatory-drugs",
+    "internalUrl": "/products/analgesic-and-anti-inflammatory-drugs",
+    "image": "/images/categories/analgesic-and-anti-inflammatory-drugs.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/2/382839828/EB/UN/XT/15001533/img-20240120-195403-500x500.jpg",
+    "productCount": 1
+  },
+  {
+    "id": "pharmaceutical-cream",
+    "name": "Pharmaceutical Cream",
+    "slug": "pharmaceutical-cream",
+    "internalUrl": "/products/pharmaceutical-cream",
+    "image": "/images/categories/pharmaceutical-cream.webp",
+    "remoteImage": "https://5.imimg.com/data5/IOS/Default/2023/9/346110888/TC/KD/MM/15001533/product-jpeg-500x500.png",
+    "productCount": 1
+  },
+  {
+    "id": "foam-face-wash",
+    "name": "Foam Face Wash",
+    "slug": "foam-face-wash",
+    "internalUrl": "/products/foam-face-wash",
+    "image": "/images/categories/foam-face-wash.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338241429/YA/SC/BN/15001533/trenbolone-injection-500x500.jpeg",
+    "productCount": 1
+  },
+  {
+    "id": "variable-auto-transformer",
+    "name": "Variable Auto Transformer",
+    "slug": "variable-auto-transformer",
+    "internalUrl": "/products/variable-auto-transformer",
+    "image": "/images/categories/variable-auto-transformer.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467700/DE/XG/IJ/15001533/product-jpeg-500x500.jpeg",
+    "productCount": 1
+  },
+  {
+    "id": "minoxidil-topical-solution",
+    "name": "Minoxidil Topical Solution",
+    "slug": "minoxidil-topical-solution",
+    "internalUrl": "/products/minoxidil-topical-solution",
+    "image": "/images/categories/minoxidil-topical-solution.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338236898/LS/SG/GB/15001533/testosterone-enanthate-injection-500x500.jpeg",
+    "productCount": 1
+  },
+  {
+    "id": "check-shirt",
+    "name": "Check Shirt",
+    "slug": "check-shirt",
+    "internalUrl": "/products/check-shirt",
+    "image": "/images/categories/check-shirt.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459023/VW/ON/TT/15001533/img-20240121-174234-500x500.jpg",
+    "productCount": 1
+  },
+  {
+    "id": "womens-health",
+    "name": "Womens Health",
+    "slug": "womens-health",
+    "internalUrl": "/products/womens-health",
+    "image": "/images/categories/womens-health.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379466560/FP/ZP/HZ/15001533/img-20240121-182238-500x500.jpg",
+    "productCount": 1
+  },
+  {
+    "id": "hair-loss-medicine",
+    "name": "Hair Loss Medicine",
+    "slug": "hair-loss-medicine",
+    "internalUrl": "/products/hair-loss-medicine",
+    "image": "/images/categories/hair-loss-medicine.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501124762/YZ/MO/FN/15001533/minoxidil-finasteride-solution-500x500.jpeg",
+    "productCount": 1
+  },
+  {
+    "id": "eye-care-medicine",
+    "name": "Eye Care Medicine",
+    "slug": "eye-care-medicine",
+    "internalUrl": "/products/eye-care-medicine",
+    "image": "/images/categories/eye-care-medicine.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501406957/ST/RR/UJ/15001533/5ml-bimat-bimatoprost-eye-drops-500x500.jpeg",
+    "productCount": 1
+  },
+  {
+    "id": "testosterone-gel",
+    "name": "Testosterone Gel",
+    "slug": "testosterone-gel",
+    "internalUrl": "/products/testosterone-gel",
+    "image": "/images/categories/testosterone-gel.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501527135/PW/RS/WY/15001533/5g-cernos-testosterone-gel-500x500.png",
+    "productCount": 1
+  },
+  {
+    "id": "anti-alcohol-drugs",
+    "name": "Anti Alcohol Drugs",
+    "slug": "anti-alcohol-drugs",
+    "internalUrl": "/products/anti-alcohol-drugs",
+    "image": "/images/categories/anti-alcohol-drugs.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501527293/IB/NB/UV/15001533/acamprol-tablet-500x500.png",
+    "productCount": 1
+  },
+  {
+    "id": "pain-relief-gel",
+    "name": "Pain Relief Gel",
+    "slug": "pain-relief-gel",
+    "internalUrl": "/products/pain-relief-gel",
+    "image": "/images/categories/pain-relief-gel.webp",
+    "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381491606/ZO/TQ/LN/15001533/product-jpeg-500x500.jpg",
+    "productCount": 1
+  },
+  {
+    "id": "other-products",
+    "name": "Other Products",
+    "slug": "other-products",
+    "internalUrl": "/products/other-products",
+    "image": "/images/categories/other-products.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2026/4/600123494/WV/AD/SY/15001533/acetasmart-250mg-tablets-500x500.jpg",
+    "productCount": 5
+  }
+]
