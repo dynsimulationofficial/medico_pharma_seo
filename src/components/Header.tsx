@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -218,9 +219,15 @@ export default function Header() {
             className="brand premium-header-brand"
             aria-label="Medico Pharma — home"
           >
-            <span className="brand-mark" aria-hidden="true">
-              <span />
-              <i />
+            <span className="brand-logo-image-wrap" aria-hidden="true">
+              <Image
+                src="/logo.png"
+                alt=""
+                fill
+                sizes="38px"
+                className="brand-logo-image"
+                priority
+              />
             </span>
 
             <span className="brand-text">

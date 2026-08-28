@@ -3,78 +3,78 @@ import type { CSSProperties } from "react";
 
 const products = [
   {
-    code: "NUT",
-    title: "Nutraceuticals",
-    href: "/products/nutraceuticals",
-    text: "Nutrition-led formulations for wellness portfolios, private-label programs and healthcare distribution.",
-    tags: ["Wellness", "Daily nutrition", "Private label"],
-    icon: "capsule",
+    number: "01",
+    title: "Pharmaceutical Capsules",
+    label: "Oral solid dosage",
+    href: "/products/pharmaceutical-tablets",
+    image: "/medico pharma2.png",
+    icon: "diagnostic",
   },
   {
-    code: "V&M",
-    title: "Vitamins & Minerals",
-    href: "/products/vitamins-minerals",
-    text: "Vitamin and mineral formats organised for clear portfolio discovery across everyday nutrition categories.",
-    tags: ["Vitamins", "Minerals", "Micronutrients"],
-    icon: "spark",
+    number: "02",
+    title: "Pharmaceutical Tablets",
+    label: "Oral solid dosage",
+    href: "/products/pharmaceutical-tablets",
+    image: "/tablets.png",
+    icon: "diagnostic",
   },
   {
-    code: "PRO",
-    title: "Protein Powders",
-    href: "/products/protein-powders",
-    text: "Protein-focused powder concepts for nutrition, lifestyle and active-wellness product ranges.",
-    tags: ["Powders", "Protein", "Nutrition"],
-    icon: "powder",
-  },
-  {
-    code: "SPT",
-    title: "Sports Nutrition",
-    href: "/products/sports-nutrition",
-    text: "Performance-oriented nutrition categories designed for active consumers and sports-focused portfolios.",
-    tags: ["Performance", "Recovery", "Active wellness"],
-    icon: "bolt",
-  },
-  {
-    code: "HRB",
-    title: "Herbal Products",
-    href: "/products/herbal-products",
-    text: "Botanical and plant-based product categories presented with responsible, non-disease communication.",
-    tags: ["Botanical", "Plant based", "Wellness"],
-    icon: "leaf",
-  },
-  {
-    code: "AYU",
-    title: "Ayurvedic Products",
-    href: "/products/ayurvedic-products",
-    text: "Traditional wellness product categories for partners seeking clearly positioned Ayurvedic ranges.",
-    tags: ["Ayurvedic", "Traditional", "Wellness"],
-    icon: "herb",
-  },
-  {
-    code: "DEV",
-    title: "Medical Devices",
-    href: "/products/medical-devices",
-    text: "A dedicated route for healthcare equipment and device opportunities across institutional and trade needs.",
-    tags: ["Devices", "Healthcare", "Institutional"],
+    number: "03",
+     title: 'Steroids Tablets',
+    label: 'Specialty oral range',
+    href: '/products/steroids-tablets',
+    image: "/steroid.png",
     icon: "device",
   },
   {
-    code: "SUR",
-    title: "Surgical Consumables",
-    href: "/products/surgical-consumables",
-    text: "Essential clinical and surgical-use consumables grouped for fast procurement and partnership enquiries.",
-    tags: ["Clinical", "Consumables", "Procurement"],
+    number: "04",
+     title: 'Protein Powders',
+    label: 'Nutrition',
+    href: '/products/protein-powders',
+    image: "/protein powder.png",
     icon: "cross",
   },
   {
-    code: "DX",
-    title: "Diagnostic Kits",
-    href: "/products/diagnostic-kits",
-    text: "Diagnostic and testing categories structured for clear product discovery where market permissions apply.",
-    tags: ["Diagnostics", "Testing", "Healthcare"],
+    number: "05",
+    title: 'Pharmaceutical Cream',
+    label: 'Topical formulations',
+    href: '/products/pharmaceutical-cream',
+    image: "/Pharmaceutical Cream.png",
+    icon: "leaf",
+  },
+  {
+    number: "06",
+    title: "Pharmaceutical Medicines",
+    label: "General medicines",
+    href: "/products/pharmaceutical-medicines",
+    image: "/medicies.png",
     icon: "diagnostic",
   },
-];
+  {
+    number: "07",
+    title: "Pharmaceutical Ointment",
+    label: "Topical formulations",
+    href: "/products/pharmaceutical-ointment",
+    image: "/cream.png",
+    icon: "leaf",
+  },
+  {
+    number: "08",
+    title: "Antibiotic Medicines",
+    label: "Anti-infective range",
+    href: "/products/antibiotic-medicines",
+    image: "/phasma.png",
+    icon: "capsule",
+  },
+  {
+    number: "09",
+    title: "Steroids Injections",
+    label: "Specialty injectable",
+    href: "/products/steroids-injections",
+    image: "/mp_injection.png",
+    icon: "device",
+  },
+] as const;
 
 const services = [
   {
@@ -173,7 +173,7 @@ const process = [
 const faqs = [
   [
     "What product categories does Medico Pharma cover?",
-    "The website is structured around Nutraceuticals, Vitamins & Minerals, Protein Powders, Sports Nutrition, Herbal Products, Ayurvedic Products, Medical Devices, Surgical Consumables and Diagnostic Kits.",
+    "The website portfolio includes Pharmaceutical Tablets, Capsules, Injections, Anti Depressants Medicines, Skin Care Products, Pharmaceutical Medicines, Ointments, Antibiotic Medicines and Steroids Injections.",
   ],
   [
     "Do you support private-label or third-party manufacturing enquiries?",
@@ -319,73 +319,193 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ABOUT / BUSINESS OVERVIEW */}
-      <section className="section home-overview-section">
+      {/* ABOUT MEDICO PHARMA */}
+      <section className="section home-overview-section home-overview-premium-spacing">
         <div className="container home-overview-grid">
           <div data-reveal="left" className="home-overview-copy">
-            <span className="eyebrow">About Medico Pharma</span>
-            <h2>A healthcare portfolio designed around how partnerships begin.</h2>
+            {/* <span className="eyebrow">About Medico Pharma</span> */}
+
+            <h2>
+              A trusted healthcare partner built on <em>quality, compliance,</em> and care.
+            </h2>
+
+            {/* <p>
+              Medico Pharma is a healthcare and pharmaceutical partner focused on delivering
+              dependable product categories, responsible quality standards and practical commercial support.
+            </p> */}
+
             <p>
-              Product discovery should feel simple. Medico Pharma separates products, services and
-              commercial resources so a buyer can understand the offer and move toward the right conversation quickly.
+              From product discovery to partnership discussions, Medico Pharma keep every step clear, structured
+              and aligned with the needs of distributors, healthcare buyers and growing brands.
             </p>
-            <Link href="/about" className="text-link">
+
+            <Link href="/about" className="text-link home-overview-link">
               Learn more about us <span aria-hidden="true">→</span>
             </Link>
+
+            <div className="overview-values-row" aria-label="Medico Pharma values">
+              <div className="overview-value-item">
+                <span className="overview-value-icon"><HomeIcon type="shield" /></span>
+                <small>Integrity<br />in every step</small>
+              </div>
+              <div className="overview-value-item">
+                <span className="overview-value-icon"><HomeIcon type="network" /></span>
+                <small>Partnerships<br />that last</small>
+              </div>
+              <div className="overview-value-item">
+                <span className="overview-value-icon"><HomeIcon type="globe" /></span>
+                <small>Care for a<br />healthier world</small>
+              </div>
+            </div>
           </div>
 
-          <div className="home-overview-board" data-reveal="right" style={{ "--reveal-delay": "120ms" } as CSSProperties}>
+          <div
+            className="home-overview-board"
+            data-reveal="right"
+            style={{ "--reveal-delay": "120ms" } as CSSProperties}
+          >
+            <div className="overview-board-glow" aria-hidden="true" />
+            <div className="overview-board-dots" aria-hidden="true" />
+
             <div className="overview-board-head">
-              <span>MEDICO / PARTNER MAP</span>
-              <i className="live-dot" />
+              <span className="overview-board-kicker">
+                <i className="overview-board-leaf-dot" aria-hidden="true" />
+                Our commitment
+              </span>
+              <span className="overview-board-menu" aria-hidden="true">•••</span>
             </div>
-            <div className="overview-board-grid">
-              <Link href="/products" className="overview-board-cell overview-board-cell-main">
-                <span>01</span><strong>Products</strong><small>9 focused categories</small><i>↗</i>
-              </Link>
-              <Link href="/services" className="overview-board-cell">
-                <span>02</span><strong>Services</strong><small>5 partnership routes</small><i>↗</i>
-              </Link>
-              <Link href="/resources" className="overview-board-cell">
-                <span>03</span><strong>Resources</strong><small>Catalog + company profile</small><i>↗</i>
-              </Link>
+
+            <div className="overview-commitment-grid">
+              <article className="overview-commitment-card">
+                <div className="overview-commitment-icon">
+                  <HomeIcon type="shield" />
+                </div>
+                <h3>Quality Assurance</h3>
+                <span className="overview-card-rule" />
+                <p>
+                  Structured quality practices help keep every product and partnership conversation clear and dependable.
+                </p>
+                <span className="overview-card-pill"><i /> Quality First</span>
+              </article>
+
+              <article className="overview-commitment-card">
+                <div className="overview-commitment-icon overview-commitment-icon-gmp">
+                  <HomeIcon type="globe" />
+                  <strong>GMP</strong>
+                </div>
+                <h3>Quality Standards</h3>
+                <span className="overview-card-rule" />
+                <p>
+                  A compliance-led approach supports responsible documentation, sourcing and commercial coordination.
+                </p>
+                <span className="overview-card-pill"><i /> Compliance Led</span>
+              </article>
+
+              <article className="overview-commitment-card">
+                <div className="overview-commitment-icon">
+                  <HomeIcon type="route" />
+                </div>
+                <h3>Global Distribution</h3>
+                <span className="overview-card-rule" />
+                <p>
+                  Partner-ready product routes help international buyers move from discovery to the right discussion faster.
+                </p>
+                <span className="overview-card-pill"><i /> Partner Ready</span>
+              </article>
+            </div>
+
+            <div className="overview-stats-strip">
+              <div className="overview-stat-item">
+                <span className="overview-stat-icon"><HomeIcon type="grid" /></span>
+                <div><strong>9</strong><b>Product Categories</b><small>Focused healthcare portfolio</small></div>
+              </div>
+
+              <div className="overview-stat-item">
+                <span className="overview-stat-icon"><HomeIcon type="network" /></span>
+                <div><strong>5</strong><b>Service Routes</b><small>Built for partnership needs</small></div>
+              </div>
+
+              <div className="overview-stat-item">
+                <span className="overview-stat-icon"><HomeIcon type="globe" /></span>
+                <div><strong>Export</strong><b>Partner Ready</b><small>International enquiries welcome</small></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* PRODUCTS - GREEN BAND */}
-      <section className="section home-products-band" id="products">
+      {/* PRODUCT PORTFOLIO — IMAGE BENTO */}
+      <section className="section home-products-band home-products-premium" id="products">
         <div className="container">
-          <div className="catalog-heading-row" data-reveal>
-            <div className="section-heading">
+          <div className="home-products-premium-head" data-reveal>
+            <div className="home-products-premium-copy">
               <span className="eyebrow">Product portfolio</span>
-              <h2>Nine focused categories. One easier way to browse.</h2>
+              <h2>Pharmaceutical categories made easier to discover.</h2>
               <p>
-                Each product family gets a dedicated route so buyers can scan the portfolio quickly
-                and move into the category that matches their requirement.
+                A focused view of key dosage forms and specialty ranges. Open a category to explore the
+                relevant product family, or continue to the complete portfolio.
               </p>
             </div>
-            <Link href="/products" className="text-link catalog-heading-link">
-              View all products <span aria-hidden="true">→</span>
+
+            <div className="home-products-directory-note" aria-label="Portfolio summary">
+              <span>PHARMACEUTICAL CATEGORIES</span>
+              <strong>09</strong>
+              <small>focused product routes</small>
+            </div>
+          </div>
+
+          <div className="home-product-showcase">
+            {products.slice(0, 5).map((product, index) => (
+              <Link
+                href={product.href}
+                className={`home-product-card ${index === 0 ? "home-product-card-featured" : ""}`}
+                key={product.title}
+                data-reveal="scale"
+                style={{ "--reveal-delay": `${index * 75}ms` } as CSSProperties}
+              >
+                <div
+                  className="home-product-media"
+                  style={{ backgroundImage: `url("${product.image}")` }}
+                >
+                  <span className="home-product-image-shine" aria-hidden="true" />
+                  <span className="home-product-number">{product.number}</span>
+                  <span className="home-product-icon" aria-hidden="true">
+                    <CategoryIcon type={product.icon} />
+                  </span>
+                </div>
+
+                <div className="home-product-card-copy">
+                  <span>{product.label}</span>
+                  <h3>{product.title}</h3>
+                  <i aria-hidden="true">↗</i>
+                </div>
+              </Link>
+            ))}
+
+            <Link href="/products" className="home-product-more-card" data-reveal="scale" style={{ "--reveal-delay": "380ms" } as CSSProperties}>
+              <span className="home-product-more-kicker">MEDICINES & SPECIALTY</span>
+              <div className="home-product-more-heading">
+                <strong>Explore all products</strong>
+                <span aria-hidden="true">↗</span>
+              </div>
+
+              <div className="home-product-more-list">
+                {products.slice(5).map((product) => (
+                  <span key={product.title}>
+                    <b>{product.title}</b>
+                    <small>{product.label}</small>
+                  </span>
+                ))}
+              </div>
+
+              <div className="home-product-more-orbit orbit-one" aria-hidden="true" />
+              <div className="home-product-more-orbit orbit-two" aria-hidden="true" />
             </Link>
           </div>
 
-          <div className="product-grid product-grid-expanded">
-            {products.map((product, index) => (
-              <div key={product.title} data-reveal="scale" style={{ "--reveal-delay": `${index * 65}ms` } as CSSProperties}>
-                <Link href={product.href} className="product-card product-card-link product-card-home">
-                  <div className="product-card-top">
-                    <span className="product-code">{product.code}</span>
-                    <span className="product-arrow" aria-hidden="true">↗</span>
-                  </div>
-                  <span className="product-icon" aria-hidden="true"><CategoryIcon type={product.icon} /></span>
-                  <h3>{product.title}</h3>
-                  <p>{product.text}</p>
-                  <ul>{product.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-                </Link>
-              </div>
-            ))}
+          <div className="home-products-bottom-link" data-reveal>
+            <span>Need a different category?</span>
+            <Link href="/products">View the complete product portfolio <i aria-hidden="true">→</i></Link>
           </div>
         </div>
       </section>
@@ -420,36 +540,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHO WE WORK WITH */}
-      <section className="section partner-types-section">
+      {/* WHO WE WORK WITH — VIDEO MATCH */}
+      <section className="section partner-types-section partner-video-section">
         <div className="container">
-          <div className="home-centered-heading" data-reveal>
+          <div className="home-centered-heading partner-video-heading" data-reveal>
             <span className="eyebrow">Who we work with</span>
-            <h2>Different buyers. One clear entry point.</h2>
+            <h2>
+              Different buyers.<br />
+              <em>One clear entry point.</em>
+            </h2>
             <p>
-              The home page should immediately help each visitor recognise where they fit and what they should explore next.
+              Every visitor should recognise where they fit within a few seconds — and
+              know exactly which route to open next.
             </p>
           </div>
 
-          <div className="partner-types-grid">
+          <div className="partner-types-grid partner-video-grid">
             {partnerTypes.map((item, index) => (
               <article
-                className="partner-type-card"
+                className="partner-type-card partner-video-card"
                 key={item.title}
                 data-reveal="scale"
                 style={{ "--reveal-delay": `${index * 90}ms` } as CSSProperties}
               >
-                <div className="partner-type-top"><span>{item.number}</span><HomeIcon type={item.icon} /></div>
+                <div className="partner-video-card-top">
+                  <span className="partner-video-icon" aria-hidden="true">
+                    <HomeIcon type={item.icon} />
+                  </span>
+                  <span className="partner-video-number">{item.number}</span>
+                </div>
+
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
+
+                <span className="partner-video-footer">
+                  {[
+                    "TRADE & DISTRIBUTION",
+                    "BRAND BUILDING",
+                    "INSTITUTIONAL SUPPLY",
+                    "EXPORT ENQUIRIES",
+                  ][index]}
+                </span>
               </article>
             ))}
           </div>
         </div>
       </section>
-
-      {/* WHY CHOOSE US - SOFT GREEN */}
-      <section className="section why-choose-section" id="quality">
+      {/* WHY CHOOSE US — VIDEO MATCH */}
+      <section className="section why-choose-section why-choose-video" id="quality">
         <div className="container why-choose-grid">
           <div className="why-choose-intro" data-reveal="left">
             <span className="eyebrow">Why choose us</span>
@@ -468,7 +606,7 @@ export default function Home() {
           <div className="why-choose-cards">
             {whyChoose.map((item, index) => (
               <article
-                className="why-choose-card"
+                className="why-choose-card why-video-card"
                 key={item.title}
                 data-reveal="right"
                 style={{ "--reveal-delay": `${index * 85}ms` } as CSSProperties}
@@ -482,30 +620,32 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* PROCESS */}
-      <section className="section partnership-process-section">
+      {/* PARTNERSHIP PROCESS — VIDEO MATCH */}
+      <section className="section partnership-process-section partnership-video-process">
         <div className="container">
-          <div className="process-heading-row" data-reveal>
+          <div className="process-heading-row process-video-heading" data-reveal>
             <div>
               <span className="eyebrow light">Partnership process</span>
-              <h2>From first requirement to the right commercial conversation.</h2>
+              <h2>
+                From first requirement<br />
+                to the right <em>commercial conversation.</em>
+              </h2>
             </div>
             <p>
-              Keep the journey simple enough for a first-time buyer to understand in a few seconds.
+              Four steps, one continuous line — simple enough for a first-time buyer to follow in a few seconds.
             </p>
           </div>
 
-          <div className="process-grid">
+          <div className="process-video-grid" data-reveal="fade">
+            <div className="process-video-track" aria-hidden="true" />
+
             {process.map(([number, title, text], index) => (
               <article
-                className="process-card"
+                className="process-video-card"
                 key={title}
-                data-reveal="scale"
-                style={{ "--reveal-delay": `${index * 90}ms` } as CSSProperties}
+                style={{ "--process-delay": `${index * 90}ms` } as CSSProperties}
               >
-                <span>{number}</span>
-                <div className="process-line" aria-hidden="true"><i /></div>
+                <span className="process-video-node">{number}</span>
                 <h3>{title}</h3>
                 <p>{text}</p>
               </article>
@@ -513,49 +653,53 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* RESOURCES */}
-      <section className="section home-resources-section" id="resources">
+      {/* RESOURCES — EDITORIAL DOCUMENT CARDS */}
+      <section className="section home-resources-section home-resources-premium" id="resources">
         <div className="container">
-          <div className="home-centered-heading" data-reveal>
-            <span className="eyebrow">Resources</span>
-            <h2>Commercial information, kept easy to reach.</h2>
-            <p>Keep the core documents a buyer is most likely to request one click away from the home page.</p>
+          <div className="resources-premium-heading" data-reveal>
+            <div>
+              <span className="eyebrow">Resources</span>
+              <h2>Useful commercial documents, presented like real working assets.</h2>
+            </div>
+            <p>Open the portfolio catalog or the company profile without leaving the main discovery flow.</p>
           </div>
 
-          <div className="resource-grid home-resource-grid">
-            <div data-reveal="left" style={{ "--reveal-delay": "80ms" } as CSSProperties}>
-              <Link href="/resources/product-catalog" className="resource-card resource-card-home">
-                <div className="resource-card-visual resource-catalog-visual" aria-hidden="true">
-                  <span>01</span><i /><i /><i /><b>CATALOG</b>
-                </div>
-                <div className="resource-card-copy">
-                  <span className="resource-kicker">Portfolio resource</span>
-                  <h3>Product Catalog</h3>
-                  <p>Browse the product families and use the catalog as a central commercial reference.</p>
-                  <span className="text-link">Open product catalog <i aria-hidden="true">→</i></span>
-                </div>
-              </Link>
-            </div>
+          <div className="resources-premium-grid">
+            <Link href="/resources/product-catalog" className="resource-premium-card resource-premium-catalog" data-reveal="left">
+              <div className="resource-premium-copy">
+                <span>01 / PRODUCT CATALOG</span>
+                <h3>Browse the complete product portfolio.</h3>
+                <p>Category-led reference material for product discovery and buyer conversations.</p>
+                <b>Open catalog <i aria-hidden="true">→</i></b>
+              </div>
 
-            <div data-reveal="right" style={{ "--reveal-delay": "140ms" } as CSSProperties}>
-              <Link href="/resources/company-profile" className="resource-card resource-card-home">
-                <div className="resource-card-visual resource-profile-visual" aria-hidden="true">
-                  <div className="profile-mark"><span /><i /></div>
-                  <b>MEDICO<br />PHARMA</b>
+              <div className="resource-catalog-scene" aria-hidden="true">
+                <div className="resource-doc resource-doc-back"><i /><i /><i /></div>
+                <div className="resource-doc resource-doc-front">
+                  <span>MEDICO</span>
+                  <strong>PRODUCT<br />CATALOG</strong>
+                  <div><i /><i /><i /></div>
                 </div>
-                <div className="resource-card-copy">
-                  <span className="resource-kicker">Company resource</span>
-                  <h3>Company Profile</h3>
-                  <p>Present the company, capabilities and partnership structure in one easy-to-share route.</p>
-                  <span className="text-link">View company profile <i aria-hidden="true">→</i></span>
-                </div>
-              </Link>
-            </div>
+                <span className="resource-catalog-chip">09 categories</span>
+              </div>
+            </Link>
+
+            <Link href="/resources/company-profile" className="resource-premium-card resource-premium-profile" data-reveal="right" style={{ "--reveal-delay": "120ms" } as CSSProperties}>
+              <span className="resource-profile-index">02</span>
+              <div className="resource-profile-mark" aria-hidden="true">
+                <span /><i />
+              </div>
+              <div className="resource-profile-copy">
+                <span>COMPANY PROFILE</span>
+                <h3>Capabilities, positioning and partnership structure.</h3>
+                <p>A concise company view that is easy to share with buyers and commercial partners.</p>
+              </div>
+              <span className="resource-profile-action">View profile <i aria-hidden="true">↗</i></span>
+            </Link>
           </div>
         </div>
       </section>
-  {/* LARGE CONTACT CTA - REFERENCE LAYOUT, PHARMA VISUAL INSTEAD OF PHONE */}
+      {/* DISCUSS REQUIREMENT — ORIGINAL PHARMA VISUAL RESTORED */}
       <section className="home-contact-cta-section">
         <div className="home-contact-grid-bg" aria-hidden="true" />
         <div className="container home-contact-cta-grid">
