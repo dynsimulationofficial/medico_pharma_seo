@@ -6,7 +6,7 @@
     "internalUrl": "/products/pharmaceutical-tablets",
     "image": "/images/categories/pharmaceutical-tablets.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-    "productCount": 7
+    "productCount": 40
   },
   {
     "id": "pharmaceutical-capsules",
@@ -42,7 +42,7 @@
     "internalUrl": "/products/skin-care-products",
     "image": "/images/categories/skin-care-products.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381491453/VH/AS/SA/15001533/product-jpeg-500x500.jpg",
-    "productCount": 9
+    "productCount": 5
   },
   {
     "id": "pharmaceutical-medicines",
@@ -51,7 +51,7 @@
     "internalUrl": "/products/pharmaceutical-medicines",
     "image": "/images/categories/pharmaceutical-medicines.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379462558/UR/QI/VL/15001533/img-20240121-180533-500x500.jpg",
-    "productCount": 4
+    "productCount": 5
   },
   {
     "id": "pharmaceutical-ointment",
@@ -69,7 +69,7 @@
     "internalUrl": "/products/antibiotic-medicines",
     "image": "/images/categories/antibiotic-medicines.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501405923/KJ/LB/HZ/15001533/img-20240120-202209-500x500.jpeg",
-    "productCount": 4
+    "productCount": 5
   },
   {
     "id": "steroids-injections",
@@ -78,7 +78,7 @@
     "internalUrl": "/products/steroids-injections",
     "image": "/images/categories/steroids-injections.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467402/YK/RQ/PC/15001533/product-500x500.jpeg",
-    "productCount": 4
+    "productCount": 5
   },
   {
     "id": "antimalarial-medicine",
@@ -123,7 +123,7 @@
     "internalUrl": "/products/pain-relief-medicines",
     "image": "/images/categories/pain-relief-medicines.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501404345/UH/BW/XJ/15001533/440mg-zerodol-sp-aceclofenac-paracetamol-serratiopeptidase-tablets-500x500.jpeg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "herbal-capsul",
@@ -132,7 +132,7 @@
     "internalUrl": "/products/herbal-capsul",
     "image": "/images/categories/herbal-capsul.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459225/UK/XW/BQ/15001533/img-20240121-174528-500x500.jpg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "anti-psychotic-medicines",
@@ -141,7 +141,7 @@
     "internalUrl": "/products/anti-psychotic-medicines",
     "image": "/images/categories/anti-psychotic-medicines.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458839/UI/VQ/OG/15001533/product-jpeg-500x500.jpg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "antiparasitic-medicine",
@@ -150,7 +150,7 @@
     "internalUrl": "/products/antiparasitic-medicine",
     "image": "/images/categories/antiparasitic-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431251/WB/OG/VD/15001533/product-jpeg-500x500.png",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "pharmaceutical-syrup",
@@ -159,7 +159,7 @@
     "internalUrl": "/products/pharmaceutical-syrup",
     "image": "/images/categories/pharmaceutical-syrup.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467879/HP/EB/AO/15001533/product-jpeg-500x500.jpeg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "anti-fungal-medicine",
@@ -168,7 +168,7 @@
     "internalUrl": "/products/anti-fungal-medicine",
     "image": "/images/categories/anti-fungal-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381459223/SD/UG/AY/15001533/product-jpeg-500x500.jpg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "steroids-tablets",
@@ -177,7 +177,7 @@
     "internalUrl": "/products/steroids-tablets",
     "image": "/images/categories/steroids-tablets.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501122662/QO/UZ/MH/15001533/prod-20241008-1203018282813961586341864-jpg-500x500.jpeg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "protein-powder",
@@ -321,6 +321,6 @@
     "internalUrl": "/products/other-products",
     "image": "/images/categories/other-products.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2026/4/600123494/WV/AD/SY/15001533/acetasmart-250mg-tablets-500x500.jpg",
-    "productCount": 5
+    "productCount": 1
   }
 ]

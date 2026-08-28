@@ -10,21 +10,21 @@ const productGroups = [
   {
     title: "Pharmaceutical Categories",
     items: [
-      ["Pharmaceutical Tablets", "", "Oral solid dosage"],
-      ["Pharmaceutical Capsules", "", "Capsule formulations"],
-      ["Pharmaceutical Injection", "", "Injectable range"],
-      ["Anti Depressants Medicines", "", "Therapy range"],
-      ["Skin Care Products", "", "Dermatology & care"],
+      ["Pharmaceutical Tablets", "/products/pharmaceutical-tablets", "Oral solid dosage"],
+      ["Pharmaceutical Capsules", "/products/pharmaceutical-capsules", "Capsule formulations"],
+      ["Pharmaceutical Injection", "/products/pharmaceutical-injection", "Injectable range"],
+      ["Anti Depressants Medicines", "/products/anti-depressants-medicines", "Therapy range"],
+      ["Skin Care Products", "/products/skin-care-products", "Dermatology & care"],
     ],
   },
   {
     title: "Medicines & Specialty",
     items: [
-      ["Pharmaceutical Medicines", "", "General medicines"],
-      ["Pharmaceutical Ointment", "", "Topical formulations"],
-      ["Antibiotic Medicines", "", "Anti-infective range"],
-      ["Steroids Injections", "", "Specialty injectable"],
-      ["Antimalarial Medicine", "", "Anti-infective range"],
+      ["Pharmaceutical Medicines", "/products/pharmaceutical-medicines", "General medicines"],
+      ["Pharmaceutical Ointment", "/products/pharmaceutical-ointment", "Topical formulations"],
+      ["Antibiotic Medicines", "/products/antibiotic-medicines", "Anti-infective range"],
+      ["Steroids Injections", "/products/steroids-injections", "Specialty injectable"],
+      ["Antimalarial Medicine", "/products/antimalarial-medicine", "Anti-infective range"],
     ],
   },
 ] as const;
