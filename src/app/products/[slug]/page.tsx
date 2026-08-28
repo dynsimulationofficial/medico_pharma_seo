@@ -273,7 +273,7 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
               }}
             >
               {productsList.map((product) => {
-                const displayImg = product.remoteImage || product.image || "/Medics_pharma1.png";
+                const displayImg = product.image || product.remoteImage || "/Medics_pharma1.png";
                 return (
                   <div
                     key={product.id}
