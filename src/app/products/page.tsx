@@ -9,14 +9,14 @@ const categories = [
     title: 'Pharmaceutical Tablets',
     label: 'Oral solid dosage',
     href: '/products/pharmaceutical-tablets',
-    image: "/Medics_pharma1.png",
+    image: "/tablets.png",
   },
   {
     number: "02",
     title: 'Pharmaceutical Capsules',
     label: 'Capsule formulations',
     href: '/products/pharmaceutical-capsules',
-    image: "/capsules.png",
+    image: "/capsuless.png",
   },
   {
     number: "03",

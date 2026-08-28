@@ -9,63 +9,63 @@ const categories = [
     title: 'Anti Fungal Medicine',
     label: 'Anti-infective',
     href: '/products/anti-fungal-medicine',
-    image: "/images/product-categories/anti-fungal-medicine.webp",
+    image: "/anti fungal.png",
   },
   {
     number: "20",
     title: 'Steroids Tablets',
     label: 'Specialty oral range',
     href: '/products/steroids-tablets',
-    image: "/images/product-categories/steroids-tablets.webp",
+    image: "/steroid.png",
   },
   {
     number: "21",
-    title: 'Protein Powder',
+    title: 'Protein Powders',
     label: 'Nutrition',
     href: '/products/protein-powders',
-    image: "/images/product-categories/protein-powder.webp",
+    image: "/protein powder.png",
   },
   {
     number: "22",
     title: 'Anti Acne Medicines',
     label: 'Dermatology',
     href: '/products/anti-acne-medicines',
-    image: "/images/product-categories/anti-acne-medicines.webp",
+    image: "/anit acne.png",
   },
   {
     number: "23",
     title: 'Hypertension Medicine',
     label: 'Cardiovascular',
     href: '/products/hypertension-medicine',
-    image: "/images/product-categories/hypertension-medicine.webp",
+    image: "/hypertension.png",
   },
   {
     number: "24",
     title: 'Analgesic And Anti Inflammatory Drugs',
     label: 'Pain & inflammation',
     href: '/products/analgesic-and-anti-inflammatory-drugs',
-    image: "/images/product-categories/analgesic-anti-inflammatory.webp",
+    image: "/analgesic & anti inflammatory drugs.png",
   },
   {
     number: "25",
     title: 'Pharmaceutical Cream',
     label: 'Topical formulations',
     href: '/products/pharmaceutical-cream',
-    image: "/images/product-categories/pharmaceutical-cream.webp",
+    image: "/Pharmaceutical Cream.png",
   },
   {
     number: "26",
     title: 'Foam Face Wash',
     label: 'Skin care',
     href: '/products/foam-face-wash',
-    image: "/images/product-categories/foam-face-wash.webp",
+    image: "/foam face wash.png",
   },
   {
     number: "27",
     title: 'Variable Auto Transformer',
     label: 'Miscellaneous listing',
     href: '/products/variable-auto-transformer',
-    image: "/images/product-categories/variable-auto-transformer.webp",
+    image: "/variable auto transformer.png",
   }
 ] as const;
 
@@ -136,9 +136,9 @@ export default function Product03Page() {
                     backgroundImage: `url("${category.image}")`,
                   }}
                 >
-                  <span className="medico-cat-image-fallback">
+                  {/* <span className="medico-cat-image-fallback">
                     Add product image
-                  </span>
+                  </span> */}
 
                   <span className="medico-cat-number">
                     {category.number}

@@ -9,63 +9,63 @@ const categories = [
     title: 'Antimalarial Medicine',
     label: 'Anti-infective',
     href: '/products/antimalarial-medicine',
-    image: "/images/product-categories/antimalarial-medicine.webp",
+    image: "/antimalarial.png",
   },
   {
     number: "11",
     title: 'Anti Cancer Medicine',
     label: 'Oncology range',
     href: '/products/anti-cancer-medicine',
-    image: "/images/product-categories/anti-cancer-medicine.webp",
+    image: "/anti cancer.png",
   },
   {
     number: "12",
     title: 'Antidiabetic Medicine',
     label: 'Metabolic care',
     href: '/products/antidiabetic-medicine',
-    image: "/images/product-categories/antidiabetic-medicine.webp",
+    image: "/antidiabities.png",
   },
   {
     number: "13",
     title: 'Erectile Dysfunction Medicine',
     label: "Men's health",
     href: '/products/erectile-dysfunction-medicine',
-    image: "/images/product-categories/erectile-dysfunction-medicine.webp",
+    image: "/erectile dysfunction.png",
   },
   {
     number: "14",
     title: 'Pain Relief Medicines',
     label: 'Pain management',
     href: '/products/pain-relief-medicines',
-    image: "/images/product-categories/pain-relief-medicines.webp",
+    image: "/pain relief.png",
   },
   {
     number: "15",
     title: 'Herbal Capsul',
     label: 'Herbal wellness',
     href: '/products/herbal-capsul',
-    image: "/images/product-categories/herbal-capsul.webp",
+    image: "/capsul.png",
   },
   {
     number: "16",
     title: 'Anti Psychotic Medicines',
     label: 'Neuro / psychiatry',
     href: '/products/anti-psychotic-medicines',
-    image: "/images/product-categories/anti-psychotic-medicines.webp",
+    image: "/anti psychotic.png",
   },
   {
     number: "17",
     title: 'Antiparasitic Medicine',
     label: 'Anti-infective',
     href: '/products/antiparasitic-medicine',
-    image: "/images/product-categories/antiparasitic-medicine.webp",
+    image: "/anti parasitic.png",
   },
   {
     number: "18",
     title: 'Pharmaceutical Syrup',
     label: 'Liquid dosage',
     href: '/products/pharmaceutical-syrup',
-    image: "/images/product-categories/pharmaceutical-syrup.webp",
+    image: "/pharmaceutical.png",
   }
 ] as const;
 
@@ -136,9 +136,9 @@ export default function Product02Page() {
                     backgroundImage: `url("${category.image}")`,
                   }}
                 >
-                  <span className="medico-cat-image-fallback">
+                  {/* <span className="medico-cat-image-fallback">
                     Add product image
-                  </span>
+                  </span> */}
 
                   <span className="medico-cat-number">
                     {category.number}

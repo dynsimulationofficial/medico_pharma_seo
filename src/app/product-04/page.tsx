@@ -9,64 +9,58 @@ const categories = [
     title: 'Minoxidil Topical Solution',
     label: 'Hair care / topical',
     href: '/products/minoxidil-topical-solution',
-    image: "/images/product-categories/minoxidil-topical-solution.webp",
+    image: "/minoxidil.png",
   },
   {
     number: "29",
     title: 'Check Shirt',
     label: 'Miscellaneous listing',
     href: '/products/check-shirt',
-    image: "/images/product-categories/check-shirt.webp",
+    image: "/Miscellaneous listing.png",
   },
   {
     number: "30",
     title: 'Womens Health',
     label: "Women's health",
     href: '/products/womens-health',
-    image: "/images/product-categories/womens-health.webp",
+    image: "/Womens Health.png",
   },
   {
     number: "31",
     title: 'Hair Loss Medicine',
     label: 'Hair care',
     href: '/products/hair-loss-medicine',
-    image: "/images/product-categories/hair-loss-medicine.webp",
+    image: "/hair loss medicine.png",
   },
   {
     number: "32",
     title: 'Eye Care Medicine',
     label: 'Ophthalmic',
     href: '/products/eye-care-medicine',
-    image: "/images/product-categories/eye-care-medicine.webp",
+    image: "/Eye Care Medicine.png",
   },
   {
     number: "33",
     title: 'Testosterone Gel',
     label: 'Specialty topical',
     href: '/products/testosterone-gel',
-    image: "/images/product-categories/testosterone-gel.webp",
+    image: "/Testosterone Gel.png",
   },
   {
     number: "34",
     title: 'Anti Alcohol Drugs',
     label: 'Dependence management',
     href: '/products/anti-alcohol-drugs',
-    image: "/images/product-categories/anti-alcohol-drugs.webp",
+    image: "/Anti Alcohol Drugs.png",
   },
   {
     number: "35",
     title: 'Pain Relief Gel',
     label: 'Topical pain relief',
     href: '/products/pain-relief-gel',
-    image: "/images/product-categories/pain-relief-gel.webp",
+    image: "/Pain Relief Gel.png",
   },
-  {
-    number: "36",
-    title: 'Other Products',
-    label: 'Additional catalogue',
-    href: '/products/other-products',
-    image: "/images/product-categories/other-products.webp",
-  }
+
 ] as const;
 
 export default function Product04Page() {
@@ -136,9 +130,9 @@ export default function Product04Page() {
                     backgroundImage: `url("${category.image}")`,
                   }}
                 >
-                  <span className="medico-cat-image-fallback">
+                  {/* <span className="medico-cat-image-fallback">
                     Add product image
-                  </span>
+                  </span> */}
 
                   <span className="medico-cat-number">
                     {category.number}
