@@ -6,7 +6,7 @@
     "internalUrl": "/products/pharmaceutical-tablets",
     "image": "/images/categories/pharmaceutical-tablets.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-    "productCount": 40
+    "productCount": 92
   },
   {
     "id": "pharmaceutical-capsules",
@@ -42,7 +42,7 @@
     "internalUrl": "/products/skin-care-products",
     "image": "/images/categories/skin-care-products.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381491453/VH/AS/SA/15001533/product-jpeg-500x500.jpg",
-    "productCount": 5
+    "productCount": 9
   },
   {
     "id": "pharmaceutical-medicines",
@@ -132,7 +132,7 @@
     "internalUrl": "/products/herbal-capsul",
     "image": "/images/categories/herbal-capsul.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459225/UK/XW/BQ/15001533/img-20240121-174528-500x500.jpg",
-    "productCount": 1
+    "productCount": 2
   },
   {
     "id": "anti-psychotic-medicines",
@@ -177,7 +177,7 @@
     "internalUrl": "/products/steroids-tablets",
     "image": "/images/categories/steroids-tablets.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501122662/QO/UZ/MH/15001533/prod-20241008-1203018282813961586341864-jpg-500x500.jpeg",
-    "productCount": 1
+    "productCount": 2
   },
   {
     "id": "protein-powder",
@@ -267,7 +267,7 @@
     "internalUrl": "/products/womens-health",
     "image": "/images/categories/womens-health.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379466560/FP/ZP/HZ/15001533/img-20240121-182238-500x500.jpg",
-    "productCount": 1
+    "productCount": 3
   },
   {
     "id": "hair-loss-medicine",
@@ -321,6 +321,15 @@
     "internalUrl": "/products/other-products",
     "image": "/images/categories/other-products.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2026/4/600123494/WV/AD/SY/15001533/acetasmart-250mg-tablets-500x500.jpg",
+    "productCount": 1
+  },
+  {
+    "id": "protein-powders",
+    "name": "Protein Powder",
+    "slug": "protein-powders",
+    "internalUrl": "/products/protein-powders",
+    "image": "/images/categories/protein-powder.webp",
+    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338241085/SG/FM/FM/15001533/adenosine-monophosphate-injection-500x500.jpeg",
     "productCount": 1
   }
 ]
