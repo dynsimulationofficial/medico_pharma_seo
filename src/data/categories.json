@@ -123,7 +123,7 @@
     "internalUrl": "/products/pain-relief-medicines",
     "image": "/images/categories/pain-relief-medicines.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501404345/UH/BW/XJ/15001533/440mg-zerodol-sp-aceclofenac-paracetamol-serratiopeptidase-tablets-500x500.jpeg",
-    "productCount": 3
+    "productCount": 2
   },
   {
     "id": "herbal-capsul",
@@ -141,7 +141,7 @@
     "internalUrl": "/products/anti-psychotic-medicines",
     "image": "/images/categories/anti-psychotic-medicines.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458839/UI/VQ/OG/15001533/product-jpeg-500x500.jpg",
-    "productCount": 3
+    "productCount": 2
   },
   {
     "id": "antiparasitic-medicine",
@@ -159,7 +159,7 @@
     "internalUrl": "/products/pharmaceutical-syrup",
     "image": "/images/categories/pharmaceutical-syrup.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467879/HP/EB/AO/15001533/product-jpeg-500x500.jpeg",
-    "productCount": 3
+    "productCount": 2
   },
   {
     "id": "anti-fungal-medicine",
@@ -168,7 +168,7 @@
     "internalUrl": "/products/anti-fungal-medicine",
     "image": "/images/categories/anti-fungal-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381459223/SD/UG/AY/15001533/product-jpeg-500x500.jpg",
-    "productCount": 3
+    "productCount": 2
   },
   {
     "id": "steroids-tablets",
@@ -195,7 +195,7 @@
     "internalUrl": "/products/anti-acne-medicines",
     "image": "/images/categories/anti-acne-medicines.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431714/ND/UW/DH/15001533/img-4314-500x500.jpeg",
-    "productCount": 3
+    "productCount": 1
   },
   {
     "id": "hypertension-medicine",
@@ -204,7 +204,7 @@
     "internalUrl": "/products/hypertension-medicine",
     "image": "/images/categories/hypertension-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
-    "productCount": 3
+    "productCount": 1
   },
   {
     "id": "analgesic-and-anti-inflammatory-drugs",
@@ -213,7 +213,7 @@
     "internalUrl": "/products/analgesic-and-anti-inflammatory-drugs",
     "image": "/images/categories/analgesic-and-anti-inflammatory-drugs.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/2/382839828/EB/UN/XT/15001533/img-20240120-195403-500x500.jpg",
-    "productCount": 3
+    "productCount": 1
   },
   {
     "id": "pharmaceutical-cream",
@@ -222,7 +222,7 @@
     "internalUrl": "/products/pharmaceutical-cream",
     "image": "/images/categories/pharmaceutical-cream.webp",
     "remoteImage": "https://5.imimg.com/data5/IOS/Default/2023/9/346110888/TC/KD/MM/15001533/product-jpeg-500x500.png",
-    "productCount": 3
+    "productCount": 1
   },
   {
     "id": "foam-face-wash",
@@ -231,7 +231,7 @@
     "internalUrl": "/products/foam-face-wash",
     "image": "/images/categories/foam-face-wash.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338241429/YA/SC/BN/15001533/trenbolone-injection-500x500.jpeg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "variable-auto-transformer",
@@ -249,7 +249,7 @@
     "internalUrl": "/products/minoxidil-topical-solution",
     "image": "/images/categories/minoxidil-topical-solution.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338236898/LS/SG/GB/15001533/testosterone-enanthate-injection-500x500.jpeg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "check-shirt",
@@ -276,7 +276,7 @@
     "internalUrl": "/products/hair-loss-medicine",
     "image": "/images/categories/hair-loss-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501124762/YZ/MO/FN/15001533/minoxidil-finasteride-solution-500x500.jpeg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "eye-care-medicine",
@@ -303,7 +303,7 @@
     "internalUrl": "/products/anti-alcohol-drugs",
     "image": "/images/categories/anti-alcohol-drugs.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501527293/IB/NB/UV/15001533/acamprol-tablet-500x500.png",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "pain-relief-gel",
@@ -312,7 +312,7 @@
     "internalUrl": "/products/pain-relief-gel",
     "image": "/images/categories/pain-relief-gel.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381491606/ZO/TQ/LN/15001533/product-jpeg-500x500.jpg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "other-products",
@@ -321,7 +321,7 @@
     "internalUrl": "/products/other-products",
     "image": "/images/categories/other-products.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2026/4/600123494/WV/AD/SY/15001533/acetasmart-250mg-tablets-500x500.jpg",
-    "productCount": 1
+    "productCount": 15
   },
   {
     "id": "protein-powders",
