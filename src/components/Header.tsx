@@ -59,15 +59,6 @@ const serviceGroups = [
   },
 ] as const;
 
-const resourceGroups = [
-  {
-    title: "Commercial Resources",
-    items: [
-      ["Product Catalog", "/resources/product-catalog", "Browse the portfolio"],
-      ["Company Profile", "/resources/company-profile", "Company and capabilities"],
-    ],
-  },
-] as const;
 
 const menuGroups = {
   Products: {
@@ -83,13 +74,6 @@ const menuGroups = {
     description:
       "Manufacturing, private-label and export support organised around the way commercial partnerships actually begin.",
     groups: serviceGroups,
-  },
-  Resources: {
-    href: "/resources",
-    eyebrow: "Resources",
-    description:
-      "Core commercial documents kept separate from product browsing so partners can reach them quickly.",
-    groups: resourceGroups,
   },
 } as const;
 
@@ -338,7 +322,7 @@ export default function Header() {
                 href="/contact"
                 className={isActive("/contact") ? "active" : ""}
               >
-                Contact
+                Contact Us
               </Link>
 
               {/* MOBILE ACTIONS */}

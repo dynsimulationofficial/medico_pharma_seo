@@ -1,10 +1,11 @@
 import Link from "next/link";
 
 const products = [
-  ["Nutraceuticals", "/products/nutraceuticals"],
-  ["Vitamins & Minerals", "/products/vitamins-minerals"],
+  ["Pharmaceutical Tablets", "/products/pharmaceutical-tablets"],
+   ["Antidiabetic Medicine", "/products/antidiabetic-medicine"],
+  ["Skin Care Products", "/products/skin-care-products"],
   ["Protein Powders", "/products/protein-powders"],
-  ["Sports Nutrition", "/products/sports-nutrition"],
+  
   ["Herbal Products", "/products/herbal-products"],
 ];
 
