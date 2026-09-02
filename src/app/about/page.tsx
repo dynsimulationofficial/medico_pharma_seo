@@ -5,10 +5,11 @@ import type { CSSProperties } from "react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Medico Pharma | Medico Pharma Healthcare",
   description:
-    "Medico Pharma connects pharmaceutical products, manufacturing solutions and business partnerships for distributors, healthcare businesses, brands and international buyers.",
-};
+    "Learn about Medico Pharma, a pharmaceutical company providing quality products, contract manufacturing, private label, third-party manufacturing, export services and business partnerships.",
+alternates: { canonical: "/about" },
+  };
 
 /** hero load-in delay (pure CSS keyframes) */
 const h = (ms: number) => ({ "--ab-d": `${ms}ms` }) as CSSProperties;

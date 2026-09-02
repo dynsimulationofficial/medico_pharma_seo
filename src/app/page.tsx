@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
+import type { Metadata } from "next";
+
 
 const products = [
   {
@@ -233,6 +235,20 @@ function HomeIcon({ type }: { type: string }) {
   if (type === "route") return <svg {...common}><circle cx="5" cy="5" r="2" /><circle cx="19" cy="19" r="2" /><path d="M7 5h5a4 4 0 0 1 4 4v0a4 4 0 0 1-4 4H9a4 4 0 0 0-4 4v0" /></svg>;
   return <svg {...common}><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><rect x="14" y="14" width="7" height="7" rx="1.5" /></svg>;
 }
+
+export const metadata: Metadata = {
+  title: "Medico Pharma Healthcare | Pharmaceutical Products & Manufacturing Solutions",
+  description: "Medico Pharma provides pharmaceutical products, contract manufacturing, private label, third-party manufacturing and export solutions for distributors, healthcare businesses and global partners.",
+  openGraph: {
+    title: "Medico Pharma Healthcare | Pharmaceutical Products & Manufacturing Solutions",
+    description: "Medico Pharma provides pharmaceutical products, contract manufacturing, private label, third-party manufacturing and export solutions for distributors, healthcare businesses and global partners.",
+    url: "https://www.medicoparma.com",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://www.medicoparma.com",
+  },
+};
 
 export default function Home() {
   return (

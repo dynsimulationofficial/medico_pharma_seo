@@ -5,10 +5,11 @@ import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Medico Pharma | Medico Pharma Healthcare",
   description:
-    "Contact Medico Pharma for product, manufacturing, private-label, export and partnership enquiries.",
-};
+    "Contact Medico Pharma for pharmaceutical product enquiries, contract manufacturing, private label, third-party manufacturing, export services and business partnerships.",
+alternates: { canonical: "/contact" },
+  };
 
 /** hero load-in delay (pure CSS keyframes) */
 const h = (ms: number) => ({ "--ct-d": `${ms}ms` }) as CSSProperties;
