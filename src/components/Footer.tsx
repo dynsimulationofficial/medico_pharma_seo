@@ -5,8 +5,7 @@ const products = [
    ["Antidiabetic Medicine", "/products/antidiabetic-medicine"],
   ["Skin Care Products", "/products/skin-care-products"],
   ["Protein Powders", "/products/protein-powders"],
-  
-  ["Herbal Products", "/products/herbal-products"],
+  ["Herbal Capsules", "/products/herbal-capsules"],
 ];
 
 const services = [
@@ -127,11 +126,11 @@ export default function Footer() {
           </a>
 
           <a
-            href="mailto:info@medicopharma.com"
+            href="mailto:info@medico-pharma.com"
             className="footer-contact-item"
           >
             <span className="footer-contact-icon">@</span>
-            <span>info@medicopharma.com</span>
+            <span>info@medico-pharma.com</span>
           </a>
 
           <div className="footer-contact-item">
@@ -184,13 +183,13 @@ export default function Footer() {
       </div>
 
       <div className="container footer-bottom">
-        <p>
-          © {new Date().getFullYear()}{" "}
-          <Link href="/" className="footer-medico-highlight">
-            Medico Pharma
-          </Link>
-          . All rights reserved.
-        </p>
+       <p>
+  © 2020{" "}
+  <Link href="/" className="footer-medico-highlight">
+    Medico Pharma
+  </Link>
+  . All rights reserved.
+</p>
 
         <p className="footer-powered">
           Powered by{" "}

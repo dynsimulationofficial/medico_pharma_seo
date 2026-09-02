@@ -78,7 +78,7 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
     },
     {
       question: `How can I place an inquiry or request product samples?`,
-      answer: `Click on 'Enquire Now' for any product or reach out directly via call/WhatsApp at +91 98765 43210 or email info@medicopharma.com. Our commercial team responds within 24 business hours.`,
+      answer: `Click on 'Enquire Now' for any product or reach out directly via call/WhatsApp at +91 98765 43210 or email info@medico-pharma.com. Our commercial team responds within 24 business hours.`,
     },
     {
       question: `Are these products eligible for export?`,
