@@ -15,11 +15,11 @@ export async function POST(request: Request) {
 
     const host = process.env.SMTP_HOST || "mail.medicos-pharma.com";
     const port = Number(process.env.SMTP_PORT || 465);
-    const user = process.env.SMTP_USER || "info@medicos-pharma.com";
-    const pass = process.env.SMTP_PASS || "y?mG]2S=E_";
+    const user = process.env.SMTP_USER || "";
+    const pass = process.env.SMTP_PASS || "";
     const fromName = process.env.FROM_NAME || "Medicos Pharma";
     const fromEmail = process.env.FROM_EMAIL || "info@medicos-pharma.com";
-    const toEmail = process.env.TO_EMAIL || "danishkkhan13@gmail.com";
+    const toEmail = process.env.TO_EMAIL || "";
 
     const transporter = nodemailer.createTransport({
       host,
