@@ -76,12 +76,34 @@ export default function ContactForm() {
 
     setStatus("sending");
 
-    // Connect this to your API route, company inbox, or CRM before launch.
-    // Example: await fetch("/api/enquiry", { method: "POST", body: JSON.stringify(values) });
-    await new Promise((resolve) => setTimeout(resolve, 1100));
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
 
-    setStatus("sent");
-    setValues(empty);
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("sent");
+        setValues(empty);
+      } else {
+        setErrors((previous) => ({
+          ...previous,
+          message: data.error || "Failed to send email. Please try again.",
+        }));
+        setStatus("idle");
+      }
+    } catch (err) {
+      setErrors((previous) => ({
+        ...previous,
+        message: "An unexpected error occurred. Please try again later.",
+      }));
+      setStatus("idle");
+    }
   };
 
   if (status === "sent") {
