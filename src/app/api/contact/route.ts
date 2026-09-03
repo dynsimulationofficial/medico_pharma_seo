@@ -13,14 +13,22 @@ export async function POST(request: Request) {
       );
     }
 
-    // Read environment variables with safe defaults so form submission never fails
-    const host = process.env.SMTP_HOST || "mail.medicos-pharma.com";
+    // Read strictly from environment variables (No hardcoded credentials in code)
+    const host = process.env.SMTP_HOST;
     const port = Number(process.env.SMTP_PORT || 465);
-    const user = process.env.SMTP_USER || "info@medicos-pharma.com";
-    const pass = process.env.SMTP_PASS || "y?mG]2S=E_";
+    const user = process.env.SMTP_USER;
+    const pass = process.env.SMTP_PASS;
     const fromName = process.env.FROM_NAME || "Medicos Pharma";
-    const fromEmail = process.env.FROM_EMAIL || "info@medicos-pharma.com";
-    const toEmail = process.env.TO_EMAIL || "info@medicos-pharma.com";
+    const fromEmail = process.env.FROM_EMAIL || user;
+    const toEmail = process.env.TO_EMAIL;
+
+    if (!host || !user || !pass || !toEmail) {
+      console.error("Missing SMTP environment variables. Please check process.env.");
+      return NextResponse.json(
+        { success: false, error: "SMTP server credentials are not configured in environment variables." },
+        { status: 500 }
+      );
+    }
 
     const transporter = nodemailer.createTransport({
       host,
