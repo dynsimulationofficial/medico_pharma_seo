@@ -16,6 +16,53 @@ const services = [
   ["Export Services", "/services/export-services"],
 ];
 
+function SocialIcon({ name }: { name: "linkedin" | "instagram" | "facebook" | "whatsapp" }) {
+  const iconProps = {
+    width: 14,
+    height: 14,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.8,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    "aria-hidden": true,
+  };
+
+  if (name === "instagram") {
+    return (
+      <svg {...iconProps}>
+        <rect x="3" y="3" width="18" height="18" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" stroke="none" />
+      </svg>
+    );
+  }
+
+  if (name === "facebook") {
+    return (
+      <svg {...iconProps}>
+        <path d="M14 21v-8h2.7l.4-3H14V8.1c0-.9.3-1.5 1.6-1.5h1.7V4a22 22 0 0 0-2.5-.1c-2.5 0-4.2 1.5-4.2 4.3V10H8v3h2.6v8" />
+      </svg>
+    );
+  }
+
+  if (name === "linkedin") {
+    return (
+      <svg {...iconProps}>
+        <path d="M6 9v9M6 6.2v.1M10 18v-5a3 3 0 0 1 6 0v5M10 9v9" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg {...iconProps}>
+      <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.7A8 8 0 1 1 20 11.5Z" />
+      <path d="M8.8 8.7c.2-.4.5-.4.8-.4l.7 1.7c.1.3 0 .5-.2.7l-.5.5a6 6 0 0 0 2.9 2.9l.5-.5c.2-.2.4-.3.7-.2l1.7.7c0 .3 0 .6-.4.8-.4.4-1 .7-1.6.5a8.2 8.2 0 0 1-4.9-4.9c-.2-.6.1-1.2.3-1.8Z" />
+    </svg>
+  );
+}
+
 export default function Footer() {
   return (
     <footer className="site-footer">
@@ -149,7 +196,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              in
+              <SocialIcon name="linkedin" />
             </a>
 
             <a
@@ -158,7 +205,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              ig
+              <SocialIcon name="instagram" />
             </a>
 
             <a
@@ -167,7 +214,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              f
+              <SocialIcon name="facebook" />
             </a>
 
             <a
@@ -176,7 +223,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="WhatsApp"
             >
-              wa
+              <SocialIcon name="whatsapp" />
             </a>
           </div>
         </div>
