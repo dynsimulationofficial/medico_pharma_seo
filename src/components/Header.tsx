@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { startTransition, useEffect, useState } from "react";
 import type { CSSProperties } from "react";
 
 const productGroups = [
@@ -80,8 +80,8 @@ const menuGroups = {
 type MenuName = keyof typeof menuGroups;
 
 /* Replace these two values with the real Medico Pharma number. */
-const PHONE_DISPLAY = "+91 98765 43210";
-const PHONE_LINK = "+919876543210";
+const PHONE_DISPLAY = "+91 97681 18800";
+const PHONE_LINK = "+919768118800";
 
 export default function Header() {
   const pathname = usePathname();
@@ -155,8 +155,10 @@ export default function Header() {
   }, [pathname]);
 
   useEffect(() => {
-    setMobileOpen(false);
-    setOpenMenu(null);
+    startTransition(() => {
+      setMobileOpen(false);
+      setOpenMenu(null);
+    });
   }, [pathname]);
 
   useEffect(() => {

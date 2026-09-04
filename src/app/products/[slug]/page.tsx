@@ -78,7 +78,7 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
     },
     {
       question: `How can I place an inquiry or request product samples?`,
-      answer: `Click on 'Enquire Now' for any product or reach out directly via call/WhatsApp at +91 98765 43210 or email info@medico-pharma.com. Our commercial team responds within 24 business hours.`,
+      answer: `Click on 'Enquire Now' for any product or reach out directly via call/WhatsApp at +91 97681 18800 or email info@medico-pharma.com. Our commercial team responds within 24 business hours.`,
     },
     {
       question: `Are these products eligible for export?`,
@@ -168,7 +168,7 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
                 </div>
 
                 <div className="dynamic-category-split-contact-actions">
-                  {/* <a href="tel:+919876543210" className="premium-mobile-enquire">
+                  {/* <a href="tel:+919768118800" className="premium-mobile-enquire">
                     <span className="dynamic-category-contact-icon" aria-hidden="true">⌕</span>
                     Call now
                   </a> */}

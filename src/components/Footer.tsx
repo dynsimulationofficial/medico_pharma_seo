@@ -120,14 +120,14 @@ export default function Footer() {
         <div className="footer-contact-column">
           <p className="footer-label">Contact</p>
 
-          <a href="tel:+919876543210" className="footer-contact-item">
+          <a href="tel:+919768118800" className="footer-contact-item">
             <span className="footer-contact-icon">↗</span>
-            <span>+91 98765 43210</span>
+            <span>+91 97681 18800</span>
           </a>
 
           <a
             href="mailto:info@medico-pharma.com"
-            className="footer-contact-item"
+            className="footer-contact-item footer-email"
           >
             <span className="footer-contact-icon">@</span>
             <span>info@medico-pharma.com</span>
@@ -171,7 +171,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919768118800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"

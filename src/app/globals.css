@@ -4904,6 +4904,11 @@ p { text-wrap: pretty; }
     transform 220ms var(--ease-out);
 }
 
+.footer-email > span:last-child {
+  white-space: nowrap;
+  font-size: 0.68rem;
+}
+
 a.footer-contact-item:hover {
   color: #ffffff;
   transform: translateX(3px);
