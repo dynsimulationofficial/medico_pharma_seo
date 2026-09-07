@@ -2,28 +2,65 @@ import type { MetadataRoute } from "next";
 import { categories } from "@/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = (
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
-  ).replace(/\/$/, "");
-  const lastModified = new Date();
+  const baseUrl = "https://www.medicoparma.com";
+  const lastModified = new Date("2026-09-07");
   const staticRoutes = [
-    "",
-    "/about",
-    "/products",
-    "/contact",
-    "/services",
-    "/privacy-policy",
-    "/terms-&-conditions",
-    "/product-01",
-    "/product-03",
-    "/product-04",
+    { path: "/", changeFrequency: "weekly" as const, priority: 1 },
+    { path: "/about", changeFrequency: "monthly" as const, priority: 0.7 },
+    { path: "/products", changeFrequency: "weekly" as const, priority: 0.9 },
+    { path: "/contact", changeFrequency: "monthly" as const, priority: 0.6 },
+    { path: "/services", changeFrequency: "monthly" as const, priority: 0.8 },
+    {
+      path: "/services/pharmaceutical-manufacturing",
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      path: "/services/contract-manufacturing",
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      path: "/services/oem-private-label",
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      path: "/services/third-party-manufacturing",
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      path: "/services/export-services",
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      path: "/privacy-policy",
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
+    },
+    {
+      path: "/terms-&-conditions",
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
+    },
   ];
-  const categoryRoutes = categories.map((category) => category.internalUrl);
-
-  return [...staticRoutes, ...categoryRoutes].map((path) => ({
-    url: `${baseUrl}${path}`,
-    lastModified,
-    changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : 0.8,
+  const categoryRoutes = categories.map((category) => ({
+    path: category.internalUrl,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
   }));
+
+  return [...staticRoutes, ...categoryRoutes].map(
+    ({ path, changeFrequency, priority }) => ({
+      url: `${baseUrl}${path
+        .split("/")
+        .map((segment) => encodeURIComponent(segment))
+        .join("/")}`,
+      lastModified,
+      changeFrequency,
+      priority,
+    })
+  );
 }
