@@ -6,12 +6,20 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.medicos-pharma.com"),
   title: {
     default: "Medico Pharma | Pharmaceutical Solutions",
     template: "%s | Medico Pharma",
   },
   description:
     "Discover Medico Pharma's pharmaceutical capabilities, product categories, quality approach, and partnership support.",
+  icons: {
+    icon: [
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   keywords: [
     "Medico Pharma",
     "pharmaceutical company",

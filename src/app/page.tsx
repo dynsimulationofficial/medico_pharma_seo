@@ -242,11 +242,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medico Pharma Healthcare | Pharmaceutical Products & Manufacturing Solutions",
     description: "Medico Pharma provides pharmaceutical products, contract manufacturing, private label, third-party manufacturing and export solutions for distributors, healthcare businesses and global partners.",
-    url: "https://www.medicoparma.com",
+    url: "https://www.medicos-pharma.com",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.medicoparma.com",
+    canonical: "https://www.medicos-pharma.com",
   },
 };
 
