@@ -4981,6 +4981,47 @@ a.footer-contact-item:hover {
   height: 14px;
 }
 
+.footer-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  color: #ffffff;
+  transition: transform 220ms var(--ease-out), color 180ms ease;
+}
+
+.footer-whatsapp:hover {
+  color: #d6f7a2;
+  transform: translateX(3px);
+}
+
+.footer-whatsapp-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #25d366, #128c7e);
+  color: #ffffff;
+}
+
+.footer-whatsapp span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-whatsapp small {
+  color: var(--brand-200);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-whatsapp strong {
+  font-size: 0.74rem;
+}
+
 
 /* --------------------------------
    BOTTOM BAR — COMPACT
@@ -6305,15 +6346,19 @@ a.footer-contact-item:hover {
 .premium-header-inner {
   position: relative;
 
+  /* Header gets a little more usable width than the page body so the
+     navigation + contact actions never feel squeezed. */
+  max-width: 1280px;
+  padding-inline: clamp(22px, 2.4vw, 34px);
+
   display: grid;
-  /* Equal left/right tracks keep the navigation truly centered */
   grid-template-columns:
-    minmax(300px, 1fr)
-    auto
-    minmax(300px, 1fr);
+    minmax(220px, 250px)
+    minmax(430px, 1fr)
+    auto;
 
   align-items: center;
-  gap: 30px;
+  gap: 22px;
 
   min-height: 78px;
 
@@ -6363,13 +6408,16 @@ a.footer-contact-item:hover {
 /* ---------- Center navigation ---------- */
 
 .premium-main-nav {
+  position: absolute;
+  left: 50%;
   justify-self: center;
+  transform: translateX(-50%);
 }
 
 .premium-nav-links {
   display: flex;
   align-items: center;
-  gap: clamp(20px, 2vw, 30px);
+  gap: clamp(18px, 1.6vw, 26px);
   white-space: nowrap;
 }
 
@@ -6478,15 +6526,16 @@ a.footer-contact-item:hover {
 
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 11px;
+  white-space: nowrap;
 }
 
 .premium-call {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 
-  padding: 4px 2px;
+  padding: 4px 0;
 
   transition: transform 260ms var(--ease-out);
 }
@@ -6573,6 +6622,66 @@ a.footer-contact-item:hover {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: -0.025em;
+}
+
+.premium-whatsapp {
+  position: relative;
+  isolation: isolate;
+
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+
+  border: 1px solid rgba(7, 91, 34, 0.10);
+  border-radius: 50%;
+  background: #25d366;
+  color: #ffffff;
+
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.55) inset,
+    0 10px 22px -10px rgba(37, 211, 102, 0.85);
+
+  transition:
+    transform 240ms var(--ease-out),
+    background 240ms var(--ease-soft),
+    box-shadow 240ms var(--ease-out);
+}
+
+/* Subtle outer ring makes the WhatsApp action visible without looking loud. */
+.premium-whatsapp::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border: 1px solid rgba(37, 211, 102, 0.26);
+  border-radius: 50%;
+  transition: transform 240ms var(--ease-out), opacity 240ms ease;
+}
+
+.premium-whatsapp svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.premium-whatsapp:hover {
+  transform: translateY(-2px) scale(1.035);
+  background: #20c85a;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.55) inset,
+    0 15px 28px -11px rgba(37, 211, 102, 0.92);
+}
+
+.premium-whatsapp:hover::before {
+  transform: scale(1.08);
+  opacity: 0.7;
+}
+
+.premium-whatsapp:focus-visible {
+  outline: 3px solid rgba(37, 211, 102, 0.24);
+  outline-offset: 4px;
 }
 
 .premium-enquire {
@@ -6734,26 +6843,45 @@ a.footer-contact-item:hover {
   display: none;
 }
 
+.premium-mobile-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 0 16px;
+  border-radius: var(--r-pill);
+  background: #128c7e;
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 1180px) {
   .premium-header-inner {
-    /* Keep both side tracks equal so the nav remains centered */
     grid-template-columns:
-      minmax(230px, 1fr)
-      auto
-      minmax(230px, 1fr);
+      minmax(200px, 220px)
+      minmax(390px, 1fr)
+      auto;
 
-    gap: 18px;
+    gap: 14px;
+    padding-inline: 22px;
+  }
+
+  .premium-main-nav {
+    transform: translateX(-50%);
   }
 
   .premium-nav-links {
-    gap: 17px;
+    gap: 15px;
   }
 
   .premium-nav-links > a,
   .premium-nav-group > button {
-    font-size: 0.82rem;
+    font-size: 0.80rem;
   }
 
   .premium-call-copy {
@@ -6761,7 +6889,18 @@ a.footer-contact-item:hover {
   }
 
   .premium-header-actions {
-    gap: 10px;
+    gap: 9px;
+  }
+
+  .premium-whatsapp {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+
+  .premium-enquire {
+    min-height: 44px;
+    padding-inline: 18px;
   }
 }
 
@@ -6792,6 +6931,7 @@ a.footer-contact-item:hover {
 
   .premium-main-nav {
     position: fixed;
+    transform: translateY(-12px);
 
     inset: 72px 0 auto 0;
 
@@ -6807,8 +6947,6 @@ a.footer-contact-item:hover {
 
     opacity: 0;
     visibility: hidden;
-
-    transform: translateY(-12px);
 
     transition:
       opacity 260ms ease,
@@ -21813,4 +21951,61 @@ p.svx-heading-copy { max-width: 58ch; color: var(--ink-500); font-size: 0.93rem;
     opacity: 1 !important;
     transform: none !important;
   }
+}
+
+/* ============================================================
+   FOOTER — PREMIUM WHATSAPP ICON
+   Icon only. Footer layout/content untouched.
+   ============================================================ */
+.footer-whatsapp-icon {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  border: 1px solid rgba(37, 211, 102, 0.32);
+  border-radius: 50%;
+  background: #25d366;
+  color: #ffffff;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 8px 20px -8px rgba(37, 211, 102, 0.75);
+  transition:
+    transform 240ms var(--ease-out),
+    background 220ms var(--ease-soft),
+    box-shadow 240ms var(--ease-out);
+}
+
+.footer-whatsapp-icon::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border: 1px solid rgba(37, 211, 102, 0.24);
+  border-radius: 50%;
+  transition:
+    transform 240ms var(--ease-out),
+    opacity 220ms ease;
+}
+
+.footer-whatsapp-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.footer-whatsapp:hover .footer-whatsapp-icon {
+  transform: translateY(-2px) scale(1.04);
+  background: #20c85a;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    0 12px 25px -9px rgba(37, 211, 102, 0.9);
+}
+
+.footer-whatsapp:hover .footer-whatsapp-icon::before {
+  transform: scale(1.08);
+  opacity: 0.8;
 }

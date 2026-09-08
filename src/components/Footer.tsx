@@ -16,49 +16,17 @@ const services = [
   ["Export Services", "/services/export-services"],
 ];
 
-function SocialIcon({ name }: { name: "linkedin" | "instagram" | "facebook" | "whatsapp" }) {
-  const iconProps = {
-    width: 14,
-    height: 14,
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: 1.8,
-    strokeLinecap: "round" as const,
-    strokeLinejoin: "round" as const,
-    "aria-hidden": true,
-  };
-
-  if (name === "instagram") {
-    return (
-      <svg {...iconProps}>
-        <rect x="3" y="3" width="18" height="18" rx="5" />
-        <circle cx="12" cy="12" r="4" />
-        <circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" stroke="none" />
-      </svg>
-    );
-  }
-
-  if (name === "facebook") {
-    return (
-      <svg {...iconProps}>
-        <path d="M14 21v-8h2.7l.4-3H14V8.1c0-.9.3-1.5 1.6-1.5h1.7V4a22 22 0 0 0-2.5-.1c-2.5 0-4.2 1.5-4.2 4.3V10H8v3h2.6v8" />
-      </svg>
-    );
-  }
-
-  if (name === "linkedin") {
-    return (
-      <svg {...iconProps}>
-        <path d="M6 9v9M6 6.2v.1M10 18v-5a3 3 0 0 1 6 0v5M10 9v9" />
-      </svg>
-    );
-  }
-
+function WhatsAppIcon() {
   return (
-    <svg {...iconProps}>
-      <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.7A8 8 0 1 1 20 11.5Z" />
-      <path d="M8.8 8.7c.2-.4.5-.4.8-.4l.7 1.7c.1.3 0 .5-.2.7l-.5.5a6 6 0 0 0 2.9 2.9l.5-.5c.2-.2.4-.3.7-.2l1.7.7c0 .3 0 .6-.4.8-.4.4-1 .7-1.6.5a8.2 8.2 0 0 1-4.9-4.9c-.2-.6.1-1.2.3-1.8Z" />
+    <svg
+      viewBox="0 0 24 24"
+      width="20"
+      height="20"
+      fill="currentColor"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.009-.371-.011-.57-.011-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.99c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.14 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
     </svg>
   );
 }
@@ -106,8 +74,8 @@ export default function Footer() {
 
           <Link href="/about">About us</Link>  <Link href="/#faq">Products</Link>
            <Link href="/#faq">Services</Link>
-            <Link href="/#quality">Resources</Link>
-          <Link href="/contact">Contact</Link>
+            {/* <Link href="/#quality">Resources</Link> */}
+          <Link href="/contact">Contact us</Link>
          
         
         </div>
@@ -189,43 +157,18 @@ export default function Footer() {
             </span>
           </div>
 
-          <div className="footer-socials">
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <SocialIcon name="linkedin" />
-            </a>
-
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <SocialIcon name="instagram" />
-            </a>
-
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-              <SocialIcon name="facebook" />
-            </a>
-
-            <a
-              href="https://wa.me/919768118800"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-            >
-              <SocialIcon name="whatsapp" />
-            </a>
-          </div>
+          <a
+            href="https://wa.me/919768118800"
+            className="footer-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="footer-whatsapp-icon"><WhatsAppIcon /></span>
+            <span>
+              <small>WhatsApp us</small>
+              <strong>+91 97681 18800</strong>
+            </span>
+          </a>
         </div>
       </div>
 
