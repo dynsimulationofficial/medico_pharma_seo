@@ -6,70 +6,70 @@ import type { CSSProperties } from "react";
 const categories = [
   {
     number: "01",
-    title: 'Pharmaceutical Tablets',
-    label: 'Oral solid dosage',
-    href: '/products/pharmaceutical-tablets',
+    title: "Pharmaceutical Tablets",
+    label: "Oral solid dosage",
+    href: "/products/pharmaceutical-tablets",
     image: "/tablets.png",
   },
   {
     number: "02",
-    title: 'Pharmaceutical Capsules',
-    label: 'Capsule formulations',
-    href: '/products/pharmaceutical-capsules',
+    title: "Pharmaceutical Capsules",
+    label: "Capsule formulations",
+    href: "/products/pharmaceutical-capsules",
     image: "/capsuless.png",
   },
   {
     number: "03",
-    title: 'Pharmaceutical Injection',
-    label: 'Injectable range',
-    href: '/products/pharmaceutical-injection',
+    title: "Pharmaceutical Injection",
+    label: "Injectable range",
+    href: "/products/pharmaceutical-injection",
     image: "/injection.png",
   },
   {
     number: "04",
-    title: 'Anti Depressants Medicines',
-    label: 'Therapy range',
-    href: '/products/anti-depressants-medicines',
+    title: "Anti Depressants Medicines",
+    label: "Regulated therapy range",
+    href: "/products/anti-depressants-medicines",
     image: "/medicines.png",
   },
   {
     number: "05",
-    title: 'Skin Care Products',
-    label: 'Dermatology & care',
-    href: '/products/skin-care-products',
+    title: "Skin Care Products",
+    label: "Dermatology & care",
+    href: "/products/skin-care-products",
     image: "/p[roducts.png",
   },
   {
     number: "06",
-    title: 'Pharmaceutical Medicines',
-    label: 'General medicines',
-    href: '/products/pharmaceutical-medicines',
+    title: "Pharmaceutical Medicines",
+    label: "General medicines",
+    href: "/products/pharmaceutical-medicines",
     image: "/medicies.png",
   },
   {
     number: "07",
-    title: 'Pharmaceutical Ointment',
-    label: 'Topical formulations',
-    href: '/products/pharmaceutical-ointment',
+    title: "Pharmaceutical Ointment",
+    label: "Topical formulations",
+    href: "/products/pharmaceutical-ointment",
     image: "/cream.png",
   },
   {
     number: "08",
-    title: 'Antibiotic Medicines',
-    label: 'Anti-infective',
-    href: '/products/antibiotic-medicines',
+    title: "Antibiotic Medicines",
+    label: "Regulated anti-infective range",
+    href: "/products/antibiotic-medicines",
     image: "/phasma.png",
   },
   {
     number: "09",
-    title: 'Steroids Injections',
-    label: 'Specialty injectable',
-    href: '/products/steroids-injections',
+    title: "Steroids Injections",
+    label: "Regulated specialty range",
+    href: "/products/steroids-injections",
     image: "/mp_injection.png",
-  }
+  },
 ] as const;
 
-export default function Product01Page() {
+export default function ProductsPage() {
   return (
     <main className="medico-cat-page">
       <section className="medico-cat-hero">
@@ -79,24 +79,31 @@ export default function Product01Page() {
 
         <div className="container medico-cat-hero-inner">
           <div className="medico-cat-hero-copy">
-            {/* <span className="medico-cat-kicker">Portfolio / Product 01</span> */}
-
             <h1>
-              Healthcare categories
-              <em> built for clear discovery.</em>
+              Pharmaceutical categories
+              <em> for verified B2B enquiries.</em>
             </h1>
 
             <p>
-              Browse nine product categories in this portfolio set. Each card is
-              image-ready, so you can place your own real product photography for
-              tablets, capsules, injections, skin care and the rest of the range.
+              Explore product categories for institutional, wholesale,
+              manufacturing and export discussions. Availability is subject to
+              applicable licences, market approvals and commercial verification.
             </p>
+
+            <div className="medico-compliance-note" role="note">
+              <strong>Regulated-product notice</strong>
+              <span>
+                This website is intended for business and procurement enquiries.
+                Medico Pharma does not provide medical advice or sell prescription
+                medicines directly to consumers through this website.
+              </span>
+            </div>
           </div>
 
           <div className="medico-cat-hero-stat">
-            <span>PRODUCT SET</span>
+            <span>PRODUCT CATEGORIES</span>
             <strong>09</strong>
-            <p>categories on this page</p>
+            <p>B2B catalogue categories</p>
             <svg viewBox="0 0 220 34" aria-hidden="true">
               <path d="M0 18h42l8-12 10 24 8-18 10 6h26l7-6 10 12 8-6h91" />
             </svg>
@@ -108,16 +115,8 @@ export default function Product01Page() {
         <div className="container">
           <div className="medico-cat-heading">
             <div>
-              <span>Product set 1 of 4</span>
+              <span>B2B product directory</span>
               <h2>Browse categories</h2>
-            </div>
-
-            <div className="medico-cat-page-links" aria-label="Product pages">
-              <Link href="#" className={true ? "active" : ""}>01</Link>
-              <Link href="/product-01" className={false ? "active" : ""}>02</Link>
-              <Link href="/product-02" className={false ? "active" : ""}>03</Link>
-              <Link href="/product-03" className={false ? "active" : ""}>04</Link>
-               <Link href="/product-04" className={false ? "active" : ""}>05</Link>
             </div>
           </div>
 
@@ -126,9 +125,11 @@ export default function Product01Page() {
               <Link
                 href={category.href}
                 className="medico-cat-card"
-                style={{
-                  "--card-delay": `${index * 65}ms`,
-                } as CSSProperties}
+                style={
+                  {
+                    "--card-delay": `${index * 65}ms`,
+                  } as CSSProperties
+                }
                 key={category.title}
               >
                 <div
@@ -137,14 +138,7 @@ export default function Product01Page() {
                     backgroundImage: `url("${category.image}")`,
                   }}
                 >
-                  {/* <span className="medico-cat-image-fallback">
-                    Add product image
-                  </span> */}
-
-                  <span className="medico-cat-number">
-                    {category.number}
-                  </span>
-
+                  <span className="medico-cat-number">{category.number}</span>
                   <span className="medico-cat-image-shine" aria-hidden="true" />
                 </div>
 
@@ -153,33 +147,25 @@ export default function Product01Page() {
                   <h3>{category.title}</h3>
                 </div>
 
-                <span className="medico-cat-arrow" aria-hidden="true">↗</span>
+                <span className="medico-cat-arrow" aria-hidden="true">
+                  ↗
+                </span>
               </Link>
             ))}
 
-            <Link href="/product-01" className="medico-cat-more-card">
-              <span className="medico-cat-more-label">Product 02</span>
-
+            <Link href="/contact" className="medico-cat-more-card">
+              <span className="medico-cat-more-label">Business enquiry</span>
               <div>
-                <strong>View more categories</strong>
+                <strong>Discuss a verified B2B requirement</strong>
                 <span aria-hidden="true">↗</span>
               </div>
-
               <i className="medico-cat-orbit medico-cat-orbit-a" aria-hidden="true" />
               <i className="medico-cat-orbit medico-cat-orbit-b" aria-hidden="true" />
             </Link>
           </div>
 
           <div className="medico-cat-bottom-nav">
-            <Link href="/product-01" className={true ? "disabled" : ""}>
-              ← Previous
-            </Link>
-
-            <span>Product 01</span>
-
-            <Link href="/product-01" className={false ? "disabled" : ""}>
-              Next →
-            </Link>
+            <Link href="/contact">Contact commercial team →</Link>
           </div>
         </div>
       </section>

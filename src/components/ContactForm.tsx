@@ -1,4 +1,3 @@
-// components/ContactForm.tsx
 "use client";
 
 import { useState } from "react";
@@ -34,18 +33,24 @@ const enquiryTypes = [
 function validate(values: Values): Errors {
   const errors: Errors = {};
 
-  if (!values.name.trim()) errors.name = "Enter your full name.";
+  if (values.name.trim().length < 2) errors.name = "Enter your full name.";
+
   if (!values.email.trim()) {
     errors.email = "Enter an email address we can reply to.";
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(values.email)) {
     errors.email = "That email address looks incomplete.";
   }
-  if (values.phone && !/^[\d+\s()-]{7,18}$/.test(values.phone)) {
-    errors.phone = "Use digits, spaces, +, - or brackets only.";
+
+  if (values.phone && !/^[\d+\s().-]{7,25}$/.test(values.phone)) {
+    errors.phone = "Use a valid phone number.";
   }
+
   if (!values.enquiry) errors.enquiry = "Choose the type of enquiry.";
+
   if (values.message.trim().length < 20) {
     errors.message = "Add at least 20 characters so we can route this correctly.";
+  } else if (values.message.length > 3000) {
+    errors.message = "Keep your message under 3,000 characters.";
   }
 
   return errors;
@@ -55,21 +60,28 @@ export default function ContactForm() {
   const [values, setValues] = useState<Values>(empty);
   const [errors, setErrors] = useState<Errors>({});
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [website, setWebsite] = useState("");
+  const [formStartedAt, setFormStartedAt] = useState(() => Date.now());
 
   const update = (key: keyof Values) => (
     event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     setValues((previous) => ({ ...previous, [key]: event.target.value }));
-    // Clear the message as soon as the person starts fixing the field
-    if (errors[key]) setErrors((previous) => ({ ...previous, [key]: undefined }));
+    if (errors[key]) {
+      setErrors((previous) => ({ ...previous, [key]: undefined }));
+    }
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
     const found = validate(values);
     setErrors(found);
 
     if (Object.keys(found).length > 0) {
-      const first = document.querySelector<HTMLElement>(".has-error input, .has-error select, .has-error textarea");
+      const first = document.querySelector<HTMLElement>(
+        ".has-error input, .has-error select, .has-error textarea"
+      );
       first?.focus();
       return;
     }
@@ -79,25 +91,39 @@ export default function ContactForm() {
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
+        credentials: "same-origin",
+        cache: "no-store",
         headers: {
+          Accept: "application/json",
           "Content-Type": "application/json",
+          "X-Requested-With": "XMLHttpRequest",
         },
-        body: JSON.stringify(values),
+        body: JSON.stringify({
+          ...values,
+          website,
+          formStartedAt,
+        }),
       });
 
-      const data = await response.json();
+      const data = (await response.json().catch(() => null)) as
+        | { success?: boolean; error?: string }
+        | null;
 
-      if (data.success) {
+      if (response.ok && data?.success) {
         setStatus("sent");
         setValues(empty);
-      } else {
-        setErrors((previous) => ({
-          ...previous,
-          message: data.error || "Failed to send email. Please try again.",
-        }));
-        setStatus("idle");
+        setWebsite("");
+        setFormStartedAt(Date.now());
+        return;
       }
-    } catch (err) {
+
+      setErrors((previous) => ({
+        ...previous,
+        message:
+          data?.error || "We could not send your enquiry. Please try again later.",
+      }));
+      setStatus("idle");
+    } catch {
       setErrors((previous) => ({
         ...previous,
         message: "An unexpected error occurred. Please try again later.",
@@ -111,13 +137,32 @@ export default function ContactForm() {
       <section className="contact-form">
         <div className="form-success">
           <span className="tick" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <path d="M20 6 9 17l-5-5" />
             </svg>
           </span>
           <h2>Enquiry received</h2>
-          <p>Our team will review your requirement and reply to the email address you shared.</p>
-          <button type="button" className="button" onClick={() => setStatus("idle")}>
+          <p>
+            Our team will review your business requirement and reply to the email
+            address you shared.
+          </p>
+          <button
+            type="button"
+            className="button"
+            onClick={() => {
+              setStatus("idle");
+              setFormStartedAt(Date.now());
+            }}
+          >
             Send another enquiry <span aria-hidden="true">→</span>
           </button>
         </div>
@@ -126,12 +171,27 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="contact-form">
+    <form className="contact-form" onSubmit={handleSubmit} noValidate>
       <header>
-        <span className="eyebrow">Enquiry form</span>
+        <span className="eyebrow">Business enquiry form</span>
         <h2>Share your requirement.</h2>
-        <p>Fields marked with an asterisk are required.</p>
+        <p>
+          For B2B, institutional, manufacturing and export enquiries. Fields marked
+          with an asterisk are required.
+        </p>
       </header>
+
+      <div className="form-honeypot" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input
+          id="website"
+          name="website"
+          value={website}
+          onChange={(event) => setWebsite(event.target.value)}
+          autoComplete="off"
+          tabIndex={-1}
+        />
+      </div>
 
       <div className="field-grid">
         <div className={`field ${errors.name ? "has-error" : ""}`.trim()}>
@@ -143,12 +203,16 @@ export default function ContactForm() {
             name="name"
             value={values.name}
             onChange={update("name")}
-            placeholder="Dr. Anita Sharma"
+            placeholder="Your full name"
+            autoComplete="name"
+            maxLength={100}
             aria-invalid={Boolean(errors.name)}
             aria-describedby={errors.name ? "name-error" : undefined}
           />
           {errors.name ? (
-            <p className="field-error" id="name-error">{errors.name}</p>
+            <p className="field-error" id="name-error">
+              {errors.name}
+            </p>
           ) : null}
         </div>
 
@@ -163,11 +227,15 @@ export default function ContactForm() {
             value={values.email}
             onChange={update("email")}
             placeholder="name@company.com"
+            autoComplete="email"
+            maxLength={254}
             aria-invalid={Boolean(errors.email)}
             aria-describedby={errors.email ? "email-error" : undefined}
           />
           {errors.email ? (
-            <p className="field-error" id="email-error">{errors.email}</p>
+            <p className="field-error" id="email-error">
+              {errors.email}
+            </p>
           ) : null}
         </div>
 
@@ -179,6 +247,8 @@ export default function ContactForm() {
             value={values.company}
             onChange={update("company")}
             placeholder="Optional"
+            autoComplete="organization"
+            maxLength={120}
           />
         </div>
 
@@ -191,15 +261,23 @@ export default function ContactForm() {
             value={values.phone}
             onChange={update("phone")}
             placeholder="+91 00000 00000"
+            autoComplete="tel"
+            maxLength={25}
             aria-invalid={Boolean(errors.phone)}
             aria-describedby={errors.phone ? "phone-error" : undefined}
           />
           {errors.phone ? (
-            <p className="field-error" id="phone-error">{errors.phone}</p>
+            <p className="field-error" id="phone-error">
+              {errors.phone}
+            </p>
           ) : null}
         </div>
 
-        <div className={`field field-select span-2 ${errors.enquiry ? "has-error" : ""}`.trim()}>
+        <div
+          className={`field field-select span-2 ${
+            errors.enquiry ? "has-error" : ""
+          }`.trim()}
+        >
           <label htmlFor="enquiry">
             Type of enquiry <span aria-hidden="true">*</span>
           </label>
@@ -213,15 +291,23 @@ export default function ContactForm() {
           >
             <option value="">Select one</option>
             {enquiryTypes.map((type) => (
-              <option key={type} value={type}>{type}</option>
+              <option key={type} value={type}>
+                {type}
+              </option>
             ))}
           </select>
           {errors.enquiry ? (
-            <p className="field-error" id="enquiry-error">{errors.enquiry}</p>
+            <p className="field-error" id="enquiry-error">
+              {errors.enquiry}
+            </p>
           ) : null}
         </div>
 
-        <div className={`field span-2 ${errors.message ? "has-error" : ""}`.trim()}>
+        <div
+          className={`field span-2 ${
+            errors.message ? "has-error" : ""
+          }`.trim()}
+        >
           <label htmlFor="message">
             Your requirement <span aria-hidden="true">*</span>
           </label>
@@ -230,26 +316,25 @@ export default function ContactForm() {
             name="message"
             value={values.message}
             onChange={update("message")}
-            placeholder="Tell us about the products, quantities, or partnership you have in mind."
+            placeholder="Tell us about your organisation, target market, product category and business requirement."
+            maxLength={3000}
             aria-invalid={Boolean(errors.message)}
             aria-describedby={errors.message ? "message-error" : undefined}
           />
           {errors.message ? (
-            <p className="field-error" id="message-error">{errors.message}</p>
+            <p className="field-error" id="message-error">
+              {errors.message}
+            </p>
           ) : null}
         </div>
       </div>
 
       <div className="form-footer">
         <p className="form-note">
-          Your details are used only to answer this enquiry.
+          This website handles business enquiries only. Regulated products are
+          subject to applicable licences, approvals and market requirements.
         </p>
-        <button
-          type="button"
-          className="button"
-          onClick={handleSubmit}
-          disabled={status === "sending"}
-        >
+        <button type="submit" className="button" disabled={status === "sending"}>
           {status === "sending" ? (
             <>
               <span className="spinner" aria-hidden="true" /> Sending
@@ -261,6 +346,6 @@ export default function ContactForm() {
           )}
         </button>
       </div>
-    </section>
+    </form>
   );
 }

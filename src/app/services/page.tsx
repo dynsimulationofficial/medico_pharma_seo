@@ -200,7 +200,7 @@ const motionScript = `
 
 /* Drop your photo at public/images/services/services-hero.jpg
    Leave this as an empty string ("") to show the placeholder frame instead. */
-const heroImage = "/images/services/services-hero.jpg";
+const heroImage = "/Pharmaceutical Manufacturing.png";
 
 const heroTrust = [
   "Quality you can trust",

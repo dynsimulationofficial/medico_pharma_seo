@@ -81,9 +81,7 @@ export default function Product04Page() {
             </h1>
 
             <p>
-              Browse nine product categories in this portfolio set. Each card is
-              image-ready, so you can place your own real product photography for
-              tablets, capsules, injections, skin care and the rest of the range.
+              Explore pharmaceutical categories for verified B2B, institutional, manufacturing and export enquiries. Product availability is subject to applicable regulatory and commercial requirements.
             </p>
           </div>
 

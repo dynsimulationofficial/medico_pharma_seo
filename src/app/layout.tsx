@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import "./security-fix.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.medicos-pharma.com"),
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Medico Pharma",
   },
   description:
-    "Discover Medico Pharma's pharmaceutical capabilities, product categories, quality approach, and partnership support.",
+    "B2B pharmaceutical product, manufacturing and export information from Medico Pharma. Availability is subject to applicable regulatory and commercial requirements.",
   icons: {
     icon: [
       { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
@@ -23,15 +23,21 @@ export const metadata: Metadata = {
   keywords: [
     "Medico Pharma",
     "pharmaceutical company",
-    "pharma products",
-    "healthcare products",
-    "pharmaceutical partner",
+    "pharmaceutical manufacturing",
+    "B2B pharma",
+    "pharmaceutical export",
   ],
   openGraph: {
     title: "Medico Pharma",
     description:
-      "Pharmaceutical solutions built around quality, responsibility, and dependable partnerships.",
+      "B2B pharmaceutical solutions built around quality, regulatory responsibility and dependable partnerships.",
     type: "website",
+    url: "https://www.medicos-pharma.com",
+    siteName: "Medico Pharma",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -39,30 +45,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-BTQ2LG17SZ"
-          strategy="afterInteractive"
-        />
-
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-BTQ2LG17SZ');
-          `}
-        </Script>
-
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "yc0rgbimvc");
-          `}
-        </Script>
-
         <Header />
         <main>{children}</main>
         <Footer />
@@ -79,10 +61,10 @@ function FloatingWhatsApp() {
       className="floating-whatsapp"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with Medico Pharma on WhatsApp"
-      title="Chat on WhatsApp"
+      aria-label="Open Medico Pharma business WhatsApp"
+      title="Business WhatsApp"
     >
-      <span className="floating-whatsapp-label">Chat on WhatsApp</span>
+      <span className="floating-whatsapp-label">Business WhatsApp</span>
 
       <span className="floating-whatsapp-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="currentColor" focusable="false">

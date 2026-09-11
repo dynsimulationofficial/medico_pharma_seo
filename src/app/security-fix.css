@@ -1,0 +1,44 @@
+.medico-compliance-note,
+.dynamic-category-compliance-note {
+  margin-top: 22px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.medico-compliance-note strong,
+.dynamic-category-compliance-notice-title {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.medico-compliance-note span,
+.dynamic-category-compliance-note p {
+  display: block;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.dynamic-category-compliance-note {
+  color: inherit;
+}
+
+.dynamic-category-compliance-note a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.form-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

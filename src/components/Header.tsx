@@ -79,7 +79,6 @@ const menuGroups = {
 
 type MenuName = keyof typeof menuGroups;
 
-/* Replace these two values with the real Medico Pharma number. */
 const PHONE_DISPLAY = "+91 97681 18800";
 const PHONE_LINK = "+919768118800";
 
@@ -386,7 +385,7 @@ export default function Header() {
               href="/contact"
               className="premium-enquire"
             >
-              <span>Enroll now</span>
+              <span>Enquire now</span>
             </Link>
           </div>
         </div>

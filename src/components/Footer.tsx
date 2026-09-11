@@ -115,7 +115,7 @@ export default function Footer() {
           <p className="footer-label">Company Policy</p>
 
           <Link
-            href="/terms-&-conditions"
+            href="/terms-and-conditions"
            
           >
            
@@ -174,7 +174,7 @@ export default function Footer() {
 
       <div className="container footer-bottom">
        <p>
-  © 2020{" "}
+  © {new Date().getFullYear()}{" "}
   <Link href="/" className="footer-medico-highlight">
     Medico Pharma
   </Link>

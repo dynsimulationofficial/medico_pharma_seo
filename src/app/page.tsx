@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
+import HomeContactForm from "@/components/HomeContactForm";
 
 
 const products = [
@@ -763,22 +764,7 @@ export default function Home() {
             <h2>Discuss your requirement</h2>
             <p>Tell us what you are looking for and move toward the right product or partnership route.</p>
 
-            <form className="home-contact-form" action="/contact" method="get">
-              <select name="interest" defaultValue="product" aria-label="Enquiry type">
-                <option value="product">Product enquiry</option>
-                <option value="manufacturing">Manufacturing</option>
-                <option value="private-label">OEM / Private Label</option>
-                <option value="export">Export Services</option>
-                <option value="other">Other partnership</option>
-              </select>
-              <input type="text" name="name" placeholder="Name" aria-label="Name" />
-              <input type="email" name="email" placeholder="Email" aria-label="Email" />
-              <input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number" />
-              <textarea name="message" placeholder="Your message" aria-label="Your message" rows={4} />
-              <button type="submit">
-                Send enquiry <span aria-hidden="true">→</span>
-              </button>
-            </form>
+            <HomeContactForm />
           </div>
         </div>
       </section>

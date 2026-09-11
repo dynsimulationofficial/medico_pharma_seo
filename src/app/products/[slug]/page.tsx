@@ -16,13 +16,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const category = getCategoryBySlug(slug);
 
   if (!category) {
     return {
       title: "Category Not Found | Medico Pharma",
+      robots: { index: false, follow: false },
     };
   }
 
@@ -30,19 +33,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${category.name} | Medico Pharma`,
     description:
       category.description ||
-      `Explore high-quality ${category.name} solutions from Medico Pharma. Wholesaler, manufacturer, private label and export supplier from Mumbai.`,
+      `B2B information about ${category.name} from Medico Pharma. Availability is subject to regulatory requirements, market approvals and commercial verification.`,
     keywords: [
       category.name,
-      `${category.name} manufacturer`,
-      `${category.name} supplier`,
-      `wholesaler ${category.name}`,
+      `${category.name} B2B supplier`,
+      `${category.name} manufacturing`,
+      `${category.name} export`,
       "Medico Pharma Mumbai",
     ],
+    alternates: {
+      canonical: `/products/${category.slug}`,
+    },
   };
 }
 
 function getProductMeta(name: string) {
-  const strength = name.match(/\b\d+(?:\.\d+)?\s?(?:mg|mcg|g|ml|iu|%)\b/i)?.[0] || "B2B";
+  const strength =
+    name.match(/\b\d+(?:\.\d+)?\s?(?:mg|mcg|g|ml|iu|%)\b/i)?.[0] || "B2B";
   const lower = name.toLowerCase();
 
   let form = "Medicine";
@@ -69,20 +76,21 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
 
   const faqs = [
     {
-      question: `What products are available under ${category.name}?`,
-      answer: `We supply a comprehensive range of ${category.name} including certified formulations for hospital, wholesale, and export distribution. Contact our team for full batch details and stock availability.`,
+      question: `What products are listed under ${category.name}?`,
+      answer: `This page provides B2B catalogue information for ${category.name}. Product availability, formulation, packaging and supply are confirmed only after a commercial and regulatory review.`,
     },
     {
-      question: `Do you offer B2B wholesale prices for ${category.name}?`,
-      answer: `Yes, Medico Pharma specializes in bulk B2B supply, contract manufacturing, OEM, and private labeling for ${category.name}. Prices are quoted based on order volume and packaging specifications.`,
+      question: `Who can submit an enquiry for ${category.name}?`,
+      answer: `Medico Pharma handles business, institutional, wholesale, manufacturing and export enquiries. We may request organisation details, intended market and applicable licences before progressing a regulated-product request.`,
     },
     {
-      question: `How can I place an inquiry or request product samples?`,
-      answer: `Click on 'Enquire Now' for any product or reach out directly via call/WhatsApp at +91 97681 18800 or email info@medico-pharma.com. Our commercial team responds within 24 business hours.`,
+      question: `Does this website sell prescription medicines directly to consumers?`,
+      answer:
+        "No. This website is for B2B information and business enquiries and does not provide medical advice or direct-to-consumer prescription medicine sales.",
     },
     {
-      question: `Are these products eligible for export?`,
-      answer: `Yes, we support export of ${category.name} with compliance documentation and custom labeling for permitted international markets.`,
+      question: `Can ${category.name} be supplied for export?`,
+      answer: `Export discussions are subject to product classification, destination-country approvals, licences, documentation and applicable trade and pharmaceutical regulations.`,
     },
   ];
 
@@ -99,79 +107,106 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
     })),
   };
 
+  const faqSchemaJson = JSON.stringify(faqSchema).replace(/</g, "\\u003c");
+
   return (
     <main className="dynamic-category-page dynamic-category-split-page">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
+        dangerouslySetInnerHTML={{ __html: faqSchemaJson }}
       />
 
-      {/* SPLIT CATEGORY EXPERIENCE — HERO LEFT / PRODUCTS RIGHT */}
       <section className="dynamic-category-split-shell">
         <div className="dynamic-category-split-grid">
-          {/* LEFT — SAME GREEN CATEGORY BACKGROUND */}
           <aside className="dynamic-category-split-hero">
             <div className="dynamic-category-hero-dots" aria-hidden="true" />
-            <div className="dynamic-category-hero-glow dynamic-category-hero-glow-a" aria-hidden="true" />
-            <div className="dynamic-category-hero-glow dynamic-category-hero-glow-b" aria-hidden="true" />
+            <div
+              className="dynamic-category-hero-glow dynamic-category-hero-glow-a"
+              aria-hidden="true"
+            />
+            <div
+              className="dynamic-category-hero-glow dynamic-category-hero-glow-b"
+              aria-hidden="true"
+            />
 
             <div className="dynamic-category-split-hero-inner">
               <h1>
                 {category.name}
-                <em>built for clear discovery.</em>
+                <em>B2B product information.</em>
               </h1>
 
               <p>
                 {category.description ||
-                  `Explore high-grade ${category.name} range supplied by Medico Pharma. Available for B2B wholesale, private-label branding, and export markets.`}
+                  `Explore ${category.name} information for qualified business, institutional and export enquiries.`}
               </p>
 
-              <div className="dynamic-category-split-trust" aria-label="Category benefits">
+              <div className="dynamic-category-compliance-note" role="note">
+                <strong className="dynamic-category-compliance-notice-title">
+                  Business & regulatory notice
+                </strong>
+                <p>
+                  Product listings are informational and do not constitute a
+                  consumer offer, prescription, medical advice or guaranteed
+                  availability. Regulated supply is subject to applicable licences,
+                  approvals, documentation and market requirements.
+                </p>
+              </div>
+
+              <div
+                className="dynamic-category-split-trust"
+                aria-label="Category benefits"
+              >
                 <div>
                   <span className="dynamic-category-split-trust-icon">✓</span>
-                  <p><strong>Quality Assured</strong><small>Verified supply</small></p>
+                  <p>
+                    <strong>Quality Focused</strong>
+                    <small>Documented B2B supply</small>
+                  </p>
                 </div>
                 <div>
                   <span className="dynamic-category-split-trust-icon">◎</span>
-                  <p><strong>B2B Ready</strong><small>Wholesale support</small></p>
+                  <p>
+                    <strong>B2B Only</strong>
+                    <small>Commercial enquiries</small>
+                  </p>
                 </div>
                 <div>
                   <span className="dynamic-category-split-trust-icon">↗</span>
-                  <p><strong>Export Support</strong><small>Global enquiries</small></p>
+                  <p>
+                    <strong>Export Review</strong>
+                    <small>Market-specific checks</small>
+                  </p>
                 </div>
               </div>
 
-              <div className="dynamic-category-split-stats dynamic-category-split-stats-v9" aria-label="Category service highlights">
+              <div
+                className="dynamic-category-split-stats dynamic-category-split-stats-v9"
+                aria-label="Category service highlights"
+              >
                 <div>
                   <i aria-hidden="true" />
                   <strong>{String(productsList.length).padStart(2, "0")}</strong>
-                  <span>Products</span>
-                </div>
-                <div>
-                  <i aria-hidden="true" />
-                  <strong>24h</strong>
-                  <span>Business response</span>
+                  <span>Listed items</span>
                 </div>
                 <div>
                   <i aria-hidden="true" />
                   <strong>B2B</strong>
-                  <span>Supply focus</span>
+                  <span>Enquiry focus</span>
+                </div>
+                <div>
+                  <i aria-hidden="true" />
+                  <strong>REG</strong>
+                  <span>Subject to review</span>
                 </div>
               </div>
 
               <div className="dynamic-category-split-contact dynamic-category-split-contact-v9">
                 <div className="dynamic-category-split-contact-copy">
-                  <span>NEED PRODUCT SUPPORT?</span>
-                  <strong>Talk to our commercial team.</strong>
+                  <span>BUSINESS REQUIREMENT?</span>
+                  <strong>Contact our commercial team.</strong>
                 </div>
 
                 <div className="dynamic-category-split-contact-actions">
-                  {/* <a href="tel:+919768118800" className="premium-mobile-enquire">
-                    <span className="dynamic-category-contact-icon" aria-hidden="true">⌕</span>
-                    Call now
-                  </a> */}
                   <Link href="/contact" className="dynamic-category-enquiry-btn">
                     Get in touch <span aria-hidden="true">→</span>
                   </Link>
@@ -180,16 +215,18 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
             </div>
           </aside>
 
-          {/* RIGHT — PREMIUM PRODUCT LIST */}
           <section className="dynamic-category-split-products">
             <div className="dynamic-category-split-products-head">
               <div>
                 <h2>Products under {category.name}</h2>
-                <p>Browse the available products and open an enquiry for the item that fits your requirement.</p>
+                <p>
+                  Catalogue information for qualified B2B enquiries. Commercial
+                  availability is confirmed only after verification.
+                </p>
               </div>
 
               <div className="dynamic-category-split-count">
-                <span>SHOWING</span>
+                <span>LISTED</span>
                 <strong>{String(productsList.length).padStart(2, "0")}</strong>
                 <small>items</small>
               </div>
@@ -198,22 +235,41 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
             {productsList.length > 0 ? (
               <div className="dynamic-product-premium-list">
                 {productsList.map((product, index) => {
-                  const displayImg = product.image || product.remoteImage || "/Medics_pharma1.png";
+                  // Keep production pages self-contained: do not load remote images
+                  // from third-party product sites.
+                  const displayImg = product.image || "/Medics_pharma1.png";
                   const meta = getProductMeta(product.name);
 
                   return (
                     <article
                       className="dynamic-product-premium-card"
                       key={product.id}
-                      style={{ "--product-delay": `${index * 70}ms` } as CSSProperties}
+                      style={
+                        { "--product-delay": `${index * 70}ms` } as CSSProperties
+                      }
                     >
-                      <span className="dynamic-product-premium-rail" aria-hidden="true" />
-                      <span className="dynamic-product-premium-index">{String(index + 1).padStart(2, "0")}</span>
+                      <span
+                        className="dynamic-product-premium-rail"
+                        aria-hidden="true"
+                      />
+                      <span className="dynamic-product-premium-index">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
 
                       <div className="dynamic-product-premium-media">
-                        <span className="dynamic-product-premium-orbit" aria-hidden="true" />
-                        <span className="dynamic-product-premium-shine" aria-hidden="true" />
-                        <img src={displayImg} alt={product.name} loading="lazy" />
+                        <span
+                          className="dynamic-product-premium-orbit"
+                          aria-hidden="true"
+                        />
+                        <span
+                          className="dynamic-product-premium-shine"
+                          aria-hidden="true"
+                        />
+                        <img
+                          src={displayImg}
+                          alt={product.name}
+                          loading="lazy"
+                        />
                       </div>
 
                       <div className="dynamic-product-premium-main">
@@ -225,35 +281,37 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
                         <h3>{product.name}</h3>
 
                         <div className="dynamic-product-premium-specs">
-                          <span><i>◉</i><b>{meta.strength}</b><small>Strength</small></span>
-                          <span><i>○</i><b>{meta.form}</b><small>Form</small></span>
-                          <span><i>□</i><b>B2B</b><small>Supply</small></span>
+                          <span>
+                            <i>◉</i>
+                            <b>{meta.strength}</b>
+                            <small>Strength</small>
+                          </span>
+                          <span>
+                            <i>○</i>
+                            <b>{meta.form}</b>
+                            <small>Form</small>
+                          </span>
+                          <span>
+                            <i>□</i>
+                            <b>B2B</b>
+                            <small>Supply enquiry</small>
+                          </span>
                         </div>
                       </div>
 
                       <div className="dynamic-product-premium-side">
                         <div className="dynamic-product-premium-price">
-                          <span>Commercial quote</span>
-                          <strong>{product.price}</strong>
+                          <span>Commercial availability</span>
+                          <strong>On request</strong>
                         </div>
 
                         <div className="dynamic-product-premium-actions">
-                          <Link href="/contact" className="dynamic-product-premium-enquire">
-                            Enquire Now <span aria-hidden="true">→</span>
+                          <Link
+                            href="/contact"
+                            className="dynamic-product-premium-enquire"
+                          >
+                            Business Enquiry <span aria-hidden="true">→</span>
                           </Link>
-
-                          {product.productUrl && (
-                            <a
-                              href={product.productUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="dynamic-product-premium-external"
-                              title="View product source"
-                              aria-label={`View ${product.name} source`}
-                            >
-                              ↗
-                            </a>
-                          )}
                         </div>
                       </div>
                     </article>
@@ -265,7 +323,7 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
                 <span>CATALOGUE UPDATE</span>
                 <h3>Products for this category are currently being updated.</h3>
                 <Link href="/contact" className="text-link">
-                  Request Catalogue <span aria-hidden="true">→</span>
+                  Contact commercial team <span aria-hidden="true">→</span>
                 </Link>
               </div>
             )}
@@ -273,14 +331,19 @@ export default async function DynamicCategoryPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* FAQ — CONTENT UNCHANGED */}
-      <section className="section faq-section home-faq-section dynamic-category-faq" id="faq">
+      <section
+        className="section faq-section home-faq-section dynamic-category-faq"
+        id="faq"
+      >
         <div className="container faq-grid">
           <div>
             <div className="section-heading">
-              <span className="eyebrow">Frequently asked Questions</span>
+              <span className="eyebrow">Frequently asked questions</span>
               <h2>Useful answers before you enquire.</h2>
-              <p>Quick answers about availability, wholesale pricing, samples and export support for this category.</p>
+              <p>
+                Information about B2B availability, verification and
+                market-specific regulatory requirements.
+              </p>
             </div>
           </div>
 

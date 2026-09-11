@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Terms and conditions governing use of the Medico Pharma website, product information, enquiries, manufacturing, private-label and export discussions.",
 };
 
-const LAST_UPDATED = "27 August 2026";
+const LAST_UPDATED = "11 September 2026";
 
 const sections: ReadonlyArray<readonly [string, string]> = [
   ["acceptance", "1. Acceptance of these Terms"],
@@ -428,19 +428,6 @@ export default function TermsAndConditionsPage() {
               Contact Medico Pharma <span aria-hidden="true">→</span>
             </Link>
           </Section>
-
-          <div className="legalReviewNote">
-            <div className="reviewMark" aria-hidden="true">!</div>
-            <div>
-              <strong>Before publishing</strong>
-              <p>
-                This page is a professional website-terms template, not legal advice. Have your legal
-                adviser confirm the exact legal entity name, registered office, governing law,
-                jurisdiction, product-specific obligations and any terms required by the markets in
-                which you sell or manufacture.
-              </p>
-            </div>
-          </div>
         </article>
       </div>
     </main>
