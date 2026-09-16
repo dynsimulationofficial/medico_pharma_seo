@@ -1316,7 +1316,7 @@ export default function ContractManufacturingPage() {
               <h2>Pharmaceutical CMO and Manufacturing Outsourcing Support</h2>
             </div>
             <div className="pmx-heading-copy">
-              <p>A Contract Manufacturing Organization, commonly referred to as a CMO, provides outsourced manufacturing capacity to other companies.</p><p>Within the pharmaceutical industry, organisations may search for a pharmaceutical CMO, CMO pharma, contract manufacturing organization pharma, or pharma contract manufacturing companies when evaluating production outsourcing options.</p><p>Medico Pharma's contract manufacturing approach is designed to coordinate pharmaceutical production requirements across formulation, manufacturing, packaging and supply preparation.</p>
+              <p>A Contract Manufacturing Organization, commonly referred to as a CMO, provides outsourced manufacturing capacity to other companies.</p><p>Within the pharmaceutical industry, organisations may search for a pharmaceutical CMO, CMO pharma, contract manufacturing organization pharma, or pharma contract manufacturing companies when evaluating production outsourcing options.</p><p>Medico Pharma&apos;s contract manufacturing approach is designed to coordinate pharmaceutical production requirements across formulation, manufacturing, packaging and supply preparation.</p>
             </div>
           </div>
 

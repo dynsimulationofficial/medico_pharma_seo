@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { countryCodes } from "@/data/countryCodes";
 
 type Values = {
   name: string;
   email: string;
   company: string;
+  countryCode: string;
   phone: string;
   enquiry: string;
   message: string;
@@ -17,6 +19,7 @@ const empty: Values = {
   name: "",
   email: "",
   company: "",
+  countryCode: "+1",
   phone: "",
   enquiry: "",
   message: "",
@@ -41,7 +44,7 @@ function validate(values: Values): Errors {
     errors.email = "That email address looks incomplete.";
   }
 
-  if (values.phone && !/^[\d+\s().-]{7,25}$/.test(values.phone)) {
+  if (values.phone && !/^[\d\s().-]{5,20}$/.test(values.phone.trim())) {
     errors.phone = "Use a valid phone number.";
   }
 
@@ -88,6 +91,10 @@ export default function ContactForm() {
 
     setStatus("sending");
 
+    const fullPhone = values.phone.trim()
+      ? `${values.countryCode} ${values.phone.trim()}`
+      : "";
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -100,6 +107,7 @@ export default function ContactForm() {
         },
         body: JSON.stringify({
           ...values,
+          phone: fullPhone,
           website,
           formStartedAt,
         }),
@@ -254,18 +262,39 @@ export default function ContactForm() {
 
         <div className={`field ${errors.phone ? "has-error" : ""}`.trim()}>
           <label htmlFor="phone">Phone</label>
-          <input
-            id="phone"
-            name="phone"
-            type="tel"
-            value={values.phone}
-            onChange={update("phone")}
-            placeholder="+91 00000 00000"
-            autoComplete="tel"
-            maxLength={25}
-            aria-invalid={Boolean(errors.phone)}
-            aria-describedby={errors.phone ? "phone-error" : undefined}
-          />
+          <div className="phone-input-group">
+            <div className="country-code-select-wrap">
+              <select
+                id="country-code"
+                name="countryCode"
+                value={values.countryCode}
+                onChange={update("countryCode")}
+                aria-label="Country calling code"
+                className="country-code-select"
+              >
+                {countryCodes.map((item) => (
+                  <option
+                    key={`${item.code}-${item.dialCode}`}
+                    value={item.dialCode}
+                  >
+                    {item.flag} {item.dialCode} ({item.code})
+                  </option>
+                ))}
+              </select>
+            </div>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              value={values.phone}
+              onChange={update("phone")}
+              placeholder="00000 00000"
+              autoComplete="tel-national"
+              maxLength={20}
+              aria-invalid={Boolean(errors.phone)}
+              aria-describedby={errors.phone ? "phone-error" : undefined}
+            />
+          </div>
           {errors.phone ? (
             <p className="field-error" id="phone-error">
               {errors.phone}
