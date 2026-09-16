@@ -7,7 +7,7 @@ type Values = {
   name: string;
   email: string;
   company: string;
-  countryCode: string;
+  country: string;
   phone: string;
   enquiry: string;
   message: string;
@@ -19,7 +19,7 @@ const empty: Values = {
   name: "",
   email: "",
   company: "",
-  countryCode: "+1",
+  country: "US",
   phone: "",
   enquiry: "",
   message: "",
@@ -91,8 +91,9 @@ export default function ContactForm() {
 
     setStatus("sending");
 
+    const selectedCountry = countryCodes.find((c) => c.code === values.country) || countryCodes[0];
     const fullPhone = values.phone.trim()
-      ? `${values.countryCode} ${values.phone.trim()}`
+      ? `${selectedCountry.dialCode} ${values.phone.trim()}`
       : "";
 
     try {
@@ -107,6 +108,7 @@ export default function ContactForm() {
         },
         body: JSON.stringify({
           ...values,
+          countryCode: selectedCountry.dialCode,
           phone: fullPhone,
           website,
           formStartedAt,
@@ -266,16 +268,16 @@ export default function ContactForm() {
             <div className="country-code-select-wrap">
               <select
                 id="country-code"
-                name="countryCode"
-                value={values.countryCode}
-                onChange={update("countryCode")}
+                name="country"
+                value={values.country}
+                onChange={update("country")}
                 aria-label="Country calling code"
                 className="country-code-select"
               >
                 {countryCodes.map((item) => (
                   <option
-                    key={`${item.code}-${item.dialCode}`}
-                    value={item.dialCode}
+                    key={item.code}
+                    value={item.code}
                   >
                     {item.flag} {item.dialCode} ({item.code})
                   </option>

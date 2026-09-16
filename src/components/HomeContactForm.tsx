@@ -26,12 +26,14 @@ export default function HomeContactForm() {
 
     const interest = String(data.get("interest") || "other");
     const phoneInput = String(data.get("phone") || "").trim();
-    const countryCode = String(data.get("countryCode") || "+91").trim();
-    const phone = phoneInput ? `${countryCode} ${phoneInput}` : "";
+    const countryIso = String(data.get("country") || "US").trim();
+    const selectedCountry = countryCodes.find((c) => c.code === countryIso) || countryCodes[0];
+    const phone = phoneInput ? `${selectedCountry.dialCode} ${phoneInput}` : "";
 
     const payload = {
       name: String(data.get("name") || "").trim(),
       email: String(data.get("email") || "").trim(),
+      countryCode: selectedCountry.dialCode,
       phone,
       company: "",
       enquiry: enquiryMap[interest] || "General question",
@@ -94,15 +96,15 @@ export default function HomeContactForm() {
       <div className="phone-input-group home-phone-group">
         <div className="country-code-select-wrap">
           <select
-            name="countryCode"
-            defaultValue="+1"
+            name="country"
+            defaultValue="US"
             aria-label="Country code"
             className="country-code-select"
           >
             {countryCodes.map((item) => (
               <option
-                key={`home-${item.code}-${item.dialCode}`}
-                value={item.dialCode}
+                key={`home-${item.code}`}
+                value={item.code}
               >
                 {item.flag} {item.dialCode} ({item.code})
               </option>
