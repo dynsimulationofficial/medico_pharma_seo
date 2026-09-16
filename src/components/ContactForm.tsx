@@ -288,7 +288,7 @@ export default function ContactForm() {
               type="tel"
               value={values.phone}
               onChange={update("phone")}
-              placeholder="00000 00000"
+              placeholder="(555) 000-0000"
               autoComplete="tel-national"
               maxLength={20}
               aria-invalid={Boolean(errors.phone)}

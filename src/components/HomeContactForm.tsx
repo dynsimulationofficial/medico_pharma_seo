@@ -112,7 +112,7 @@ export default function HomeContactForm() {
         <input
           type="tel"
           name="phone"
-          placeholder="Phone number"
+          placeholder="(555) 000-0000"
           aria-label="Phone number"
           autoComplete="tel-national"
           maxLength={20}
