@@ -34,6 +34,7 @@ export default function HomeContactForm() {
       name: String(data.get("name") || "").trim(),
       email: String(data.get("email") || "").trim(),
       countryCode: selectedCountry.dialCode,
+      countryName: `${selectedCountry.name} (${selectedCountry.code})`,
       phone,
       company: "",
       enquiry: enquiryMap[interest] || "General question",

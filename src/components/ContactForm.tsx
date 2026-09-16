@@ -109,6 +109,7 @@ export default function ContactForm() {
         body: JSON.stringify({
           ...values,
           countryCode: selectedCountry.dialCode,
+          countryName: `${selectedCountry.name} (${selectedCountry.code})`,
           phone: fullPhone,
           website,
           formStartedAt,

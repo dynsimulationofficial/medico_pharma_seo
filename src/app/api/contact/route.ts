@@ -228,10 +228,13 @@ export async function POST(request: Request) {
       },
     });
 
+    const countryName = readText(body.countryName || body.country, 60);
+
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
     const safeCompany = escapeHtml(company || "Not provided");
     const safePhone = escapeHtml(phone || "Not provided");
+    const safeCountry = escapeHtml(countryName || "United States (US)");
     const safeEnquiry = escapeHtml(enquiry);
     const safeMessage = escapeHtml(message).replace(/\r?\n/g, "<br />");
 
@@ -246,6 +249,7 @@ export async function POST(request: Request) {
             <tr><td style="padding:10px;font-weight:700">Name</td><td style="padding:10px">${safeName}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Email</td><td style="padding:10px">${safeEmail}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Phone</td><td style="padding:10px">${safePhone}</td></tr>
+            <tr><td style="padding:10px;font-weight:700">Country</td><td style="padding:10px">${safeCountry}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Company</td><td style="padding:10px">${safeCompany}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Enquiry</td><td style="padding:10px">${safeEnquiry}</td></tr>
           </table>
@@ -271,6 +275,7 @@ export async function POST(request: Request) {
         `Full Name: ${name}`,
         `Email: ${email}`,
         `Phone: ${phone || "N/A"}`,
+        `Country: ${countryName || "United States (US)"}`,
         `Company: ${company || "N/A"}`,
         `Enquiry Type: ${enquiry}`,
         "",
