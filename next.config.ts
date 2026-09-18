@@ -39,6 +39,17 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  env: {
+    SMTP_HOST: process.env.SMTP_HOST || "",
+    SMTP_PORT: process.env.SMTP_PORT || "465",
+    SMTP_SECURE: process.env.SMTP_SECURE || "true",
+    SMTP_USER: process.env.SMTP_USER || "",
+    SMTP_PASS: process.env.SMTP_PASS || "",
+    FROM_NAME: process.env.FROM_NAME || "Medicos Pharma",
+    FROM_EMAIL: process.env.FROM_EMAIL || "",
+    TO_EMAIL: process.env.TO_EMAIL || "",
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || "https://medicos-pharma.com",
+  },
 
   async headers() {
     return [

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { countryCodes } from "@/data/countryCodes";
 
 const enquiryMap: Record<string, string> = {
   product: "Product information",
@@ -24,10 +25,17 @@ export default function HomeContactForm() {
     const data = new FormData(form);
 
     const interest = String(data.get("interest") || "other");
+    const phoneInput = String(data.get("phone") || "").trim();
+    const countryIso = String(data.get("country") || "US").trim();
+    const selectedCountry = countryCodes.find((c) => c.code === countryIso) || countryCodes[0];
+    const phone = phoneInput ? `${selectedCountry.dialCode} ${phoneInput}` : "";
+
     const payload = {
       name: String(data.get("name") || "").trim(),
       email: String(data.get("email") || "").trim(),
-      phone: String(data.get("phone") || "").trim(),
+      countryCode: selectedCountry.dialCode,
+      countryName: `${selectedCountry.name} (${selectedCountry.code})`,
+      phone,
       company: "",
       enquiry: enquiryMap[interest] || "General question",
       message: String(data.get("message") || "").trim(),
@@ -86,7 +94,33 @@ export default function HomeContactForm() {
       </select>
       <input type="text" name="name" placeholder="Name" aria-label="Name" autoComplete="name" maxLength={100} required />
       <input type="email" name="email" placeholder="Email" aria-label="Email" autoComplete="email" maxLength={254} required />
-      <input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number" autoComplete="tel" maxLength={25} />
+      <div className="phone-input-group home-phone-group">
+        <div className="country-code-select-wrap">
+          <select
+            name="country"
+            defaultValue="US"
+            aria-label="Country code"
+            className="country-code-select"
+          >
+            {countryCodes.map((item) => (
+              <option
+                key={`home-${item.code}`}
+                value={item.code}
+              >
+                {item.flag} {item.dialCode} ({item.code})
+              </option>
+            ))}
+          </select>
+        </div>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="(555) 000-0000"
+          aria-label="Phone number"
+          autoComplete="tel-national"
+          maxLength={20}
+        />
+      </div>
       <textarea name="message" placeholder="Your business requirement" aria-label="Your business requirement" rows={4} maxLength={3000} required />
 
       <div className="form-honeypot" aria-hidden="true">

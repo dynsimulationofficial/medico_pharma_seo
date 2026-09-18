@@ -1511,6 +1511,80 @@ p { text-wrap: pretty; }
 .field input::placeholder,
 .field textarea::placeholder { color: var(--ink-300); }
 
+/* Phone input with Country Code dropdown */
+.phone-input-group {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.phone-input-group .country-code-select-wrap {
+  position: relative;
+  flex: 0 0 92px;
+  width: 92px;
+}
+.phone-input-group .country-code-select {
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 20px 13px 10px;
+  border-top-left-radius: var(--r-sm);
+  border-bottom-left-radius: var(--r-sm);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid var(--line-strong);
+  border-right: none;
+  background: var(--sky-50);
+  color: var(--ink-900);
+  font-size: 0.84rem;
+  font-weight: 500;
+  appearance: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: border-color var(--t-base) var(--ease-soft),
+              background var(--t-base) var(--ease-soft),
+              box-shadow var(--t-base) var(--ease-soft);
+}
+.phone-input-group .country-code-select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 5px;
+  border-right: 1.8px solid var(--ink-400);
+  border-bottom: 1.8px solid var(--ink-400);
+  pointer-events: none;
+}
+.phone-input-group input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-left: 14px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: var(--r-sm);
+  border-bottom-right-radius: var(--r-sm);
+}
+.phone-input-group:focus-within .country-code-select,
+.phone-input-group:focus-within input {
+  border-color: var(--brand-500);
+}
+.phone-input-group .country-code-select:focus {
+  outline: none;
+  background: var(--paper);
+  z-index: 2;
+  box-shadow: 0 0 0 3px rgba(70, 173, 18, 0.14);
+}
+.phone-input-group input:focus {
+  z-index: 2;
+}
+.field.has-error .country-code-select,
+.field.has-error .phone-input-group input {
+  border-color: var(--vital);
+  background: #fff8f6;
+}
+
 .field input:focus,
 .field select:focus,
 .field textarea:focus {
@@ -4085,6 +4159,62 @@ p { text-wrap: pretty; }
   border-color: #fff;
   background: rgba(255, 255, 255, 0.11);
   box-shadow: 0 0 0 3px rgba(200, 238, 75, 0.14);
+}
+
+.home-contact-form .home-phone-group {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.home-contact-form .home-phone-group .country-code-select-wrap {
+  position: relative;
+  flex: 0 0 92px;
+  width: 92px;
+}
+.home-contact-form .home-phone-group .country-code-select {
+  border-radius: 9px 0 0 9px;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-right: none;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  min-height: 52px;
+  padding: 0 18px 0 10px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  appearance: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.home-contact-form .home-phone-group .country-code-select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 5px;
+  border-right: 1.8px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1.8px solid rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+}
+.home-contact-form .home-phone-group input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-left: 14px;
+  border-radius: 0 9px 9px 0;
+}
+.home-contact-form .home-phone-group .country-code-select:focus {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(200, 238, 75, 0.14);
+  position: relative;
+  z-index: 2;
+}
+.home-contact-form .home-phone-group input:focus {
+  position: relative;
+  z-index: 2;
 }
 
 .home-contact-form button {

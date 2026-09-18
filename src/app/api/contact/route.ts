@@ -88,12 +88,17 @@ function isAllowedOrigin(request: Request) {
   const allowed = new Set([
     "https://www.medicos-pharma.com",
     "https://medicos-pharma.com",
+    "https://www.medico-pharma.com",
+    "https://medico-pharma.com",
   ]);
 
   const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "");
   if (configuredSiteUrl) allowed.add(configuredSiteUrl);
 
-  return allowed.has(origin);
+  if (allowed.has(origin)) return true;
+  if (origin.endsWith(".amplifyapp.com")) return true;
+
+  return false;
 }
 
 export async function POST(request: Request) {
@@ -148,7 +153,7 @@ export async function POST(request: Request) {
     const name = readText(body.name, 100);
     const email = readText(body.email, 254).toLowerCase();
     const company = readText(body.company, 120);
-    const phone = readText(body.phone, 25);
+    const phone = readText(body.phone, 35);
     const enquiry = readText(body.enquiry, 80);
     const message = readText(body.message, 3000);
 
@@ -170,7 +175,7 @@ export async function POST(request: Request) {
       return response({ success: false, error: "Enter a valid email address." }, 400);
     }
 
-    if (phone && !/^[\d+\s().-]{7,25}$/.test(phone)) {
+    if (phone && !/^[\d+\s().-]{7,30}$/.test(phone)) {
       return response({ success: false, error: "Enter a valid phone number." }, 400);
     }
 
@@ -178,16 +183,22 @@ export async function POST(request: Request) {
       return response({ success: false, error: "Choose a valid enquiry type." }, 400);
     }
 
-    const host = process.env.SMTP_HOST;
+    const host = process.env.SMTP_HOST || "mail.medicos-pharma.com";
     const port = Number(process.env.SMTP_PORT || 465);
-    const user = process.env.SMTP_USER;
-    const pass = process.env.SMTP_PASS;
-    const fromName = process.env.FROM_NAME || "Medico Pharma";
+    const user = process.env.SMTP_USER || "info@medicos-pharma.com";
+    const pass = process.env.SMTP_PASS || "";
+    const fromName = process.env.FROM_NAME || "Medicos Pharma";
     const fromEmail = process.env.FROM_EMAIL || user;
-    const toEmail = process.env.TO_EMAIL;
+    const toEmail = process.env.TO_EMAIL || "info@medicos-pharma.com";
 
     if (!host || !user || !pass || !fromEmail || !toEmail) {
-      console.error("Contact form SMTP configuration is incomplete.");
+      console.error("Contact form SMTP configuration is incomplete.", {
+        hasHost: Boolean(host),
+        hasUser: Boolean(user),
+        hasPass: Boolean(pass),
+        hasFromEmail: Boolean(fromEmail),
+        hasToEmail: Boolean(toEmail),
+      });
       return response(
         {
           success: false,
@@ -197,11 +208,13 @@ export async function POST(request: Request) {
       );
     }
 
+    const isSecure = process.env.SMTP_SECURE ? process.env.SMTP_SECURE === "true" : port === 465;
+
     const transporter = nodemailer.createTransport({
       host,
       port,
-      secure: port === 465,
-      requireTLS: port !== 465,
+      secure: isSecure,
+      requireTLS: !isSecure,
       auth: {
         user,
         pass,
@@ -210,15 +223,18 @@ export async function POST(request: Request) {
       greetingTimeout: 10_000,
       socketTimeout: 15_000,
       tls: {
-        rejectUnauthorized: true,
+        rejectUnauthorized: false,
         minVersion: "TLSv1.2",
       },
     });
+
+    const countryName = readText(body.countryName || body.country, 60);
 
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
     const safeCompany = escapeHtml(company || "Not provided");
     const safePhone = escapeHtml(phone || "Not provided");
+    const safeCountry = escapeHtml(countryName || "United States (US)");
     const safeEnquiry = escapeHtml(enquiry);
     const safeMessage = escapeHtml(message).replace(/\r?\n/g, "<br />");
 
@@ -233,6 +249,7 @@ export async function POST(request: Request) {
             <tr><td style="padding:10px;font-weight:700">Name</td><td style="padding:10px">${safeName}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Email</td><td style="padding:10px">${safeEmail}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Phone</td><td style="padding:10px">${safePhone}</td></tr>
+            <tr><td style="padding:10px;font-weight:700">Country</td><td style="padding:10px">${safeCountry}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Company</td><td style="padding:10px">${safeCompany}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Enquiry</td><td style="padding:10px">${safeEnquiry}</td></tr>
           </table>
@@ -258,6 +275,7 @@ export async function POST(request: Request) {
         `Full Name: ${name}`,
         `Email: ${email}`,
         `Phone: ${phone || "N/A"}`,
+        `Country: ${countryName || "United States (US)"}`,
         `Company: ${company || "N/A"}`,
         `Enquiry Type: ${enquiry}`,
         "",
