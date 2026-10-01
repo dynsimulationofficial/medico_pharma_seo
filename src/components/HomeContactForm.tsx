@@ -43,8 +43,8 @@ export default function HomeContactForm() {
       formStartedAt: startedAt,
     };
 
-    if (!payload.name || !payload.email || payload.message.length < 20) {
-      setError("Please add your name, email and a requirement of at least 20 characters.");
+    if (!payload.name || !payload.email || !phoneInput || payload.message.length < 20) {
+      setError("Please add your name, email, phone number and a requirement of at least 20 characters.");
       setStatus("error");
       return;
     }
@@ -119,6 +119,7 @@ export default function HomeContactForm() {
           aria-label="Phone number"
           autoComplete="tel-national"
           maxLength={20}
+          required
         />
       </div>
       <textarea name="message" placeholder="Your business requirement" aria-label="Your business requirement" rows={4} maxLength={3000} required />

@@ -156,6 +156,7 @@ export async function POST(request: Request) {
     const phone = readText(body.phone, 35);
     const enquiry = readText(body.enquiry, 80);
     const message = readText(body.message, 3000);
+    const product = readText(body.product || body.productName, 150);
 
     if (!name || !email || !phone || !enquiry || !message) {
       return response(
@@ -236,6 +237,7 @@ export async function POST(request: Request) {
     const safePhone = escapeHtml(phone || "Not provided");
     const safeCountry = escapeHtml(countryName || "United States (US)");
     const safeEnquiry = escapeHtml(enquiry);
+    const safeProduct = product ? escapeHtml(product) : "";
     const safeMessage = escapeHtml(message).replace(/\r?\n/g, "<br />");
 
     const htmlContent = `
@@ -246,6 +248,11 @@ export async function POST(request: Request) {
         </div>
         <div style="padding:24px;background:#fff;color:#222">
           <table style="width:100%;border-collapse:collapse;font-size:14px">
+            ${
+              safeProduct
+                ? `<tr><td style="padding:10px;font-weight:700;background:#f0f8f2;color:#0b4d26;border-bottom:1px solid #e0e0e0">Product</td><td style="padding:10px;background:#f0f8f2;color:#0b4d26;font-weight:700;border-bottom:1px solid #e0e0e0">${safeProduct}</td></tr>`
+                : ""
+            }
             <tr><td style="padding:10px;font-weight:700">Name</td><td style="padding:10px">${safeName}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Email</td><td style="padding:10px">${safeEmail}</td></tr>
             <tr><td style="padding:10px;font-weight:700">Phone</td><td style="padding:10px">${safePhone}</td></tr>
@@ -260,6 +267,10 @@ export async function POST(request: Request) {
       </div>
     `;
 
+    const emailSubject = safeProduct
+      ? `Website Product Enquiry: [${product.replace(/[\r\n]/g, " ")}] - ${enquiry.replace(/[\r\n]/g, " ")}`
+      : `Website B2B enquiry: ${enquiry.replace(/[\r\n]/g, " ")}`;
+
     await transporter.sendMail({
       from: {
         name: fromName.replace(/[\r\n]/g, " ").slice(0, 100),
@@ -270,8 +281,9 @@ export async function POST(request: Request) {
         name: name.replace(/[\r\n]/g, " ").slice(0, 100),
         address: email,
       },
-      subject: `Website B2B enquiry: ${enquiry.replace(/[\r\n]/g, " ")}`,
+      subject: emailSubject,
       text: [
+        product ? `Enquired Product: ${product}` : "",
         `Full Name: ${name}`,
         `Email: ${email}`,
         `Phone: ${phone || "N/A"}`,
@@ -281,7 +293,7 @@ export async function POST(request: Request) {
         "",
         "Message:",
         message,
-      ].join("\n"),
+      ].filter(Boolean).join("\n"),
       html: htmlContent,
       disableFileAccess: true,
       disableUrlAccess: true,

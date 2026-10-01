@@ -22393,3 +22393,294 @@ p.svx-heading-copy { max-width: 58ch; color: var(--ink-500); font-size: 0.93rem;
     transform: none;
   }
 }
+
+/* ============================================================
+   PRODUCT ENQUIRY POPUP MODAL
+   Clean, smooth, responsive B2B modal
+   ============================================================ */
+.product-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: rgba(6, 30, 15, 0.65);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation: modalFadeIn 180ms ease-out forwards;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.product-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(6, 69, 31, 0.12);
+  box-shadow: 0 24px 60px -15px rgba(6, 69, 31, 0.35), 0 10px 25px -10px rgba(0, 0, 0, 0.1);
+  padding: 28px;
+  color: #1a2a1e;
+  animation: modalCardSlide 200ms ease-out forwards;
+}
+
+@keyframes modalCardSlide {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.product-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #e0ead9;
+  background: #f7fbf2;
+  color: #52784a;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 150ms ease;
+  line-height: 1;
+}
+
+.product-modal-close:hover {
+  background: #06451f;
+  color: #ffffff;
+  border-color: #06451f;
+}
+
+.product-modal-header {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eef3eb;
+  padding-right: 36px;
+}
+
+.product-modal-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.product-modal-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #e8f5e9;
+  color: #0a681d;
+}
+
+.product-modal-cat {
+  display: inline-block;
+  font-size: 12px;
+  color: #52784a;
+  font-weight: 500;
+}
+
+.product-modal-title {
+  font-family: var(--font-display, inherit);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #06451f;
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+}
+
+.product-modal-subtitle {
+  font-size: 0.88rem;
+  color: #607964;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.product-modal-alert {
+  padding: 12px 14px;
+  background: #fdf2f2;
+  border: 1px solid #f9d2d2;
+  border-radius: 10px;
+  color: #c53030;
+  font-size: 0.86rem;
+  margin-bottom: 16px;
+}
+
+.product-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.product-modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-modal-field.span-2 {
+  grid-column: 1 / -1;
+}
+
+.product-modal-field label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #1a3922;
+}
+
+.product-modal-field label span {
+  color: #e4573d;
+}
+
+.product-modal-field input,
+.product-modal-field select,
+.product-modal-field textarea {
+  width: 100%;
+  padding: 10px 13px;
+  font-size: 0.9rem;
+  border-radius: 9px;
+  border: 1px solid #d4e0cf;
+  background: #fafdf8;
+  color: #112817;
+  font-family: inherit;
+  transition: border-color 150ms ease, box-shadow 150ms ease, background 150ms ease;
+  outline: none;
+}
+
+.product-modal-field textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.product-modal-field input:focus,
+.product-modal-field select:focus,
+.product-modal-field textarea:focus {
+  border-color: #178b17;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(23, 139, 23, 0.15);
+}
+
+.product-modal-field.has-error input,
+.product-modal-field.has-error select,
+.product-modal-field.has-error textarea {
+  border-color: #e4573d;
+  background: #fffafa;
+}
+
+.product-modal-field .field-error {
+  font-size: 0.76rem;
+  color: #d32f2f;
+  margin-top: 2px;
+}
+
+.product-modal-actions {
+  margin-top: 18px;
+}
+
+.product-modal-submit-btn {
+  width: 100%;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: linear-gradient(105deg, #06451f, #0a681d);
+  color: #ffffff;
+  border: none;
+  font-family: inherit;
+  font-size: 0.94rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 180ms ease, transform 150ms ease, box-shadow 180ms ease;
+  box-shadow: 0 8px 20px -8px rgba(6, 69, 31, 0.6);
+}
+
+.product-modal-submit-btn:hover:not(:disabled) {
+  background: linear-gradient(105deg, #0a681d, #178b17);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px -8px rgba(6, 69, 31, 0.7);
+}
+
+.product-modal-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.product-modal-success {
+  text-align: center;
+  padding: 30px 10px 10px;
+}
+
+.product-modal-success-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #e8f5e9;
+  color: #178b17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-modal-success-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.product-modal-success h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #06451f;
+  margin: 0 0 10px;
+}
+
+.product-modal-success p {
+  color: #52784a;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+@media (max-width: 600px) {
+  .product-modal-card {
+    padding: 22px 18px;
+  }
+  .product-modal-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-modal-field.span-2 {
+    grid-column: auto;
+  }
+}
+
+button.dynamic-product-premium-enquire {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: #ffffff;
+}
