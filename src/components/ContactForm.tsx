@@ -44,7 +44,9 @@ function validate(values: Values): Errors {
     errors.email = "That email address looks incomplete.";
   }
 
-  if (values.phone && !/^[\d\s().-]{5,20}$/.test(values.phone.trim())) {
+  if (!values.phone.trim()) {
+    errors.phone = "Enter your phone number.";
+  } else if (!/^[\d\s().-]{5,20}$/.test(values.phone.trim())) {
     errors.phone = "Use a valid phone number.";
   }
 
@@ -264,7 +266,9 @@ export default function ContactForm() {
         </div>
 
         <div className={`field ${errors.phone ? "has-error" : ""}`.trim()}>
-          <label htmlFor="phone">Phone</label>
+          <label htmlFor="phone">
+            Phone <span aria-hidden="true">*</span>
+          </label>
           <div className="phone-input-group">
             <div className="country-code-select-wrap">
               <select
@@ -294,6 +298,8 @@ export default function ContactForm() {
               placeholder="(555) 000-0000"
               autoComplete="tel-national"
               maxLength={20}
+              required
+              aria-required="true"
               aria-invalid={Boolean(errors.phone)}
               aria-describedby={errors.phone ? "phone-error" : undefined}
             />

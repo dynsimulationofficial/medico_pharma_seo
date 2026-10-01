@@ -157,7 +157,7 @@ export async function POST(request: Request) {
     const enquiry = readText(body.enquiry, 80);
     const message = readText(body.message, 3000);
 
-    if (!name || !email || !enquiry || !message) {
+    if (!name || !email || !phone || !enquiry || !message) {
       return response(
         { success: false, error: "Please fill in all required fields." },
         400
@@ -175,7 +175,7 @@ export async function POST(request: Request) {
       return response({ success: false, error: "Enter a valid email address." }, 400);
     }
 
-    if (phone && !/^[\d+\s().-]{7,30}$/.test(phone)) {
+    if (!phone || !/^[\d+\s().-]{7,30}$/.test(phone)) {
       return response({ success: false, error: "Enter a valid phone number." }, 400);
     }
 
