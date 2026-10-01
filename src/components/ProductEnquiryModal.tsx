@@ -320,15 +320,15 @@ export default function ProductEnquiryModal({
                   <label htmlFor="modal-phone">
                     Phone <span aria-hidden="true">*</span>
                   </label>
-                  <div className="phone-input-group">
-                    <div className="country-code-select-wrap">
+                  <div className="product-modal-phone-group">
+                    <div className="product-modal-country-wrap">
                       <select
                         id="modal-country"
                         name="country"
                         value={values.country}
                         onChange={update("country")}
                         aria-label="Country calling code"
-                        className="country-code-select"
+                        className="product-modal-country-select"
                       >
                         {countryCodes.map((item) => (
                           <option key={item.code} value={item.code}>
@@ -346,6 +346,7 @@ export default function ProductEnquiryModal({
                       placeholder="(555) 000-0000"
                       autoComplete="tel-national"
                       maxLength={20}
+                      className="product-modal-phone-input"
                       required
                     />
                   </div>
