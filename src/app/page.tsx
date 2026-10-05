@@ -2,6 +2,10 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import HomeContactForm from "@/components/HomeContactForm";
+import { categories } from "@/data/products";
+
+const categoryCount = categories.length;
+const categoryCountLabel = String(categoryCount).padStart(2, "0");
 
 
 const products = [
@@ -9,7 +13,7 @@ const products = [
     number: "01",
     title: "Pharmaceutical Capsules",
     label: "Oral solid dosage",
-    href: "/products/pharmaceutical-tablets",
+    href: "/products/pharmaceutical-capsules",
     image: "/medico pharma2.png",
     icon: "diagnostic",
   },
@@ -176,7 +180,7 @@ const process = [
 const faqs = [
   [
     "What product categories does Medico Pharma cover?",
-    "The website portfolio includes Pharmaceutical Tablets, Capsules, Injections, Anti Depressants Medicines, Skin Care Products, Pharmaceutical Medicines, Ointments, Antibiotic Medicines and Steroids Injections.",
+    `The website portfolio covers ${categoryCount} product categories. These include dosage forms such as Pharmaceutical Tablets, Capsules, Injections, Syrups, Creams and Ointments, and therapy ranges such as Anti Cancer, Antidiabetic, Weight Loss, Cardiovascular, HIV Antiretroviral, Antibiotic, Anti Depressants and Skin Care. The Products page lists every category.`,
   ],
   [
     "Do you support private-label or third-party manufacturing enquiries?",
@@ -311,7 +315,7 @@ export default function Home() {
 
             <article className="hv-card hv-card-batch hero-portfolio-card">
               <span className="batch-code">PORTFOLIO / MP-2026</span>
-              <strong>9 product groups</strong>
+              <strong>{categoryCount} product groups</strong>
               <div className="mini-bars" aria-hidden="true"><i /><i /><i /><i /></div>
             </article>
 
@@ -434,7 +438,7 @@ export default function Home() {
             <div className="overview-stats-strip">
               <div className="overview-stat-item">
                 <span className="overview-stat-icon"><HomeIcon type="grid" /></span>
-                <div><strong>9</strong><b>Product Categories</b><small>Focused healthcare portfolio</small></div>
+                <div><strong>{categoryCount}</strong><b>Product Categories</b><small>Focused healthcare portfolio</small></div>
               </div>
 
               <div className="overview-stat-item">
@@ -614,7 +618,7 @@ export default function Home() {
               and give visitors confidence about the next step.
             </p>
             <div className="why-choose-statline">
-              <div><strong>9</strong><span>product categories</span></div>
+              <div><strong>{categoryCount}</strong><span>product categories</span></div>
               <div><strong>5</strong><span>service routes</span></div>
               <div><strong>2</strong><span>core resources</span></div>
             </div>
@@ -697,7 +701,7 @@ export default function Home() {
                   <strong>PRODUCT<br />CATALOG</strong>
                   <div><i /><i /><i /></div>
                 </div>
-                <span className="resource-catalog-chip">09 categories</span>
+                <span className="resource-catalog-chip">{categoryCountLabel} categories</span>
               </div>
             </Link>
 

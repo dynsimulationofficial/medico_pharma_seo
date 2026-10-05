@@ -2,6 +2,18 @@
 
 import Link from "next/link";
 import type { CSSProperties } from "react";
+import categoriesData from "@/data/categories.json";
+
+type CategoryEntry = {
+  name: string;
+  slug: string;
+  internalUrl: string;
+  image: string;
+  productCount?: number;
+};
+
+// Every category on the site (the grid above shows the main nine).
+const allCategories = categoriesData as CategoryEntry[];
 
 const categories = [
   {
@@ -102,7 +114,7 @@ export default function ProductsPage() {
 
           <div className="medico-cat-hero-stat">
             <span>PRODUCT CATEGORIES</span>
-            <strong>09</strong>
+            <strong>{String(allCategories.length).padStart(2, "0")}</strong>
             <p>B2B catalogue categories</p>
             <svg viewBox="0 0 220 34" aria-hidden="true">
               <path d="M0 18h42l8-12 10 24 8-18 10 6h26l7-6 10 12 8-6h91" />
@@ -162,6 +174,44 @@ export default function ProductsPage() {
               <i className="medico-cat-orbit medico-cat-orbit-a" aria-hidden="true" />
               <i className="medico-cat-orbit medico-cat-orbit-b" aria-hidden="true" />
             </Link>
+          </div>
+
+          <div className="medico-cat-directory" id="all-categories">
+            <div className="medico-cat-directory-head">
+              <div>
+                <span>Complete directory</span>
+                <h2>All product categories</h2>
+              </div>
+              <p>{allCategories.length} categories</p>
+            </div>
+
+            <ul className="medico-cat-directory-grid">
+              {allCategories.map((category) => {
+                const count = category.productCount ?? 0;
+
+                return (
+                  <li key={category.slug}>
+                    <Link
+                      href={category.internalUrl}
+                      className="medico-cat-directory-item"
+                    >
+                      <span
+                        className="medico-cat-directory-thumb"
+                        style={{ backgroundImage: `url("${category.image}")` }}
+                        aria-hidden="true"
+                      />
+                      <span className="medico-cat-directory-copy">
+                        <b>{category.name}</b>
+                        <small>
+                          {count} {count === 1 ? "item" : "items"}
+                        </small>
+                      </span>
+                      <i aria-hidden="true">→</i>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
 
           <div className="medico-cat-bottom-nav">

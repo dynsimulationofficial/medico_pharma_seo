@@ -65,7 +65,7 @@ const menuGroups = {
     href: "/products",
     eyebrow: "Products",
     description:
-      "Explore ten pharmaceutical product categories, dosage formats and specialty medicine ranges.",
+      "Explore our pharmaceutical product categories, dosage formats and specialty medicine ranges.",
     groups: productGroups,
   },
   Services: {

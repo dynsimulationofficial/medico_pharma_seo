@@ -80,6 +80,32 @@ const nextConfig: NextConfig = {
         destination: "/terms-and-conditions",
         permanent: true,
       },
+      // Category pages that were renamed or merged — old links keep working
+      {
+        source: "/products/herbal-capsul",
+        destination: "/products/herbal-capsules",
+        permanent: true,
+      },
+      {
+        source: "/products/protein-powder",
+        destination: "/products/protein-powders",
+        permanent: true,
+      },
+      {
+        source: "/products/hypertension-medicine",
+        destination: "/products/cardiovascular-medicine",
+        permanent: true,
+      },
+      {
+        source: "/products/check-shirt",
+        destination: "/products/pharmaceutical-capsules",
+        permanent: true,
+      },
+      {
+        source: "/products/variable-auto-transformer",
+        destination: "/products/other-products",
+        permanent: true,
+      },
     ];
   },
 };

@@ -4,8 +4,8 @@
     "location": "Mumbai, Maharashtra, India",
     "sourceUrl": "https://www.indiamart.com/medicospharma/products.html"
   },
-  "totalCategories": 37,
-  "totalProducts": 180,
+  "totalCategories": 36,
+  "totalProducts": 193,
   "categories": [
     {
       "id": "pharmaceutical-tablets",
@@ -14,7 +14,7 @@
       "internalUrl": "/products/pharmaceutical-tablets",
       "image": "/images/categories/pharmaceutical-tablets.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-      "productCount": 50,
+      "productCount": 52,
       "description": "Explore high-quality range of Pharmaceutical Tablets supplied by Medico Pharma.",
       "products": [
         {
@@ -90,7 +90,7 @@
           "categorySlug": "pharmaceutical-tablets",
           "price": "₹ 1,506/Box",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/50mg-ocivox-fluvoxamine-maleate-tablets.jpg",
+          "image": "/images/products/pharmaceutical-tablets/50mg-ocivox-fluvoxamine-maleate-tablets-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338333417/RB/SD/HW/15001533/ocivox-50mg-fluvoxamine-maleate-tablets-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-tablets/50mg-ocivox-fluvoxamine-maleate-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#23144565133"
@@ -103,7 +103,7 @@
           "categorySlug": "pharmaceutical-tablets",
           "price": "₹ 200/Stripe",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/tadapox-tadalafil-dapoxetine-tablets.jpg",
+          "image": "/images/products/pharmaceutical-tablets/tadapox-tadalafil-dapoxetine-tablets-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467184/HC/WF/CA/15001533/tadalafil-dapoxetine-tablet-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-tablets/tadapox-tadalafil-dapoxetine-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2852143785533"
@@ -304,19 +304,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853269033591"
         },
         {
-          "id": "2852106732273",
-          "name": "Eutropin 4iu Injection",
-          "slug": "eutropin-4iu-injection",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/eutropin-4iu-injection.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2023/8/336389581/AZ/TH/EP/15001533/product-jpeg-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/eutropin-4iu-injection",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2852106732273"
-        },
-        {
           "id": "2853288040762",
           "name": "Tenormin 50mg",
           "slug": "tenormin-50mg",
@@ -434,19 +421,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853269033812"
         },
         {
-          "id": "2853313548388",
-          "name": "Testosterone Propionate",
-          "slug": "testosterone-propionate",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/testosterone-propionate.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/380743721/YT/XN/VX/15001533/product-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/testosterone-propionate",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853313548388"
-        },
-        {
           "id": "25693087533",
           "name": "12mg Ivermectol Ivermectin Tablet",
           "slug": "12mg-ivermectol-ivermectin-tablet",
@@ -458,19 +432,6 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338323301/YK/WH/QT/15001533/ivermect-ivermectin-tablet-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-tablets/12mg-ivermectol-ivermectin-tablet",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#25693087533"
-        },
-        {
-          "id": "21990638512",
-          "name": "Humalog 100 Iu",
-          "slug": "humalog-100-iu",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/humalog-100-iu.jpg",
-          "remoteImage": "https://5.imimg.com/data5/DV/GZ/RF/ANDROID-15001533/prod-20200129-2352587520019116082774839-jpg-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/humalog-100-iu",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#21990638512"
         },
         {
           "id": "23144562848",
@@ -499,19 +460,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#23144556762"
         },
         {
-          "id": "2853329261430",
-          "name": "30g Permite Permethrin Cream",
-          "slug": "30g-permite-permethrin-cream",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/30g-permite-permethrin-cream.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381492528/IK/RW/ZO/15001533/product-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/30g-permite-permethrin-cream",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853329261430"
-        },
-        {
           "id": "2852517841348",
           "name": "10Mg Baclosign Baclofen Tablet",
           "slug": "10mg-baclosign-baclofen-tablet",
@@ -538,45 +486,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2852517842591"
         },
         {
-          "id": "2852143785230",
-          "name": "Cephadex 250 Cephalexin Capsules",
-          "slug": "cephadex-250-cephalexin-capsules",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/cephadex-250-cephalexin-capsules.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/cephadex-250-cephalexin-capsules",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2852143785230"
-        },
-        {
-          "id": "2853288044397",
-          "name": "Brain Up Syrup",
-          "slug": "brain-up-syrup",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/brain-up-syrup.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/brain-up-syrup",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853288044397"
-        },
-        {
-          "id": "2853329260388",
-          "name": "Cernos Testosterone Undecanoate Soft Gelatin Capsules",
-          "slug": "cernos-testosterone-undecanoate-soft-gelatin-capsules",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/cernos-testosterone-undecanoate-soft-gelatin-capsules.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/cernos-testosterone-undecanoate-soft-gelatin-capsules",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853329260388"
-        },
-        {
           "id": "2853329227533",
           "name": "Duloxetine Tablets",
           "slug": "duloxetine-tablets",
@@ -584,36 +493,10 @@
           "categorySlug": "pharmaceutical-tablets",
           "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/duloxetine-tablets.jpg",
+          "image": "/images/products/pharmaceutical-capsules/duloxetine-tablets.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
           "internalUrl": "/products/pharmaceutical-tablets/duloxetine-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853329227533"
-        },
-        {
-          "id": "2853288042797",
-          "name": "Cephadex 250",
-          "slug": "cephadex-250",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/cephadex-250.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/cephadex-250",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853288042797"
-        },
-        {
-          "id": "2853355347933",
-          "name": "100mg Vitamin C Ascorbic Acid Injection",
-          "slug": "100mg-vitamin-c-ascorbic-acid-injection",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/100mg-vitamin-c-ascorbic-acid-injection.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/100mg-vitamin-c-ascorbic-acid-injection",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853355347933"
         },
         {
           "id": "2853329227233",
@@ -623,7 +506,7 @@
           "categorySlug": "pharmaceutical-tablets",
           "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/imipramine-50-mg.jpg",
+          "image": "/images/products/pharmaceutical-injection/imipramine-50-mg.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
           "internalUrl": "/products/pharmaceutical-tablets/imipramine-50-mg",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853329227233"
@@ -636,23 +519,10 @@
           "categorySlug": "pharmaceutical-tablets",
           "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/vilitra-10mg-tablet.jpg",
+          "image": "/images/products/pharmaceutical-injection/vilitra-10mg-tablet.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
           "internalUrl": "/products/pharmaceutical-tablets/vilitra-10mg-tablet",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853288044791"
-        },
-        {
-          "id": "2853329227988",
-          "name": "Retin A 0.1",
-          "slug": "retin-a-01",
-          "category": "Pharmaceutical Tablets",
-          "categorySlug": "pharmaceutical-tablets",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/retin-a-01.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-tablets/retin-a-01",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853329227988"
         },
         {
           "id": "2853288042548",
@@ -662,10 +532,166 @@
           "categorySlug": "pharmaceutical-tablets",
           "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-tablets/progynova-2mg-tablets.jpg",
+          "image": "/images/products/pharmaceutical-injection/progynova-2mg-tablets.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
           "internalUrl": "/products/pharmaceutical-tablets/progynova-2mg-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853288042548"
+        },
+        {
+          "id": "2853329227012",
+          "name": "Danabol Tablet",
+          "slug": "danabol-tablet",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 1,500/Box",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/danabol-tablet-rep.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338330565/LG/DG/FU/15001533/stanozolol-tablets-and-capsules-500x500.jpeg",
+          "internalUrl": "/products/pharmaceutical-tablets/danabol-tablet",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853329227012"
+        },
+        {
+          "id": "2853288043992",
+          "name": "Trazodone 50mg",
+          "slug": "trazodone-50mg",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 100/Stripe",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/trazodone-50mg-rep.jpg",
+          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-tablets/trazodone-50mg",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853288043992"
+        },
+        {
+          "id": "2853288042801",
+          "name": "Cipcal Calcium Vitamin D3 Tablets",
+          "slug": "cipcal-calcium-vitamin-d3-tablets",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 90/Stripe",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/cipcal-calcium-vitamin-d3-tablets-rep.jpg",
+          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-tablets/cipcal-calcium-vitamin-d3-tablets",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042801"
+        },
+        {
+          "id": "2853288042802",
+          "name": "Labetalol 100mg Tablets",
+          "slug": "labetalol-100mg-tablets",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 150/Stripe",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/labetalol-100mg-tablets-rep.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
+          "internalUrl": "/products/pharmaceutical-tablets/labetalol-100mg-tablets",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042802"
+        },
+        {
+          "id": "2853288042803",
+          "name": "Zoviclovir Acyclovir Tablets",
+          "slug": "zoviclovir-acyclovir-tablets",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 210/Box",
+          "currency": "INR",
+          "image": "/Medics_pharma1.png",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501082015/500mg-valclovir-valacyclovir-tablet-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-tablets/zoviclovir-acyclovir-tablets",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042803"
+        },
+        {
+          "id": "2852143785301",
+          "name": "0.5mg Deetor Dutasteride Tablets",
+          "slug": "05mg-deetor-dutasteride-tablets",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 180/Strip",
+          "currency": "INR",
+          "image": "/images/products/anti-cancer-medicine/05mg-deetor-dutasteride-tablets.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501123827/WF/IN/IE/15001533/dutasteride-avodart-500x500.jpeg",
+          "internalUrl": "/products/pharmaceutical-tablets/05mg-deetor-dutasteride-tablets",
+          "productUrl": "https://www.indiamart.com/medicospharma/anti-cancer-medicine.html#2852143785301"
+        },
+        {
+          "id": "2852143785302",
+          "name": "Hypnite 3 Mg",
+          "slug": "hypnite-3-mg",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 110/Strip",
+          "currency": "INR",
+          "image": "/images/products/anti-cancer-medicine/hypnite-3-mg.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
+          "internalUrl": "/products/pharmaceutical-tablets/hypnite-3-mg",
+          "productUrl": "https://www.indiamart.com/medicospharma/anti-cancer-medicine.html#2852143785302"
+        },
+        {
+          "id": "2852143785304",
+          "name": "Hypnite 1 Mg",
+          "slug": "hypnite-1-mg",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 60/Strip",
+          "currency": "INR",
+          "image": "/images/products/anti-cancer-medicine/hypnite-1-mg.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
+          "internalUrl": "/products/pharmaceutical-tablets/hypnite-1-mg",
+          "productUrl": "https://www.indiamart.com/medicospharma/anti-cancer-medicine.html#2852143785304"
+        },
+        {
+          "id": "2852361503191",
+          "name": "Hypnite 2 Mg",
+          "slug": "hypnite-2-mg",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 35/Box",
+          "currency": "INR",
+          "image": "/images/products/antibiotic-medicines/hypnite-2-mg.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
+          "internalUrl": "/products/pharmaceutical-tablets/hypnite-2-mg",
+          "productUrl": "https://www.indiamart.com/medicospharma/antibiotic-medicines.html#2852361503191"
+        },
+        {
+          "id": "2856430602973",
+          "name": "Sleepose 60",
+          "slug": "sleepose-60",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "₹ 200/Strip",
+          "currency": "INR",
+          "image": "/images/products/erectile-dysfunction-medicine/sleepose-60.jpg",
+          "remoteImage": "https://5.imimg.com/data5/IOS/Default/2025/4/506258714/NB/OD/NN/15001533/product-jpeg-500x500.png",
+          "internalUrl": "/products/pharmaceutical-tablets/sleepose-60",
+          "productUrl": "https://www.indiamart.com/medicospharma/erectile-dysfunction-medicine.html#2856430602973"
+        },
+        {
+          "id": "2861005202606",
+          "name": "5mg Eliquis Apixaban Tablets",
+          "slug": "5mg-eliquis-apixaban-tablets",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/cardiovascular-medicine/5mg-eliquis-apixaban-tablets.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-tablets/5mg-eliquis-apixaban-tablets",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202608",
+          "name": "Biktarvy Bictegravir Emtricitabine Tenofovir Alafenamide Tablets",
+          "slug": "biktarvy-bictegravir-emtricitabine-tenofovir-alafenamide-tablets",
+          "category": "Pharmaceutical Tablets",
+          "categorySlug": "pharmaceutical-tablets",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/hiv-antiretroviral-medicine/biktarvy-bictegravir-emtricitabine-tenofovir-alafenamide-tablets.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-tablets/biktarvy-bictegravir-emtricitabine-tenofovir-alafenamide-tablets",
+          "productUrl": ""
         }
       ]
     },
@@ -676,7 +702,7 @@
       "internalUrl": "/products/pharmaceutical-capsules",
       "image": "/images/categories/pharmaceutical-capsules.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/337927038/JX/ST/DG/15001533/glutathione-injection-500x500.jpeg",
-      "productCount": 15,
+      "productCount": 13,
       "description": "Explore high-quality range of Pharmaceutical Capsules supplied by Medico Pharma.",
       "products": [
         {
@@ -693,19 +719,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2852143785230"
         },
         {
-          "id": "2853288044397",
-          "name": "Brain Up Syrup",
-          "slug": "brain-up-syrup",
-          "category": "Pharmaceutical Capsules",
-          "categorySlug": "pharmaceutical-capsules",
-          "price": "₹ 1,047/Bottle",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/brain-up-syrup.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379466238/IC/GD/BQ/15001533/img-20240121-181216-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-capsules/brain-up-syrup",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288044397"
-        },
-        {
           "id": "2853329260388",
           "name": "Cernos Testosterone Undecanoate Soft Gelatin Capsules",
           "slug": "cernos-testosterone-undecanoate-soft-gelatin-capsules",
@@ -717,19 +730,6 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501415110/FK/SZ/XA/15001533/cernos-capsules-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-capsules/cernos-testosterone-undecanoate-soft-gelatin-capsules",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853329260388"
-        },
-        {
-          "id": "2853329227533",
-          "name": "Duloxetine Tablets",
-          "slug": "duloxetine-tablets",
-          "category": "Pharmaceutical Capsules",
-          "categorySlug": "pharmaceutical-capsules",
-          "price": "₹ 100/Stripe",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/duloxetine-tablets.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381459172/CB/PS/ZM/15001533/product-jpeg-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-capsules/duloxetine-tablets",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853329227533"
         },
         {
           "id": "2853288042797",
@@ -752,7 +752,7 @@
           "categorySlug": "pharmaceutical-capsules",
           "price": "₹ 350/Box",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/tretiva-20-isotretinoin-capsules.jpg",
+          "image": "/images/products/pharmaceutical-capsules/tretiva-20-isotretinoin-capsules-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431714/ND/UW/DH/15001533/img-4314-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-capsules/tretiva-20-isotretinoin-capsules",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042798"
@@ -765,7 +765,7 @@
           "categorySlug": "pharmaceutical-capsules",
           "price": "₹ 222/Box",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/125mg-metolar-xr-metoprolol-succinate-extended-release-capsules.jpg",
+          "image": "/images/products/pharmaceutical-capsules/125mg-metolar-xr-metoprolol-succinate-extended-release-capsules-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467879/HP/EB/AO/15001533/product-jpeg-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-capsules/125mg-metolar-xr-metoprolol-succinate-extended-release-capsules",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042799"
@@ -778,49 +778,10 @@
           "categorySlug": "pharmaceutical-capsules",
           "price": "₹ 180/Box",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/aspirin-plus-dipyridamole-capsules.jpg",
+          "image": "/images/products/pharmaceutical-capsules/aspirin-plus-dipyridamole-capsules-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-capsules/aspirin-plus-dipyridamole-capsules",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042800"
-        },
-        {
-          "id": "2853288042801",
-          "name": "Cipcal Calcium Vitamin D3 Tablets",
-          "slug": "cipcal-calcium-vitamin-d3-tablets",
-          "category": "Pharmaceutical Capsules",
-          "categorySlug": "pharmaceutical-capsules",
-          "price": "₹ 90/Stripe",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/cipcal-calcium-vitamin-d3-tablets.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-capsules/cipcal-calcium-vitamin-d3-tablets",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042801"
-        },
-        {
-          "id": "2853288042802",
-          "name": "Labetalol 100mg Tablets",
-          "slug": "labetalol-100mg-tablets",
-          "category": "Pharmaceutical Capsules",
-          "categorySlug": "pharmaceutical-capsules",
-          "price": "₹ 150/Stripe",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/labetalol-100mg-tablets.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
-          "internalUrl": "/products/pharmaceutical-capsules/labetalol-100mg-tablets",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042802"
-        },
-        {
-          "id": "2853288042803",
-          "name": "Zoviclovir Acyclovir Tablets",
-          "slug": "zoviclovir-acyclovir-tablets",
-          "category": "Pharmaceutical Capsules",
-          "categorySlug": "pharmaceutical-capsules",
-          "price": "₹ 210/Box",
-          "currency": "INR",
-          "image": "/Medics_pharma1.png",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501082015/500mg-valclovir-valacyclovir-tablet-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-capsules/zoviclovir-acyclovir-tablets",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042803"
         },
         {
           "id": "2853288042804",
@@ -830,7 +791,7 @@
           "categorySlug": "pharmaceutical-capsules",
           "price": "₹ 175/Strip",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/cyclobenzaprine-hydrochloride-capsules.jpg",
+          "image": "/images/products/other-products/cbenzprime-er-15mg-capsules.jpg",
           "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
           "internalUrl": "/products/pharmaceutical-capsules/cyclobenzaprine-hydrochloride-capsules",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042804"
@@ -843,7 +804,7 @@
           "categorySlug": "pharmaceutical-capsules",
           "price": "₹ 130/Strip",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/indomethacin-capsules-25mg.jpg",
+          "image": "/images/products/pharmaceutical-capsules/indomethacin-capsules-25mg-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379462558/UR/QI/VL/15001533/img-20240121-180533-500x500.jpg",
           "internalUrl": "/products/pharmaceutical-capsules/indomethacin-capsules-25mg",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042805"
@@ -856,7 +817,7 @@
           "categorySlug": "pharmaceutical-capsules",
           "price": "₹ 65/Strip",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/omeprazole-capsules-20mg.jpg",
+          "image": "/images/products/pharmaceutical-capsules/omeprazole-capsules-20mg-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501134646/RM/SB/AT/15001533/img-20240121-163701-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-capsules/omeprazole-capsules-20mg",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042806"
@@ -869,10 +830,49 @@
           "categorySlug": "pharmaceutical-capsules",
           "price": "₹ 240/Strip",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-capsules/pregabalin-methylcobalamin-capsules.jpg",
+          "image": "/images/products/pharmaceutical-capsules/pregabalin-methylcobalamin-capsules-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381459172/CB/PS/ZM/15001533/product-jpeg-500x500.jpg",
           "internalUrl": "/products/pharmaceutical-capsules/pregabalin-methylcobalamin-capsules",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042807"
+        },
+        {
+          "id": "2853288041997",
+          "name": "Chexid D",
+          "slug": "chexid-d",
+          "category": "Pharmaceutical Capsules",
+          "categorySlug": "pharmaceutical-capsules",
+          "price": "₹ 250/Box",
+          "currency": "INR",
+          "image": "/images/products/check-shirt/chexid-d.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459023/VW/ON/TT/15001533/img-20240121-174234-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-capsules/chexid-d",
+          "productUrl": "https://www.indiamart.com/medicospharma/check-shirt.html#2853288041997"
+        },
+        {
+          "id": "2853288043993",
+          "name": "Doxepin 25 Mg Capsules",
+          "slug": "doxepin-25-mg-capsules",
+          "category": "Pharmaceutical Capsules",
+          "categorySlug": "pharmaceutical-capsules",
+          "price": "₹ 125/Stripe",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-injection/doxepin-25-mg-capsules.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379462205/EF/KC/SI/15001533/img-20240121-180149-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-capsules/doxepin-25-mg-capsules",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853288043993"
+        },
+        {
+          "id": "2852143785202",
+          "name": "75mg Antiflu Oseltamivir Capsules",
+          "slug": "75mg-antiflu-oseltamivir-capsules",
+          "category": "Pharmaceutical Capsules",
+          "categorySlug": "pharmaceutical-capsules",
+          "price": "₹ 480/Strip",
+          "currency": "INR",
+          "image": "/images/products/antimalarial-medicine/75mg-antiflu-oseltamivir-capsules.jpg",
+          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-capsules/75mg-antiflu-oseltamivir-capsules",
+          "productUrl": "https://www.indiamart.com/medicospharma/antimalarial-medicine.html#2852143785202"
         }
       ]
     },
@@ -883,7 +883,7 @@
       "internalUrl": "/products/pharmaceutical-injection",
       "image": "/images/categories/pharmaceutical-injection.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501404744/LB/ZE/LF/15001533/100mg-vitamin-c-ascorbic-acid-injection-500x500.jpg",
-      "productCount": 12,
+      "productCount": 15,
       "description": "Explore high-quality range of Pharmaceutical Injection supplied by Medico Pharma.",
       "products": [
         {
@@ -900,58 +900,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853355347933"
         },
         {
-          "id": "2853329227233",
-          "name": "Imipramine 50 Mg",
-          "slug": "imipramine-50-mg",
-          "category": "Pharmaceutical Injection",
-          "categorySlug": "pharmaceutical-injection",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-injection/imipramine-50-mg.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-injection/imipramine-50-mg",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853329227233"
-        },
-        {
-          "id": "2853288044791",
-          "name": "Vilitra 10mg Tablet",
-          "slug": "vilitra-10mg-tablet",
-          "category": "Pharmaceutical Injection",
-          "categorySlug": "pharmaceutical-injection",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-injection/vilitra-10mg-tablet.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379466836/BB/KW/RD/15001533/img-20240121-183039-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-injection/vilitra-10mg-tablet",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853288044791"
-        },
-        {
-          "id": "2853329227988",
-          "name": "Retin A 0.1",
-          "slug": "retin-a-01",
-          "category": "Pharmaceutical Injection",
-          "categorySlug": "pharmaceutical-injection",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-injection/retin-a-01.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381490719/GA/SJ/IE/15001533/product-jpeg-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-injection/retin-a-01",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853329227988"
-        },
-        {
-          "id": "2853288042548",
-          "name": "Progynova 2mg Tablets",
-          "slug": "progynova-2mg-tablets",
-          "category": "Pharmaceutical Injection",
-          "categorySlug": "pharmaceutical-injection",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-injection/progynova-2mg-tablets.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379461111/XI/LP/ZX/15001533/img-20240121-174917-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-injection/progynova-2mg-tablets",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853288042548"
-        },
-        {
           "id": "2852516591533",
           "name": "ZyhCG Human Chorionic Gonadotropin Injection",
           "slug": "zyhcg-human-chorionic-gonadotropin-injection",
@@ -963,32 +911,6 @@
           "remoteImage": "https://5.imimg.com/data5/IOS/Default/2023/9/346073808/ON/LU/VE/15001533/product-jpeg-500x500.png",
           "internalUrl": "/products/pharmaceutical-injection/zyhcg-human-chorionic-gonadotropin-injection",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2852516591533"
-        },
-        {
-          "id": "2853329227012",
-          "name": "Danabol Tablet",
-          "slug": "danabol-tablet",
-          "category": "Pharmaceutical Injection",
-          "categorySlug": "pharmaceutical-injection",
-          "price": "₹ 1,500/Box",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-injection/danabol-tablet.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338330565/LG/DG/FU/15001533/stanozolol-tablets-and-capsules-500x500.jpeg",
-          "internalUrl": "/products/pharmaceutical-injection/danabol-tablet",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853329227012"
-        },
-        {
-          "id": "2852143785049",
-          "name": "Tugain 5% Solution",
-          "slug": "tugain-5-solution",
-          "category": "Pharmaceutical Injection",
-          "categorySlug": "pharmaceutical-injection",
-          "price": "₹ 1,000/Unit",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-injection/tugain-5-solution.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338236898/LS/SG/GB/15001533/testosterone-enanthate-injection-500x500.jpeg",
-          "internalUrl": "/products/pharmaceutical-injection/tugain-5-solution",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2852143785049"
         },
         {
           "id": "26016481573",
@@ -1004,32 +926,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#26016481573"
         },
         {
-          "id": "2853288043992",
-          "name": "Trazodone 50mg",
-          "slug": "trazodone-50mg",
-          "category": "Pharmaceutical Injection",
-          "categorySlug": "pharmaceutical-injection",
-          "price": "₹ 100/Stripe",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-injection/trazodone-50mg.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-injection/trazodone-50mg",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853288043992"
-        },
-        {
-          "id": "2853288043993",
-          "name": "Doxepin 25 Mg Capsules",
-          "slug": "doxepin-25-mg-capsules",
-          "category": "Pharmaceutical Injection",
-          "categorySlug": "pharmaceutical-injection",
-          "price": "₹ 125/Stripe",
-          "currency": "INR",
-          "image": "/images/products/pharmaceutical-injection/doxepin-25-mg-capsules.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379462205/EF/KC/SI/15001533/img-20240121-180149-500x500.jpg",
-          "internalUrl": "/products/pharmaceutical-injection/doxepin-25-mg-capsules",
-          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853288043993"
-        },
-        {
           "id": "2853329227013",
           "name": "Primobolan Depot",
           "slug": "primobolan-depot",
@@ -1037,10 +933,153 @@
           "categorySlug": "pharmaceutical-injection",
           "price": "₹ 2,200/Box",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-injection/primobolan-depot.jpg",
+          "image": "/images/products/pharmaceutical-injection/primobolan-depot-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393148/TU/PR/OP/15001533/testosterone-propionate-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-injection/primobolan-depot",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853329227013"
+        },
+        {
+          "id": "2852106732273",
+          "name": "Eutropin 4iu Injection",
+          "slug": "eutropin-4iu-injection",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/eutropin-4iu-injection.jpg",
+          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2023/8/336389581/AZ/TH/EP/15001533/product-jpeg-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-injection/eutropin-4iu-injection",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2852106732273"
+        },
+        {
+          "id": "21990638512",
+          "name": "Humalog 100 Iu",
+          "slug": "humalog-100-iu",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/humalog-100-iu.jpg",
+          "remoteImage": "https://5.imimg.com/data5/DV/GZ/RF/ANDROID-15001533/prod-20200129-2352587520019116082774839-jpg-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-injection/humalog-100-iu",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#21990638512"
+        },
+        {
+          "id": "2853313548388",
+          "name": "Testosterone Propionate",
+          "slug": "testosterone-propionate",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/testosterone-propionate.jpg",
+          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/380743721/YT/XN/VX/15001533/product-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-injection/testosterone-propionate",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853313548388"
+        },
+        {
+          "id": "2861005202601",
+          "name": "100mg Keytruda Pembrolizumab Injection",
+          "slug": "100mg-keytruda-pembrolizumab-injection",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/anti-cancer-medicine/100mg-keytruda-pembrolizumab-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-injection/100mg-keytruda-pembrolizumab-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202602",
+          "name": "2.5mg Mounjaro Tirzepatide Injection",
+          "slug": "25mg-mounjaro-tirzepatide-injection",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/antidiabetic-medicine/25mg-mounjaro-tirzepatide-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-injection/25mg-mounjaro-tirzepatide-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202603",
+          "name": "0.25mg Ozempic Semaglutide Injection",
+          "slug": "025mg-ozempic-semaglutide-injection",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/antidiabetic-medicine/025mg-ozempic-semaglutide-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-injection/025mg-ozempic-semaglutide-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202604",
+          "name": "300mg Dupixent Dupilumab Injection",
+          "slug": "300mg-dupixent-dupilumab-injection",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/skin-care-products/300mg-dupixent-dupilumab-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-injection/300mg-dupixent-dupilumab-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202605",
+          "name": "150mg Skyrizi Risankizumab Injection",
+          "slug": "150mg-skyrizi-risankizumab-injection",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/skin-care-products/150mg-skyrizi-risankizumab-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-injection/150mg-skyrizi-risankizumab-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202607",
+          "name": "400mg Darzalex Daratumumab Injection",
+          "slug": "400mg-darzalex-daratumumab-injection",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/anti-cancer-medicine/400mg-darzalex-daratumumab-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-injection/400mg-darzalex-daratumumab-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202609",
+          "name": "2.5mg Zepbound Tirzepatide Injection",
+          "slug": "25mg-zepbound-tirzepatide-injection",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/weight-loss-medicine/25mg-zepbound-tirzepatide-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-injection/25mg-zepbound-tirzepatide-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202610",
+          "name": "0.25mg Wegovy Semaglutide Injection",
+          "slug": "025mg-wegovy-semaglutide-injection",
+          "category": "Pharmaceutical Injection",
+          "categorySlug": "pharmaceutical-injection",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/weight-loss-medicine/025mg-wegovy-semaglutide-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/pharmaceutical-injection/025mg-wegovy-semaglutide-injection",
+          "productUrl": ""
         }
       ]
     },
@@ -1051,7 +1090,7 @@
       "internalUrl": "/products/anti-depressants-medicines",
       "image": "/images/categories/anti-depressants-medicines.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
-      "productCount": 11,
+      "productCount": 14,
       "description": "Explore high-quality range of Anti Depressants Medicines supplied by Medico Pharma.",
       "products": [
         {
@@ -1196,6 +1235,45 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
           "internalUrl": "/products/anti-depressants-medicines/rapofil-200",
           "productUrl": "https://www.indiamart.com/medicospharma/anti-depressants-medicines.html#2855091585617"
+        },
+        {
+          "id": "2853288043992",
+          "name": "Trazodone 50mg",
+          "slug": "trazodone-50mg",
+          "category": "Anti Depressants Medicines",
+          "categorySlug": "anti-depressants-medicines",
+          "price": "₹ 100/Stripe",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/trazodone-50mg-rep.jpg",
+          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
+          "internalUrl": "/products/anti-depressants-medicines/trazodone-50mg",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853288043992"
+        },
+        {
+          "id": "2853288043993",
+          "name": "Doxepin 25 Mg Capsules",
+          "slug": "doxepin-25-mg-capsules",
+          "category": "Anti Depressants Medicines",
+          "categorySlug": "anti-depressants-medicines",
+          "price": "₹ 125/Stripe",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-injection/doxepin-25-mg-capsules.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379462205/EF/KC/SI/15001533/img-20240121-180149-500x500.jpg",
+          "internalUrl": "/products/anti-depressants-medicines/doxepin-25-mg-capsules",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2853288043993"
+        },
+        {
+          "id": "2853329227391",
+          "name": "Imipramine Hydrochloride Tablets 75 Mg",
+          "slug": "imipramine-hydrochloride-tablets-75-mg",
+          "category": "Anti Depressants Medicines",
+          "categorySlug": "anti-depressants-medicines",
+          "price": "₹ 65/Strip",
+          "currency": "INR",
+          "image": "/images/products/anti-psychotic-medicines/imipramine-hydrochloride-tablets-75-mg.jpg",
+          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458839/UI/VQ/OG/15001533/product-jpeg-500x500.jpg",
+          "internalUrl": "/products/anti-depressants-medicines/imipramine-hydrochloride-tablets-75-mg",
+          "productUrl": "https://www.indiamart.com/medicospharma/anti-psychotic-medicines.html#2853329227391"
         }
       ]
     },
@@ -1206,7 +1284,7 @@
       "internalUrl": "/products/skin-care-products",
       "image": "/images/categories/skin-care-products.webp",
       "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381491453/VH/AS/SA/15001533/product-jpeg-500x500.jpg",
-      "productCount": 9,
+      "productCount": 12,
       "description": "Explore high-quality range of Skin Care Products supplied by Medico Pharma.",
       "products": [
         {
@@ -1325,6 +1403,45 @@
           "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381491988/QW/ER/TY/15001533/product-jpeg-500x500.jpg",
           "internalUrl": "/products/skin-care-products/30g-prilox-lignocaine-prilocaine-cream",
           "productUrl": "https://www.indiamart.com/medicospharma/skin-care-products.html#2853329262155"
+        },
+        {
+          "id": "2853329227988",
+          "name": "Retin A 0.1",
+          "slug": "retin-a-01",
+          "category": "Skin Care Products",
+          "categorySlug": "skin-care-products",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-injection/retin-a-01.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
+          "internalUrl": "/products/skin-care-products/retin-a-01",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853329227988"
+        },
+        {
+          "id": "2861005202604",
+          "name": "300mg Dupixent Dupilumab Injection",
+          "slug": "300mg-dupixent-dupilumab-injection",
+          "category": "Skin Care Products",
+          "categorySlug": "skin-care-products",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/skin-care-products/300mg-dupixent-dupilumab-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/skin-care-products/300mg-dupixent-dupilumab-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202605",
+          "name": "150mg Skyrizi Risankizumab Injection",
+          "slug": "150mg-skyrizi-risankizumab-injection",
+          "category": "Skin Care Products",
+          "categorySlug": "skin-care-products",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/skin-care-products/150mg-skyrizi-risankizumab-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/skin-care-products/150mg-skyrizi-risankizumab-injection",
+          "productUrl": ""
         }
       ]
     },
@@ -1411,7 +1528,7 @@
           "categorySlug": "pharmaceutical-medicines",
           "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-medicines/tenormin-50mg.jpg",
+          "image": "/images/products/pharmaceutical-tablets/tenormin-50mg.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467879/HP/EB/AO/15001533/product-jpeg-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-medicines/tenormin-50mg",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-medicines.html#2853288040762"
@@ -1571,17 +1688,17 @@
           "productUrl": "https://www.indiamart.com/medicospharma/antibiotic-medicines.html#2852361503190"
         },
         {
-          "id": "2852361503191",
-          "name": "Hypnite 2 Mg",
-          "slug": "hypnite-2-mg",
+          "id": "2853361502391",
+          "name": "200mg Invado Cefixime Dispersible Tablets",
+          "slug": "200mg-invado-cefixime-dispersible-tablets",
           "category": "Antibiotic Medicines",
           "categorySlug": "antibiotic-medicines",
-          "price": "₹ 35/Box",
+          "price": "₹ 100/Box",
           "currency": "INR",
-          "image": "/images/products/antibiotic-medicines/hypnite-2-mg.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
-          "internalUrl": "/products/antibiotic-medicines/hypnite-2-mg",
-          "productUrl": "https://www.indiamart.com/medicospharma/antibiotic-medicines.html#2852361503191"
+          "image": "/images/products/antiparasitic-medicine/200mg-invado-cefixime-dispersible-tablets.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501136768/TF/JX/ZK/15001533/cefixime-500x500.jpeg",
+          "internalUrl": "/products/antibiotic-medicines/200mg-invado-cefixime-dispersible-tablets",
+          "productUrl": "https://www.indiamart.com/medicospharma/antiparasitic-medicine.html#2853361502391"
         }
       ]
     },
@@ -1655,7 +1772,7 @@
           "categorySlug": "steroids-injections",
           "price": "₹ 800/Box",
           "currency": "INR",
-          "image": "/images/products/steroids-injections/steroid-injections.jpg",
+          "image": "/images/products/steroids-injections/steroid-injections-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338240720/WC/AX/MN/15001533/steroid-500x500.jpeg",
           "internalUrl": "/products/steroids-injections/steroid-injections",
           "productUrl": "https://www.indiamart.com/medicospharma/steroids-injections.html#2852143785104"
@@ -1669,7 +1786,7 @@
       "internalUrl": "/products/antimalarial-medicine",
       "image": "/images/categories/antimalarial-medicine.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501115664/DO/GC/DV/15001533/300mg-lariteg-quinine-sulphate-tablets-500x500.jpeg",
-      "productCount": 4,
+      "productCount": 3,
       "description": "Explore high-quality range of Antimalarial Medicine supplied by Medico Pharma.",
       "products": [
         {
@@ -1699,19 +1816,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/antimalarial-medicine.html#2852143785201"
         },
         {
-          "id": "2852143785202",
-          "name": "75mg Antiflu Oseltamivir Capsules",
-          "slug": "75mg-antiflu-oseltamivir-capsules",
-          "category": "Antimalarial Medicine",
-          "categorySlug": "antimalarial-medicine",
-          "price": "₹ 480/Strip",
-          "currency": "INR",
-          "image": "/images/products/antimalarial-medicine/75mg-antiflu-oseltamivir-capsules.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
-          "internalUrl": "/products/antimalarial-medicine/75mg-antiflu-oseltamivir-capsules",
-          "productUrl": "https://www.indiamart.com/medicospharma/antimalarial-medicine.html#2852143785202"
-        },
-        {
           "id": "2852143785203",
           "name": "500mg Lariago DS Chloroquine Phosphate Tablet",
           "slug": "500mg-lariago-ds-chloroquine-phosphate-tablet",
@@ -1727,13 +1831,64 @@
       ]
     },
     {
+      "id": "hiv-antiretroviral-medicine",
+      "name": "HIV Antiretroviral Medicine",
+      "slug": "hiv-antiretroviral-medicine",
+      "internalUrl": "/products/hiv-antiretroviral-medicine",
+      "image": "/images/categories/hiv-antiretroviral-medicine.webp",
+      "remoteImage": "",
+      "productCount": 3,
+      "description": "Explore high-quality range of HIV Antiretroviral Medicine supplied by Medico Pharma.",
+      "products": [
+        {
+          "id": "2859108413235",
+          "name": "HIV Drugs",
+          "slug": "hiv-drugs",
+          "category": "HIV Antiretroviral Medicine",
+          "categorySlug": "hiv-antiretroviral-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/hiv-antiretroviral-medicine/hiv-drugs-rep.jpg",
+          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
+          "internalUrl": "/products/hiv-antiretroviral-medicine/hiv-drugs",
+          "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413235"
+        },
+        {
+          "id": "2859108413237",
+          "name": "Tenofovir Tablets",
+          "slug": "tenofovir-tablets",
+          "category": "HIV Antiretroviral Medicine",
+          "categorySlug": "hiv-antiretroviral-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/hiv-antiretroviral-medicine/tenofovir-tablets-rep.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
+          "internalUrl": "/products/hiv-antiretroviral-medicine/tenofovir-tablets",
+          "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413237"
+        },
+        {
+          "id": "2861005202608",
+          "name": "Biktarvy Bictegravir Emtricitabine Tenofovir Alafenamide Tablets",
+          "slug": "biktarvy-bictegravir-emtricitabine-tenofovir-alafenamide-tablets",
+          "category": "HIV Antiretroviral Medicine",
+          "categorySlug": "hiv-antiretroviral-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/hiv-antiretroviral-medicine/biktarvy-bictegravir-emtricitabine-tenofovir-alafenamide-tablets.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/hiv-antiretroviral-medicine/biktarvy-bictegravir-emtricitabine-tenofovir-alafenamide-tablets",
+          "productUrl": ""
+        }
+      ]
+    },
+    {
       "id": "anti-cancer-medicine",
       "name": "Anti Cancer Medicine",
       "slug": "anti-cancer-medicine",
       "internalUrl": "/products/anti-cancer-medicine",
       "image": "/images/categories/anti-cancer-medicine.webp",
       "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2023/9/344665356/PK/YP/RF/15001533/product-jpeg-500x500.jpeg",
-      "productCount": 5,
+      "productCount": 4,
       "description": "Explore high-quality range of Anti Cancer Medicine supplied by Medico Pharma.",
       "products": [
         {
@@ -1750,32 +1905,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/anti-cancer-medicine.html#2852143785300"
         },
         {
-          "id": "2852143785301",
-          "name": "0.5mg Deetor Dutasteride Tablets",
-          "slug": "05mg-deetor-dutasteride-tablets",
-          "category": "Anti Cancer Medicine",
-          "categorySlug": "anti-cancer-medicine",
-          "price": "₹ 180/Strip",
-          "currency": "INR",
-          "image": "/images/products/anti-cancer-medicine/05mg-deetor-dutasteride-tablets.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501123827/WF/IN/IE/15001533/dutasteride-avodart-500x500.jpeg",
-          "internalUrl": "/products/anti-cancer-medicine/05mg-deetor-dutasteride-tablets",
-          "productUrl": "https://www.indiamart.com/medicospharma/anti-cancer-medicine.html#2852143785301"
-        },
-        {
-          "id": "2852143785302",
-          "name": "Hypnite 3 Mg",
-          "slug": "hypnite-3-mg",
-          "category": "Anti Cancer Medicine",
-          "categorySlug": "anti-cancer-medicine",
-          "price": "₹ 110/Strip",
-          "currency": "INR",
-          "image": "/images/products/anti-cancer-medicine/hypnite-3-mg.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
-          "internalUrl": "/products/anti-cancer-medicine/hypnite-3-mg",
-          "productUrl": "https://www.indiamart.com/medicospharma/anti-cancer-medicine.html#2852143785302"
-        },
-        {
           "id": "2852143785303",
           "name": "1mg Siromine Sirolimus Tablets",
           "slug": "1mg-siromine-sirolimus-tablets",
@@ -1789,17 +1918,30 @@
           "productUrl": "https://www.indiamart.com/medicospharma/anti-cancer-medicine.html#2852143785303"
         },
         {
-          "id": "2852143785304",
-          "name": "Hypnite 1 Mg",
-          "slug": "hypnite-1-mg",
+          "id": "2861005202601",
+          "name": "100mg Keytruda Pembrolizumab Injection",
+          "slug": "100mg-keytruda-pembrolizumab-injection",
           "category": "Anti Cancer Medicine",
           "categorySlug": "anti-cancer-medicine",
-          "price": "₹ 60/Strip",
+          "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/anti-cancer-medicine/hypnite-1-mg.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
-          "internalUrl": "/products/anti-cancer-medicine/hypnite-1-mg",
-          "productUrl": "https://www.indiamart.com/medicospharma/anti-cancer-medicine.html#2852143785304"
+          "image": "/images/products/anti-cancer-medicine/100mg-keytruda-pembrolizumab-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/anti-cancer-medicine/100mg-keytruda-pembrolizumab-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202607",
+          "name": "400mg Darzalex Daratumumab Injection",
+          "slug": "400mg-darzalex-daratumumab-injection",
+          "category": "Anti Cancer Medicine",
+          "categorySlug": "anti-cancer-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/anti-cancer-medicine/400mg-darzalex-daratumumab-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/anti-cancer-medicine/400mg-darzalex-daratumumab-injection",
+          "productUrl": ""
         }
       ]
     },
@@ -1810,7 +1952,7 @@
       "internalUrl": "/products/antidiabetic-medicine",
       "image": "/images/categories/antidiabetic-medicine.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/2/382846419/CY/IO/RX/15001533/img-20240120-202645-500x500.jpg",
-      "productCount": 3,
+      "productCount": 6,
       "description": "Explore high-quality range of Antidiabetic Medicine supplied by Medico Pharma.",
       "products": [
         {
@@ -1851,6 +1993,96 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501124762/YZ/MO/FN/15001533/minoxidil-finasteride-solution-500x500.jpeg",
           "internalUrl": "/products/antidiabetic-medicine/7-mg-rybelsus-semaglutide-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/antidiabetic-medicine.html#2852143785402"
+        },
+        {
+          "id": "21990638512",
+          "name": "Humalog 100 Iu",
+          "slug": "humalog-100-iu",
+          "category": "Antidiabetic Medicine",
+          "categorySlug": "antidiabetic-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/humalog-100-iu.jpg",
+          "remoteImage": "https://5.imimg.com/data5/DV/GZ/RF/ANDROID-15001533/prod-20200129-2352587520019116082774839-jpg-500x500.jpg",
+          "internalUrl": "/products/antidiabetic-medicine/humalog-100-iu",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#21990638512"
+        },
+        {
+          "id": "2861005202602",
+          "name": "2.5mg Mounjaro Tirzepatide Injection",
+          "slug": "25mg-mounjaro-tirzepatide-injection",
+          "category": "Antidiabetic Medicine",
+          "categorySlug": "antidiabetic-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/antidiabetic-medicine/25mg-mounjaro-tirzepatide-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/antidiabetic-medicine/25mg-mounjaro-tirzepatide-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202603",
+          "name": "0.25mg Ozempic Semaglutide Injection",
+          "slug": "025mg-ozempic-semaglutide-injection",
+          "category": "Antidiabetic Medicine",
+          "categorySlug": "antidiabetic-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/antidiabetic-medicine/025mg-ozempic-semaglutide-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/antidiabetic-medicine/025mg-ozempic-semaglutide-injection",
+          "productUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "weight-loss-medicine",
+      "name": "Weight Loss Medicine",
+      "slug": "weight-loss-medicine",
+      "internalUrl": "/products/weight-loss-medicine",
+      "image": "/images/categories/weight-loss-medicine.webp",
+      "remoteImage": "",
+      "productCount": 3,
+      "description": "Explore high-quality range of Weight Loss Medicine supplied by Medico Pharma.",
+      "products": [
+        {
+          "id": "2861005202602",
+          "name": "2.5mg Mounjaro Tirzepatide Injection",
+          "slug": "25mg-mounjaro-tirzepatide-injection",
+          "category": "Weight Loss Medicine",
+          "categorySlug": "weight-loss-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/antidiabetic-medicine/25mg-mounjaro-tirzepatide-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/weight-loss-medicine/25mg-mounjaro-tirzepatide-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202609",
+          "name": "2.5mg Zepbound Tirzepatide Injection",
+          "slug": "25mg-zepbound-tirzepatide-injection",
+          "category": "Weight Loss Medicine",
+          "categorySlug": "weight-loss-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/weight-loss-medicine/25mg-zepbound-tirzepatide-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/weight-loss-medicine/25mg-zepbound-tirzepatide-injection",
+          "productUrl": ""
+        },
+        {
+          "id": "2861005202610",
+          "name": "0.25mg Wegovy Semaglutide Injection",
+          "slug": "025mg-wegovy-semaglutide-injection",
+          "category": "Weight Loss Medicine",
+          "categorySlug": "weight-loss-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/weight-loss-medicine/025mg-wegovy-semaglutide-injection.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/weight-loss-medicine/025mg-wegovy-semaglutide-injection",
+          "productUrl": ""
         }
       ]
     },
@@ -1861,7 +2093,7 @@
       "internalUrl": "/products/erectile-dysfunction-medicine",
       "image": "/images/categories/erectile-dysfunction-medicine.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501526952/SB/FO/SO/15001533/erectile-dysfunction-tablets-500x500.png",
-      "productCount": 4,
+      "productCount": 3,
       "description": "Explore high-quality range of Erectile Dysfunction Medicine supplied by Medico Pharma.",
       "products": [
         {
@@ -1876,19 +2108,6 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379466836/BB/KW/RD/15001533/img-20240121-183039-500x500.jpg",
           "internalUrl": "/products/erectile-dysfunction-medicine/100mg-femalegra-sildenafil-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/erectile-dysfunction-medicine.html#21990633462"
-        },
-        {
-          "id": "2856430602973",
-          "name": "Sleepose 60",
-          "slug": "sleepose-60",
-          "category": "Erectile Dysfunction Medicine",
-          "categorySlug": "erectile-dysfunction-medicine",
-          "price": "₹ 200/Strip",
-          "currency": "INR",
-          "image": "/images/products/erectile-dysfunction-medicine/sleepose-60.jpg",
-          "remoteImage": "https://5.imimg.com/data5/IOS/Default/2025/4/506258714/NB/OD/NN/15001533/product-jpeg-500x500.png",
-          "internalUrl": "/products/erectile-dysfunction-medicine/sleepose-60",
-          "productUrl": "https://www.indiamart.com/medicospharma/erectile-dysfunction-medicine.html#2856430602973"
         },
         {
           "id": "2857021315030",
@@ -1957,39 +2176,39 @@
       ]
     },
     {
-      "id": "herbal-capsul",
-      "name": "Herbal Capsul",
-      "slug": "herbal-capsul",
-      "internalUrl": "/products/herbal-capsul",
+      "id": "herbal-capsules",
+      "name": "Herbal Capsules",
+      "slug": "herbal-capsules",
+      "internalUrl": "/products/herbal-capsules",
       "image": "/images/categories/herbal-capsul.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459225/UK/XW/BQ/15001533/img-20240121-174528-500x500.jpg",
       "productCount": 2,
-      "description": "Explore high-quality range of Herbal Capsul supplied by Medico Pharma.",
+      "description": "Explore high-quality range of Herbal Capsules supplied by Medico Pharma.",
       "products": [
         {
           "id": "2853288042155",
           "name": "Centrum For Men",
           "slug": "centrum-for-men",
-          "category": "Herbal Capsul",
-          "categorySlug": "herbal-capsul",
+          "category": "Herbal Capsules",
+          "categorySlug": "herbal-capsules",
           "price": "₹ 450/Bottle",
           "currency": "INR",
           "image": "/images/products/herbal-capsul/centrum-for-men.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459225/UK/XW/BQ/15001533/img-20240121-174528-500x500.jpg",
-          "internalUrl": "/products/herbal-capsul/centrum-for-men",
+          "internalUrl": "/products/herbal-capsules/centrum-for-men",
           "productUrl": "https://www.indiamart.com/medicospharma/herbal-capsul.html#2853288042155"
         },
         {
           "id": "2853355458333",
           "name": "Ashwagandha Extract Capsule",
           "slug": "ashwagandha-extract-capsule",
-          "category": "Herbal Capsul",
-          "categorySlug": "herbal-capsul",
+          "category": "Herbal Capsules",
+          "categorySlug": "herbal-capsules",
           "price": "₹ 200/Bottle",
           "currency": "INR",
           "image": "/images/products/herbal-capsul/ashwagandha-extract-capsule.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454466101/ON/QY/AI/15001533/img-20240120-202233-500x500.jpeg",
-          "internalUrl": "/products/herbal-capsul/ashwagandha-extract-capsule",
+          "internalUrl": "/products/herbal-capsules/ashwagandha-extract-capsule",
           "productUrl": "https://www.indiamart.com/medicospharma/herbal-capsul.html#2853355458333"
         }
       ]
@@ -2001,7 +2220,7 @@
       "internalUrl": "/products/anti-psychotic-medicines",
       "image": "/images/categories/anti-psychotic-medicines.webp",
       "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458839/UI/VQ/OG/15001533/product-jpeg-500x500.jpg",
-      "productCount": 2,
+      "productCount": 1,
       "description": "Explore high-quality range of Anti Psychotic Medicines supplied by Medico Pharma.",
       "products": [
         {
@@ -2016,19 +2235,6 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431537/BL/FV/NX/15001533/oxymetholone-tablets-500x500.jpeg",
           "internalUrl": "/products/anti-psychotic-medicines/400mg-qutipin-sr-quetiapine-prolonged-release-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/anti-psychotic-medicines.html#2852106725633"
-        },
-        {
-          "id": "2853329227391",
-          "name": "Imipramine Hydrochloride Tablets 75 Mg",
-          "slug": "imipramine-hydrochloride-tablets-75-mg",
-          "category": "Anti Psychotic Medicines",
-          "categorySlug": "anti-psychotic-medicines",
-          "price": "₹ 65/Strip",
-          "currency": "INR",
-          "image": "/images/products/anti-psychotic-medicines/imipramine-hydrochloride-tablets-75-mg.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458839/UI/VQ/OG/15001533/product-jpeg-500x500.jpg",
-          "internalUrl": "/products/anti-psychotic-medicines/imipramine-hydrochloride-tablets-75-mg",
-          "productUrl": "https://www.indiamart.com/medicospharma/anti-psychotic-medicines.html#2853329227391"
         }
       ]
     },
@@ -2039,7 +2245,7 @@
       "internalUrl": "/products/antiparasitic-medicine",
       "image": "/images/categories/antiparasitic-medicine.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431251/WB/OG/VD/15001533/product-jpeg-500x500.png",
-      "productCount": 2,
+      "productCount": 1,
       "description": "Explore high-quality range of Antiparasitic Medicine supplied by Medico Pharma.",
       "products": [
         {
@@ -2054,19 +2260,6 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431251/WB/OG/VD/15001533/product-jpeg-500x500.png",
           "internalUrl": "/products/antiparasitic-medicine/3-mg-iverjohn-ivermectin-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/antiparasitic-medicine.html#2852516953797"
-        },
-        {
-          "id": "2853361502391",
-          "name": "200mg Invado Cefixime Dispersible Tablets",
-          "slug": "200mg-invado-cefixime-dispersible-tablets",
-          "category": "Antiparasitic Medicine",
-          "categorySlug": "antiparasitic-medicine",
-          "price": "₹ 100/Box",
-          "currency": "INR",
-          "image": "/images/products/antiparasitic-medicine/200mg-invado-cefixime-dispersible-tablets.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501136768/TF/JX/ZK/15001533/cefixime-500x500.jpeg",
-          "internalUrl": "/products/antiparasitic-medicine/200mg-invado-cefixime-dispersible-tablets",
-          "productUrl": "https://www.indiamart.com/medicospharma/antiparasitic-medicine.html#2853361502391"
         }
       ]
     },
@@ -2101,7 +2294,7 @@
           "categorySlug": "pharmaceutical-syrup",
           "price": "₹ 95/Bottle",
           "currency": "INR",
-          "image": "/images/products/pharmaceutical-syrup/cyproheptadine-tricholine-citrate-syrup.jpg",
+          "image": "/images/products/pharmaceutical-syrup/cyproheptadine-tricholine-citrate-syrup-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467879/HP/EB/AO/15001533/product-jpeg-500x500.jpeg",
           "internalUrl": "/products/pharmaceutical-syrup/cyproheptadine-tricholine-citrate-syrup",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-syrup.html#2853269033633"
@@ -2185,31 +2378,6 @@
       ]
     },
     {
-      "id": "protein-powder",
-      "name": "Protein Powder",
-      "slug": "protein-powder",
-      "internalUrl": "/products/protein-powder",
-      "image": "/images/categories/protein-powder.webp",
-      "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338241085/SG/FM/FM/15001533/adenosine-monophosphate-injection-500x500.jpeg",
-      "productCount": 1,
-      "description": "Explore high-quality range of Protein Powder supplied by Medico Pharma.",
-      "products": [
-        {
-          "id": "2852143784948",
-          "name": "Protimed Protein Powder",
-          "slug": "protimed-protein-powder",
-          "category": "Protein Powder",
-          "categorySlug": "protein-powder",
-          "price": "₹ 145/Jar",
-          "currency": "INR",
-          "image": "/images/products/protein-powder/protimed-protein-powder.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338241085/SG/FM/FM/15001533/adenosine-monophosphate-injection-500x500.jpeg",
-          "internalUrl": "/products/protein-powder/protimed-protein-powder",
-          "productUrl": "https://www.indiamart.com/medicospharma/protein-powder.html#2852143784948"
-        }
-      ]
-    },
-    {
       "id": "anti-acne-medicines",
       "name": "Anti Acne Medicines",
       "slug": "anti-acne-medicines",
@@ -2235,27 +2403,53 @@
       ]
     },
     {
-      "id": "hypertension-medicine",
-      "name": "Hypertension Medicine",
-      "slug": "hypertension-medicine",
-      "internalUrl": "/products/hypertension-medicine",
+      "id": "cardiovascular-medicine",
+      "name": "Cardiovascular Medicine",
+      "slug": "cardiovascular-medicine",
+      "internalUrl": "/products/cardiovascular-medicine",
       "image": "/images/categories/hypertension-medicine.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
-      "productCount": 1,
-      "description": "Explore high-quality range of Hypertension Medicine supplied by Medico Pharma.",
+      "productCount": 3,
+      "description": "Explore high-quality range of Cardiovascular Medicine supplied by Medico Pharma.",
       "products": [
         {
           "id": "2853355347212",
           "name": "150mg ST Sprin Aspirin Tablets",
           "slug": "150mg-st-sprin-aspirin-tablets",
-          "category": "Hypertension Medicine",
-          "categorySlug": "hypertension-medicine",
+          "category": "Cardiovascular Medicine",
+          "categorySlug": "cardiovascular-medicine",
           "price": "₹ 45/Strip",
           "currency": "INR",
           "image": "/images/products/hypertension-medicine/150mg-st-sprin-aspirin-tablets.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
-          "internalUrl": "/products/hypertension-medicine/150mg-st-sprin-aspirin-tablets",
+          "internalUrl": "/products/cardiovascular-medicine/150mg-st-sprin-aspirin-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/hypertension-medicine.html#2853355347212"
+        },
+        {
+          "id": "2853288042802",
+          "name": "Labetalol 100mg Tablets",
+          "slug": "labetalol-100mg-tablets",
+          "category": "Cardiovascular Medicine",
+          "categorySlug": "cardiovascular-medicine",
+          "price": "₹ 150/Stripe",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/labetalol-100mg-tablets-rep.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
+          "internalUrl": "/products/cardiovascular-medicine/labetalol-100mg-tablets",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-capsules.html#2853288042802"
+        },
+        {
+          "id": "2861005202606",
+          "name": "5mg Eliquis Apixaban Tablets",
+          "slug": "5mg-eliquis-apixaban-tablets",
+          "category": "Cardiovascular Medicine",
+          "categorySlug": "cardiovascular-medicine",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/cardiovascular-medicine/5mg-eliquis-apixaban-tablets.jpg",
+          "remoteImage": "",
+          "internalUrl": "/products/cardiovascular-medicine/5mg-eliquis-apixaban-tablets",
+          "productUrl": ""
         }
       ]
     },
@@ -2291,7 +2485,7 @@
       "internalUrl": "/products/pharmaceutical-cream",
       "image": "/images/categories/pharmaceutical-cream.webp",
       "remoteImage": "https://5.imimg.com/data5/IOS/Default/2023/9/346110888/TC/KD/MM/15001533/product-jpeg-500x500.png",
-      "productCount": 1,
+      "productCount": 2,
       "description": "Explore high-quality range of Pharmaceutical Cream supplied by Medico Pharma.",
       "products": [
         {
@@ -2306,6 +2500,19 @@
           "remoteImage": "https://5.imimg.com/data5/IOS/Default/2023/9/346110888/TC/KD/MM/15001533/product-jpeg-500x500.png",
           "internalUrl": "/products/pharmaceutical-cream/30g-keto-ketoconazole-cream",
           "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-cream.html#2852517750588"
+        },
+        {
+          "id": "2853329261430",
+          "name": "30g Permite Permethrin Cream",
+          "slug": "30g-permite-permethrin-cream",
+          "category": "Pharmaceutical Cream",
+          "categorySlug": "pharmaceutical-cream",
+          "price": "Price on Request",
+          "currency": "INR",
+          "image": "/images/products/pharmaceutical-tablets/30g-permite-permethrin-cream.jpg",
+          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381492528/IK/RW/ZO/15001533/product-500x500.jpg",
+          "internalUrl": "/products/pharmaceutical-cream/30g-permite-permethrin-cream",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-tablets.html#2853329261430"
         }
       ]
     },
@@ -2335,38 +2542,13 @@
       ]
     },
     {
-      "id": "variable-auto-transformer",
-      "name": "Variable Auto Transformer",
-      "slug": "variable-auto-transformer",
-      "internalUrl": "/products/variable-auto-transformer",
-      "image": "/images/categories/variable-auto-transformer.webp",
-      "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467700/DE/XG/IJ/15001533/product-jpeg-500x500.jpeg",
-      "productCount": 1,
-      "description": "Explore high-quality range of Variable Auto Transformer supplied by Medico Pharma.",
-      "products": [
-        {
-          "id": "2852106732088",
-          "name": "Eca 3g Digital Grounding System",
-          "slug": "eca-3g-digital-grounding-system",
-          "category": "Variable Auto Transformer",
-          "categorySlug": "variable-auto-transformer",
-          "price": "₹ 12,000/Piece",
-          "currency": "INR",
-          "image": "/images/products/variable-auto-transformer/eca-3g-digital-grounding-system.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467700/DE/XG/IJ/15001533/product-jpeg-500x500.jpeg",
-          "internalUrl": "/products/variable-auto-transformer/eca-3g-digital-grounding-system",
-          "productUrl": "https://www.indiamart.com/medicospharma/variable-auto-transformer.html#2852106732088"
-        }
-      ]
-    },
-    {
       "id": "minoxidil-topical-solution",
       "name": "Minoxidil Topical Solution",
       "slug": "minoxidil-topical-solution",
       "internalUrl": "/products/minoxidil-topical-solution",
       "image": "/images/categories/minoxidil-topical-solution.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338236898/LS/SG/GB/15001533/testosterone-enanthate-injection-500x500.jpeg",
-      "productCount": 1,
+      "productCount": 2,
       "description": "Explore high-quality range of Minoxidil Topical Solution supplied by Medico Pharma.",
       "products": [
         {
@@ -2381,31 +2563,19 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338236898/LS/SG/GB/15001533/testosterone-enanthate-injection-500x500.jpeg",
           "internalUrl": "/products/minoxidil-topical-solution/10-minoxytop-minoxidil-topical-solution",
           "productUrl": "https://www.indiamart.com/medicospharma/minoxidil-topical-solution.html#2852143785048"
-        }
-      ]
-    },
-    {
-      "id": "check-shirt",
-      "name": "Check Shirt",
-      "slug": "check-shirt",
-      "internalUrl": "/products/check-shirt",
-      "image": "/images/categories/check-shirt.webp",
-      "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459023/VW/ON/TT/15001533/img-20240121-174234-500x500.jpg",
-      "productCount": 1,
-      "description": "Explore high-quality range of Check Shirt supplied by Medico Pharma.",
-      "products": [
+        },
         {
-          "id": "2853288041997",
-          "name": "Chexid D",
-          "slug": "chexid-d",
-          "category": "Check Shirt",
-          "categorySlug": "check-shirt",
-          "price": "₹ 250/Box",
+          "id": "2852143785049",
+          "name": "Tugain 5% Solution",
+          "slug": "tugain-5-solution",
+          "category": "Minoxidil Topical Solution",
+          "categorySlug": "minoxidil-topical-solution",
+          "price": "₹ 1,000/Unit",
           "currency": "INR",
-          "image": "/images/products/check-shirt/chexid-d.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459023/VW/ON/TT/15001533/img-20240121-174234-500x500.jpg",
-          "internalUrl": "/products/check-shirt/chexid-d",
-          "productUrl": "https://www.indiamart.com/medicospharma/check-shirt.html#2853288041997"
+          "image": "/images/products/minoxidil-topical-solution/tugain-5-solution-rep.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338236898/LS/SG/GB/15001533/testosterone-enanthate-injection-500x500.jpeg",
+          "internalUrl": "/products/minoxidil-topical-solution/tugain-5-solution",
+          "productUrl": "https://www.indiamart.com/medicospharma/pharmaceutical-injection.html#2852143785049"
         }
       ]
     },
@@ -2566,7 +2736,7 @@
       "internalUrl": "/products/other-products",
       "image": "/images/categories/other-products.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2026/4/600123494/WV/AD/SY/15001533/acetasmart-250mg-tablets-500x500.jpg",
-      "productCount": 15,
+      "productCount": 14,
       "description": "Explore high-quality range of Other Products supplied by Medico Pharma.",
       "products": [
         {
@@ -2590,7 +2760,7 @@
           "categorySlug": "other-products",
           "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/other-products/azee-250mg-tablets.jpg",
+          "image": "/images/products/antibiotic-medicines/250-mg-azee-azithromycin-tablets.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431323/OY/MT/DO/15001533/img-20240121-180938-500x500.jpeg",
           "internalUrl": "/products/other-products/azee-250mg-tablets",
           "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413231"
@@ -2603,7 +2773,7 @@
           "categorySlug": "other-products",
           "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/other-products/celeheal-200mg-capsules.jpg",
+          "image": "/images/products/other-products/celeheal-200mg-capsules-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379462558/UR/QI/VL/15001533/img-20240121-180533-500x500.jpg",
           "internalUrl": "/products/other-products/celeheal-200mg-capsules",
           "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413232"
@@ -2616,7 +2786,7 @@
           "categorySlug": "other-products",
           "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/other-products/arreno-capsules.jpg",
+          "image": "/images/products/other-products/arreno-capsules-rep.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
           "internalUrl": "/products/other-products/arreno-capsules",
           "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413233"
@@ -2635,19 +2805,6 @@
           "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413234"
         },
         {
-          "id": "2859108413235",
-          "name": "HIV Drugs",
-          "slug": "hiv-drugs",
-          "category": "Other Products",
-          "categorySlug": "other-products",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/other-products/hiv-drugs.jpg",
-          "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458996/YE/HR/NI/15001533/product-jpeg-500x500.jpg",
-          "internalUrl": "/products/other-products/hiv-drugs",
-          "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413235"
-        },
-        {
           "id": "2859108413236",
           "name": "Antiparasitic Drug",
           "slug": "antiparasitic-drug",
@@ -2659,19 +2816,6 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431251/WB/OG/VD/15001533/product-jpeg-500x500.png",
           "internalUrl": "/products/other-products/antiparasitic-drug",
           "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413236"
-        },
-        {
-          "id": "2859108413237",
-          "name": "Tenofovir Tablets",
-          "slug": "tenofovir-tablets",
-          "category": "Other Products",
-          "categorySlug": "other-products",
-          "price": "Price on Request",
-          "currency": "INR",
-          "image": "/images/products/other-products/tenofovir-tablets.jpg",
-          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
-          "internalUrl": "/products/other-products/tenofovir-tablets",
-          "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413237"
         },
         {
           "id": "2859108413238",
@@ -2733,7 +2877,7 @@
           "categorySlug": "other-products",
           "price": "Price on Request",
           "currency": "INR",
-          "image": "/images/products/other-products/amoxicillin-trihydrate-500mg-capsules.jpg",
+          "image": "/images/products/antibiotic-medicines/500mg-amoxicillin-trihydrate-capsules-ip.jpg",
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501134646/RM/SB/AT/15001533/img-20240121-163701-500x500.jpeg",
           "internalUrl": "/products/other-products/amoxicillin-trihydrate-500mg-capsules",
           "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413242"
@@ -2763,24 +2907,37 @@
           "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2026/4/600123494/WV/AD/SY/15001533/acetasmart-250mg-tablets-500x500.jpg",
           "internalUrl": "/products/other-products/pharmaceutical-specialty-item",
           "productUrl": "https://www.indiamart.com/medicospharma/other-products.html#2859108413244"
+        },
+        {
+          "id": "2852106732088",
+          "name": "Eca 3g Digital Grounding System",
+          "slug": "eca-3g-digital-grounding-system",
+          "category": "Other Products",
+          "categorySlug": "other-products",
+          "price": "₹ 12,000/Piece",
+          "currency": "INR",
+          "image": "/images/products/variable-auto-transformer/eca-3g-digital-grounding-system.jpg",
+          "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467700/DE/XG/IJ/15001533/product-jpeg-500x500.jpeg",
+          "internalUrl": "/products/other-products/eca-3g-digital-grounding-system",
+          "productUrl": "https://www.indiamart.com/medicospharma/variable-auto-transformer.html#2852106732088"
         }
       ]
     },
     {
       "id": "protein-powders",
-      "name": "Protein Powder",
+      "name": "Protein Powders",
       "slug": "protein-powders",
       "internalUrl": "/products/protein-powders",
       "image": "/images/categories/protein-powder.webp",
       "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338241085/SG/FM/FM/15001533/adenosine-monophosphate-injection-500x500.jpeg",
       "productCount": 1,
-      "description": "Explore high-quality range of Protein Powder supplied by Medico Pharma.",
+      "description": "Explore high-quality range of Protein Powders supplied by Medico Pharma.",
       "products": [
         {
           "id": "2852143784948",
           "name": "Protimed Protein Powder",
           "slug": "protimed-protein-powder",
-          "category": "Protein Powder",
+          "category": "Protein Powders",
           "categorySlug": "protein-powders",
           "price": "₹ 145/Jar",
           "currency": "INR",
