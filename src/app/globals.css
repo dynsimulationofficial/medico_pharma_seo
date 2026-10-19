@@ -5549,7 +5549,7 @@ a.footer-contact-item:hover {
   z-index: 3;
 
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr) minmax(0, 1fr);
 
   align-items: center;
 
@@ -5572,11 +5572,16 @@ a.footer-contact-item:hover {
   justify-self: start;
 }
 
-.footer-gstin {
-  white-space: nowrap;
+.footer-legal-info {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  justify-self: center;
+  text-align: center;
+  line-height: 1.45;
 }
 
-.footer-gstin span {
+.footer-legal-info strong {
   color: var(--brand-400);
   font-weight: 700;
 }
@@ -5651,6 +5656,26 @@ a.footer-contact-item:hover {
     white-space: normal;
   }
 
+}
+
+@media (min-width: 801px) and (max-width: 980px) {
+  .footer-bottom {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .footer-copyright,
+  .footer-legal-info,
+  .footer-powered {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .footer-powered {
+    white-space: normal;
+  }
 }
 
 

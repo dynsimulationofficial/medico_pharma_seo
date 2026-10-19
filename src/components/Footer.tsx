@@ -181,8 +181,13 @@ export default function Footer() {
           . All rights reserved.
         </p>
 
-        <p className="footer-gstin">
-          GSTIN: <span>27GFZPS5447M1Z2</span>
+        <p className="footer-legal-info">
+          <span>
+            Legal Name: <strong>Shakeel Ahmed Shahzad Ali Shaikh</strong>
+          </span>
+          <span>
+            GSTIN: <strong>27GFZPS5447M1Z2</strong>
+          </span>
         </p>
 
         <p className="footer-powered">
