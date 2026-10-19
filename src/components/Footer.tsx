@@ -172,26 +172,30 @@ export default function Footer() {
         </div>
       </div>
 
-     <div className="container footer-bottom">
-  <p>
-    © 2020{" "}
-    <Link href="/" className="footer-medico-highlight">
-      Medico Pharma
-    </Link>
-    . All rights reserved.
-  </p>
+      <div className="container footer-bottom">
+        <p className="footer-copyright">
+          © 2020{" "}
+          <Link href="/" className="footer-medico-highlight">
+            Medico Pharma
+          </Link>
+          . All rights reserved.
+        </p>
 
-  <p className="footer-powered">
-    Powered by{" "}
-    <a
-      href="https://dynsimulation.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Dynsimulation Technologies Pvt Ltd
-    </a>
-  </p>
-</div>
+        <p className="footer-gstin">
+          GSTIN: <span>27GFZPS5447M1Z2</span>
+        </p>
+
+        <p className="footer-powered">
+          Powered by{" "}
+          <a
+            href="https://dynsimulation.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dynsimulation Technologies Pvt Ltd
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
