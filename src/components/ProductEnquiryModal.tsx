@@ -51,32 +51,19 @@ export default function ProductEnquiryModal({
   onClose,
   product,
 }: ProductEnquiryModalProps) {
-  const [values, setValues] = useState<Values>(emptyValues);
+  const [values, setValues] = useState<Values>(() => ({
+    ...emptyValues,
+    message: product
+      ? `I am interested in ${product.name}${
+          product.category ? ` (${product.category})` : ""
+        }. Please share pricing, minimum order quantity (MOQ), and commercial availability.`
+      : "",
+  }));
   const [errors, setErrors] = useState<Errors>({});
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
   const [website, setWebsite] = useState("");
   const [serverError, setServerError] = useState("");
   const [formStartedAt, setFormStartedAt] = useState(() => Date.now());
-
-  useEffect(() => {
-    if (isOpen && product) {
-      setValues({
-        name: "",
-        email: "",
-        company: "",
-        country: "US",
-        phone: "",
-        enquiry: "Product information",
-        message: `I am interested in ${product.name}${
-          product.category ? ` (${product.category})` : ""
-        }. Please share pricing, minimum order quantity (MOQ), and commercial availability.`,
-      });
-      setErrors({});
-      setServerError("");
-      setStatus("idle");
-      setFormStartedAt(Date.now());
-    }
-  }, [isOpen, product]);
 
   useEffect(() => {
     if (!isOpen) return;

@@ -170,6 +170,11 @@ export default function CategoryProductList({
       </section>
 
       <ProductEnquiryModal
+        key={
+          isModalOpen
+            ? selectedProduct?.id ?? selectedProduct?.name ?? "open"
+            : "closed"
+        }
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         product={selectedProduct}

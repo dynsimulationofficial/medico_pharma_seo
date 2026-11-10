@@ -257,7 +257,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <main>
       {/* HERO */}
       <section className="hero hero-home-xl">
         <div className="hero-orb hero-orb-one" aria-hidden="true" />
@@ -686,7 +686,7 @@ export default function Home() {
           </div>
 
           <div className="resources-premium-grid">
-            <Link href="#" className="resource-premium-card resource-premium-catalog" data-reveal="left">
+            <Link href="/products" className="resource-premium-card resource-premium-catalog" data-reveal="left">
               <div className="resource-premium-copy">
                 <span>01 / PRODUCT CATALOG</span>
                 <h3>Browse the complete product portfolio.</h3>
@@ -705,7 +705,7 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link href="#" className="resource-premium-card resource-premium-profile" data-reveal="right" style={{ "--reveal-delay": "120ms" } as CSSProperties}>
+            <Link href="/about" className="resource-premium-card resource-premium-profile" data-reveal="right" style={{ "--reveal-delay": "120ms" } as CSSProperties}>
               <span className="resource-profile-index">02</span>
               <div className="resource-profile-mark" aria-hidden="true">
                 <span /><i />
@@ -795,6 +795,6 @@ export default function Home() {
       </section>
 
     
-    </>
+    </main>
   );
 }
