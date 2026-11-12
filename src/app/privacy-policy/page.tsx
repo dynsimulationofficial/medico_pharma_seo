@@ -418,6 +418,13 @@ export default function PrivacyPolicyPage() {
               necessary for the relevant service and should process it subject to
               appropriate contractual or legal obligations where required.
             </p>
+            <p>
+              <strong>Mobile &amp; SMS Opt-in Data:</strong> No mobile
+              information will be shared with third parties or affiliates for
+              marketing or promotional purposes. All the above categories exclude
+              text messaging originator opt-in data and consent; this
+              information will not be shared with any third parties.
+            </p>
           </Section>
 
           <Section
@@ -520,6 +527,13 @@ export default function PrivacyPolicyPage() {
               non-essential promotional communications at any time. Service,
               enquiry or transaction-related messages may still be sent where
               necessary.
+            </p>
+            <p>
+              <strong>SMS / Text Messaging:</strong> If you opt in to receive SMS
+              communications from Medicos Pharma, message frequency varies and
+              standard message and data rates may apply. You can opt out at any
+              time by replying <strong>STOP</strong> to any SMS message, or reply{" "}
+              <strong>HELP</strong> for assistance.
             </p>
           </Section>
 

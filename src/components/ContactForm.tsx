@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { countryCodes } from "@/data/countryCodes";
 
@@ -11,6 +12,7 @@ type Values = {
   phone: string;
   enquiry: string;
   message: string;
+  smsConsent: boolean;
 };
 
 type Errors = Partial<Record<keyof Values, string>>;
@@ -23,6 +25,7 @@ const empty: Values = {
   phone: "",
   enquiry: "",
   message: "",
+  smsConsent: false,
 };
 
 const enquiryTypes = [
@@ -358,6 +361,64 @@ export default function ContactForm() {
               {errors.message}
             </p>
           ) : null}
+        </div>
+
+        <div className="field span-2">
+          <label
+            htmlFor="smsConsent"
+            style={{
+              display: "flex",
+              alignItems: "flex-start",
+              gap: "10px",
+              fontWeight: 400,
+              fontSize: "0.84rem",
+              lineHeight: 1.5,
+              cursor: "pointer",
+            }}
+          >
+            <input
+              id="smsConsent"
+              name="smsConsent"
+              type="checkbox"
+              checked={values.smsConsent}
+              onChange={(event) =>
+                setValues((previous) => ({
+                  ...previous,
+                  smsConsent: event.target.checked,
+                }))
+              }
+              style={{
+                width: "18px",
+                height: "18px",
+                marginTop: "2px",
+                flexShrink: 0,
+                accentColor: "var(--vital, #0b6b1f)",
+                cursor: "pointer",
+              }}
+            />
+            <span>
+              I agree to receive promotional SMS, product updates, and special
+              offers from <strong>Medicos Pharma</strong> at the phone number
+              provided. Message frequency varies. Message &amp; data rates may
+              apply. Reply <strong>STOP</strong> to unsubscribe or{" "}
+              <strong>HELP</strong> for help. Consent is not a condition of
+              purchase. View our{" "}
+              <Link
+                href="/privacy-policy"
+                style={{ textDecoration: "underline", color: "inherit", fontWeight: 600 }}
+              >
+                Privacy Policy
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/terms-and-conditions"
+                style={{ textDecoration: "underline", color: "inherit", fontWeight: 600 }}
+              >
+                Terms &amp; Conditions
+              </Link>
+              .
+            </span>
+          </label>
         </div>
       </div>
 
