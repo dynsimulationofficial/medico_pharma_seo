@@ -3,7 +3,7 @@ import { categories } from "@/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.medicos-pharma.com";
-  const lastModified = new Date("2026-09-11");
+  const lastModified = new Date("2026-10-05");
 
   const staticRoutes = [
     { path: "/", changeFrequency: "weekly" as const, priority: 1 },

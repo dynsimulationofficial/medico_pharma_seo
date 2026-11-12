@@ -6,7 +6,7 @@
     "internalUrl": "/products/pharmaceutical-tablets",
     "image": "/images/categories/pharmaceutical-tablets.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338332508/KH/PB/NJ/15001533/methimez-5-methimazole-tablet-500x500.jpg",
-    "productCount": 50
+    "productCount": 52
   },
   {
     "id": "pharmaceutical-capsules",
@@ -15,7 +15,7 @@
     "internalUrl": "/products/pharmaceutical-capsules",
     "image": "/images/categories/pharmaceutical-capsules.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/337927038/JX/ST/DG/15001533/glutathione-injection-500x500.jpeg",
-    "productCount": 15
+    "productCount": 13
   },
   {
     "id": "pharmaceutical-injection",
@@ -24,7 +24,7 @@
     "internalUrl": "/products/pharmaceutical-injection",
     "image": "/images/categories/pharmaceutical-injection.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501404744/LB/ZE/LF/15001533/100mg-vitamin-c-ascorbic-acid-injection-500x500.jpg",
-    "productCount": 12
+    "productCount": 15
   },
   {
     "id": "anti-depressants-medicines",
@@ -33,7 +33,7 @@
     "internalUrl": "/products/anti-depressants-medicines",
     "image": "/images/categories/anti-depressants-medicines.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431285/BZ/PR/JQ/15001533/product-jpeg-500x500.png",
-    "productCount": 11
+    "productCount": 14
   },
   {
     "id": "skin-care-products",
@@ -42,7 +42,7 @@
     "internalUrl": "/products/skin-care-products",
     "image": "/images/categories/skin-care-products.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381491453/VH/AS/SA/15001533/product-jpeg-500x500.jpg",
-    "productCount": 9
+    "productCount": 12
   },
   {
     "id": "pharmaceutical-medicines",
@@ -87,7 +87,16 @@
     "internalUrl": "/products/antimalarial-medicine",
     "image": "/images/categories/antimalarial-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501115664/DO/GC/DV/15001533/300mg-lariteg-quinine-sulphate-tablets-500x500.jpeg",
-    "productCount": 4
+    "productCount": 3
+  },
+  {
+    "id": "hiv-antiretroviral-medicine",
+    "name": "HIV Antiretroviral Medicine",
+    "slug": "hiv-antiretroviral-medicine",
+    "internalUrl": "/products/hiv-antiretroviral-medicine",
+    "image": "/images/categories/hiv-antiretroviral-medicine.webp",
+    "remoteImage": "",
+    "productCount": 3
   },
   {
     "id": "anti-cancer-medicine",
@@ -96,7 +105,7 @@
     "internalUrl": "/products/anti-cancer-medicine",
     "image": "/images/categories/anti-cancer-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2023/9/344665356/PK/YP/RF/15001533/product-jpeg-500x500.jpeg",
-    "productCount": 5
+    "productCount": 4
   },
   {
     "id": "antidiabetic-medicine",
@@ -105,6 +114,15 @@
     "internalUrl": "/products/antidiabetic-medicine",
     "image": "/images/categories/antidiabetic-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/2/382846419/CY/IO/RX/15001533/img-20240120-202645-500x500.jpg",
+    "productCount": 6
+  },
+  {
+    "id": "weight-loss-medicine",
+    "name": "Weight Loss Medicine",
+    "slug": "weight-loss-medicine",
+    "internalUrl": "/products/weight-loss-medicine",
+    "image": "/images/categories/weight-loss-medicine.webp",
+    "remoteImage": "",
     "productCount": 3
   },
   {
@@ -114,7 +132,7 @@
     "internalUrl": "/products/erectile-dysfunction-medicine",
     "image": "/images/categories/erectile-dysfunction-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501526952/SB/FO/SO/15001533/erectile-dysfunction-tablets-500x500.png",
-    "productCount": 4
+    "productCount": 3
   },
   {
     "id": "pain-relief-medicines",
@@ -126,10 +144,10 @@
     "productCount": 2
   },
   {
-    "id": "herbal-capsul",
-    "name": "Herbal Capsul",
-    "slug": "herbal-capsul",
-    "internalUrl": "/products/herbal-capsul",
+    "id": "herbal-capsules",
+    "name": "Herbal Capsules",
+    "slug": "herbal-capsules",
+    "internalUrl": "/products/herbal-capsules",
     "image": "/images/categories/herbal-capsul.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459225/UK/XW/BQ/15001533/img-20240121-174528-500x500.jpg",
     "productCount": 2
@@ -141,7 +159,7 @@
     "internalUrl": "/products/anti-psychotic-medicines",
     "image": "/images/categories/anti-psychotic-medicines.webp",
     "remoteImage": "https://5.imimg.com/data5/ANDROID/Default/2024/1/381458839/UI/VQ/OG/15001533/product-jpeg-500x500.jpg",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "antiparasitic-medicine",
@@ -150,7 +168,7 @@
     "internalUrl": "/products/antiparasitic-medicine",
     "image": "/images/categories/antiparasitic-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454431251/WB/OG/VD/15001533/product-jpeg-500x500.png",
-    "productCount": 2
+    "productCount": 1
   },
   {
     "id": "pharmaceutical-syrup",
@@ -180,15 +198,6 @@
     "productCount": 2
   },
   {
-    "id": "protein-powder",
-    "name": "Protein Powder",
-    "slug": "protein-powder",
-    "internalUrl": "/products/protein-powder",
-    "image": "/images/categories/protein-powder.webp",
-    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338241085/SG/FM/FM/15001533/adenosine-monophosphate-injection-500x500.jpeg",
-    "productCount": 1
-  },
-  {
     "id": "anti-acne-medicines",
     "name": "Anti Acne Medicines",
     "slug": "anti-acne-medicines",
@@ -198,13 +207,13 @@
     "productCount": 1
   },
   {
-    "id": "hypertension-medicine",
-    "name": "Hypertension Medicine",
-    "slug": "hypertension-medicine",
-    "internalUrl": "/products/hypertension-medicine",
+    "id": "cardiovascular-medicine",
+    "name": "Cardiovascular Medicine",
+    "slug": "cardiovascular-medicine",
+    "internalUrl": "/products/cardiovascular-medicine",
     "image": "/images/categories/hypertension-medicine.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2025/4/501393489/DI/IG/GD/15001533/img-20240120-195558-500x500.jpeg",
-    "productCount": 1
+    "productCount": 3
   },
   {
     "id": "analgesic-and-anti-inflammatory-drugs",
@@ -222,7 +231,7 @@
     "internalUrl": "/products/pharmaceutical-cream",
     "image": "/images/categories/pharmaceutical-cream.webp",
     "remoteImage": "https://5.imimg.com/data5/IOS/Default/2023/9/346110888/TC/KD/MM/15001533/product-jpeg-500x500.png",
-    "productCount": 1
+    "productCount": 2
   },
   {
     "id": "foam-face-wash",
@@ -234,31 +243,13 @@
     "productCount": 1
   },
   {
-    "id": "variable-auto-transformer",
-    "name": "Variable Auto Transformer",
-    "slug": "variable-auto-transformer",
-    "internalUrl": "/products/variable-auto-transformer",
-    "image": "/images/categories/variable-auto-transformer.webp",
-    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/9/454467700/DE/XG/IJ/15001533/product-jpeg-500x500.jpeg",
-    "productCount": 1
-  },
-  {
     "id": "minoxidil-topical-solution",
     "name": "Minoxidil Topical Solution",
     "slug": "minoxidil-topical-solution",
     "internalUrl": "/products/minoxidil-topical-solution",
     "image": "/images/categories/minoxidil-topical-solution.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2023/8/338236898/LS/SG/GB/15001533/testosterone-enanthate-injection-500x500.jpeg",
-    "productCount": 1
-  },
-  {
-    "id": "check-shirt",
-    "name": "Check Shirt",
-    "slug": "check-shirt",
-    "internalUrl": "/products/check-shirt",
-    "image": "/images/categories/check-shirt.webp",
-    "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2024/1/379459023/VW/ON/TT/15001533/img-20240121-174234-500x500.jpg",
-    "productCount": 1
+    "productCount": 2
   },
   {
     "id": "womens-health",
@@ -321,11 +312,11 @@
     "internalUrl": "/products/other-products",
     "image": "/images/categories/other-products.webp",
     "remoteImage": "https://5.imimg.com/data5/SELLER/Default/2026/4/600123494/WV/AD/SY/15001533/acetasmart-250mg-tablets-500x500.jpg",
-    "productCount": 15
+    "productCount": 14
   },
   {
     "id": "protein-powders",
-    "name": "Protein Powder",
+    "name": "Protein Powders",
     "slug": "protein-powders",
     "internalUrl": "/products/protein-powders",
     "image": "/images/categories/protein-powder.webp",

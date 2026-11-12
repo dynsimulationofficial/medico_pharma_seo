@@ -8,11 +8,11 @@ const contentSecurityPolicy = [
   "form-action 'self'",
   "frame-ancestors 'none'",
   "object-src 'none'",
-  `script-src 'self' 'unsafe-inline'${isDevelopment ? " 'unsafe-eval'" : ""}`,
+  `script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.clarity.ms${isDevelopment ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  "img-src 'self' data: blob:",
+  "img-src 'self' data: blob: https://*.clarity.ms",
   "font-src 'self' data: https://fonts.gstatic.com",
-  `connect-src 'self'${isDevelopment ? " ws: wss:" : ""}`,
+  `connect-src 'self' https://*.clarity.ms https://*.google-analytics.com${isDevelopment ? " ws: wss:" : ""}`,
   "media-src 'self'",
   "frame-src 'none'",
   "worker-src 'self' blob:",
@@ -78,6 +78,37 @@ const nextConfig: NextConfig = {
       {
         source: "/terms-&-conditions",
         destination: "/terms-and-conditions",
+        permanent: true,
+      },
+      {
+        source: "/terms-%26-conditions",
+        destination: "/terms-and-conditions",
+        permanent: true,
+      },
+      // Category pages that were renamed or merged — old links keep working
+      {
+        source: "/products/herbal-capsul",
+        destination: "/products/herbal-capsules",
+        permanent: true,
+      },
+      {
+        source: "/products/protein-powder",
+        destination: "/products/protein-powders",
+        permanent: true,
+      },
+      {
+        source: "/products/hypertension-medicine",
+        destination: "/products/cardiovascular-medicine",
+        permanent: true,
+      },
+      {
+        source: "/products/check-shirt",
+        destination: "/products/pharmaceutical-capsules",
+        permanent: true,
+      },
+      {
+        source: "/products/variable-auto-transformer",
+        destination: "/products/other-products",
         permanent: true,
       },
     ];

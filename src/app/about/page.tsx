@@ -182,7 +182,7 @@ function AbIcon({ type }: { type: string }) {
 
 export default function AboutPage() {
   return (
-    <div className="ab-page">
+    <main className="ab-page">
       {/* ==================== HERO ==================== */}
       <section className="ab-hero">
         <div className="ab-hero-orb ab-hero-orb-a" aria-hidden="true" />
@@ -618,6 +618,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section> */}
-    </div>
+    </main>
   );
 }

@@ -127,7 +127,7 @@ function CtIcon({ type }: { type: string }) {
 
 export default function ContactPage() {
   return (
-    <div className="ct-page">
+    <main className="ct-page">
       {/* ==================== HERO ==================== */}
       <section className="ct-hero">
         <div className="ct-hero-orb ct-hero-orb-a" aria-hidden="true" />
@@ -389,6 +389,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

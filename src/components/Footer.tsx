@@ -9,7 +9,7 @@ const products = [
 ];
 
 const services = [
-  ["Pharmaceutical", "/services/pharmaceutical-manufacturing"],
+  ["Pharmaceutical Manufacturing", "/services/pharmaceutical-manufacturing"],
   ["Contract Manufacturing", "/services/contract-manufacturing"],
   ["OEM / Private Label", "/services/oem-private-label"],
   ["Third-Party Manufacturing", "/services/third-party-manufacturing"],
@@ -72,8 +72,8 @@ export default function Footer() {
         <div className="footer-links-column">
           <p className="footer-label">Company</p>
 
-          <Link href="/about">About us</Link>  <Link href="/#faq">Products</Link>
-           <Link href="/#faq">Services</Link>
+          <Link href="/about">About us</Link>  <Link href="/products">Products</Link>
+           <Link href="/services">Services</Link>
             {/* <Link href="/#quality">Resources</Link> */}
           <Link href="/contact">Contact us</Link>
          
@@ -173,13 +173,22 @@ export default function Footer() {
       </div>
 
       <div className="container footer-bottom">
-       <p>
-  © {new Date().getFullYear()}{" "}
-  <Link href="/" className="footer-medico-highlight">
-    Medico Pharma
-  </Link>
-  . All rights reserved.
-</p>
+        <p className="footer-copyright">
+          © 2020{" "}
+          <Link href="/" className="footer-medico-highlight">
+            Medico Pharma
+          </Link>
+          . All rights reserved.
+        </p>
+
+        <p className="footer-legal-info">
+          <span>
+            Legal Name: <strong>Shakeel Ahmed Shahzad Ali Shaikh</strong>
+          </span>
+          <span>
+            GSTIN: <strong>27GFZPS5447M1Z2</strong>
+          </span>
+        </p>
 
         <p className="footer-powered">
           Powered by{" "}

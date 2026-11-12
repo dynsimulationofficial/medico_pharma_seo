@@ -65,7 +65,7 @@ const menuGroups = {
     href: "/products",
     eyebrow: "Products",
     description:
-      "Explore ten pharmaceutical product categories, dosage formats and specialty medicine ranges.",
+      "Explore our pharmaceutical product categories, dosage formats and specialty medicine ranges.",
     groups: productGroups,
   },
   Services: {
@@ -211,7 +211,7 @@ export default function Header() {
                 fill
                 sizes="38px"
                 className="brand-logo-image"
-                priority
+                loading="eager"
               />
             </span>
 
@@ -270,11 +270,17 @@ export default function Header() {
                         : ""
                     }
                     aria-expanded={openMenu === name}
-                    onMouseEnter={() => setOpenMenu(name)}
-                    onFocus={() => setOpenMenu(name)}
+                    onMouseEnter={() => {
+                      if (window.matchMedia("(min-width: 901px)").matches) {
+                        setOpenMenu(name);
+                      }
+                    }}
                     onClick={() =>
                       setOpenMenu((current) =>
-                        current === name ? null : name
+                        window.matchMedia("(max-width: 900px)").matches &&
+                        current === name
+                          ? null
+                          : name
                       )
                     }
                   >
