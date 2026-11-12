@@ -33,6 +33,7 @@ const sections: ReadonlyArray<readonly [string, string]> = [
   ["law", "20. Governing Law & Disputes"],
   ["general", "21. General Provisions"],
   ["contact", "22. Contact"],
+  ["sms-terms", "23. SMS / Text Messaging Terms"],
 ];
 
 type SectionProps = {
@@ -427,6 +428,35 @@ export default function TermsAndConditionsPage() {
             <Link href="/contact" className="contactButton">
               Contact Medico Pharma <span aria-hidden="true">→</span>
             </Link>
+          </Section>
+
+          <Section id="sms-terms" number="23" title="SMS / Text Messaging Terms" delay={920}>
+            <p>
+              By opting in to receive SMS or text messages from Medicos Pharma (for example, via
+              our website contact form), you agree to receive promotional updates, product
+              notifications, and special offers at the mobile number provided.
+            </p>
+            <ul>
+              <li>
+                <strong>Frequency &amp; Rates:</strong> Message frequency varies. Standard message
+                and data rates may apply depending on your mobile carrier plan.
+              </li>
+              <li>
+                <strong>Opt-Out:</strong> You can cancel the SMS service at any time by replying{" "}
+                <strong>STOP</strong> to any message you receive from us. After sending STOP, you
+                will no longer receive SMS messages from us.
+              </li>
+              <li>
+                <strong>Help &amp; Support:</strong> For assistance, reply <strong>HELP</strong> to
+                any message or contact us at{" "}
+                <a href="mailto:support@medicos-pharma.com">support@medicos-pharma.com</a>.
+              </li>
+              <li>
+                <strong>Carrier Liability:</strong> Mobile carriers are not liable for delayed or
+                undelivered messages. Consent to receive marketing SMS is not a condition of
+                purchase.
+              </li>
+            </ul>
           </Section>
         </article>
       </div>
